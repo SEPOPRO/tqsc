@@ -1,0 +1,19 @@
+{
+  "name": "TQSC v2.0",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "ghcr.io/devcontainers/features/rust:1": {}
+  },
+  "postCreateCommand": "pip install -r requirements.txt && pip install scikit-learn joblib numpy && cd tqsc-native && cargo build --release 2>/dev/null; cd ..",
+  "forwardPorts": [2222, 8080],
+  "portsAttributes": {
+    "2222": { "label": "Honeypot SSH", "onAutoForward": "notify" },
+    "8080": { "label": "Honeypot HTTP", "onAutoForward": "notify" }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python", "rust-lang.rust-analyzer"]
+    }
+  }
+}
