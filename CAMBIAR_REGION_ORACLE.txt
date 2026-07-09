@@ -1,0 +1,17 @@
+# Oracle Cloud — Regiones con disponibilidad ARM desde Chile
+
+## Regiones cercanas con mejor disponibilidad
+
+1. São Paulo (sa-saopaulo-1)        ← MEJOR OPCIÓN (mismo continente)
+2. Miami (us-miami-1)                 ← 2da opción
+3. US East (us-ashburn-1)             ← 3ra opción
+4. US West (us-phoenix-1)             ← 4ta opción
+5. Santiago (cl-santiago-1)           ← Tu región actual (sin stock)
+
+## Cómo cambiar
+Arriba a la derecha de la consola Oracle:
+  ☰ → Region → Seleccionar "São Paulo (sa-saopaulo-1)"
+
+## Después de cambiar
+Volvés a: Compute → Instances → Create Instance
+Y probás VM.Standard.A1.Flex (4 núcleos, 24 GB RAM)

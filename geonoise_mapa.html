@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TQSC — GeoNoiseTracker</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9/dist/leaflet.js"></script>
+  <style>
+    body { margin:0; background:#0a0a0a; font-family:monospace; }
+    #map { height: 100vh; }
+    .leaflet-container { background: #111 !important; }
+    .info { position:absolute; top:10px; right:10px; z-index:1000;
+            background:rgba(0,0,0,0.85); color:#0f0; padding:15px;
+            border:1px solid #0f0; border-radius:8px; font-size:12px; }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <div class="info">
+    🛡️ TQSC GeoNoiseTracker<br/>
+    <span id="count">0</span> amenazas geolocalizadas<br/>
+    <span style="color:#ff0">⚡ SIN IP — solo firma EM</span>
+  </div>
+  <script>
+    var map = L.map('map', { zoomControl: false }).setView([20, 0], 2);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; TQSC'
+    }).addTo(map);
+    var puntos = [{"lat": -18.2822, "lon": -57.2287, "region": "Sudam\u00e9rica", "confianza": 0.936, "timestamp": "2026-07-09T00:22:40.557589"}, {"lat": 42.8953, "lon": 94.4953, "region": "Asia", "confianza": 0.92, "timestamp": "2026-07-09T00:22:40.557589"}];
+    puntos.forEach(function(p) {
+      var color = p.confianza > 0.7 ? '#f00' : (p.confianza > 0.5 ? '#ff0' : '#0f0');
+      L.circleMarker([p.lat, p.lon], {
+        radius: 8, color: color, fillColor: color, fillOpacity: 0.6
+      }).addTo(map).bindPopup(
+        '<b>' + p.region + '</b><br/>Confianza: ' + (p.confianza * 100).toFixed(0) + '%<br/>' + p.timestamp
+      );
+    });
+    document.getElementById('count').textContent = puntos.length;
+  </script>
+</body>
+</html>

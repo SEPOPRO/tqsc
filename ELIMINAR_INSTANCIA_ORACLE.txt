@@ -1,0 +1,23 @@
+# CÓMO ELIMINAR UNA INSTANCIA DE ORACLE CLOUD
+
+## 1. Ir a la lista de instancias
+Menú ≡ → Compute → Instances
+
+## 2. Ahí ves todas tus VMs (activas y detenidas)
+Buscá la que quieras eliminar.
+
+## 3. Eliminar
+Al lado de la instancia hay un menú de tres puntitos:
+```
+⋮  →  Terminate (Terminar)
+```
+
+## 4. Confirmar
+Te pregunta si querés eliminar también el **boot volume** (disco):
+```
+☑ Permanently delete the attached boot volume
+```
+**Marcá esa opción** — si no, te van a cobrar el disco aunque la VM esté apagada.
+
+## 5. Listo
+La instancia desaparece en ~30 segundos.

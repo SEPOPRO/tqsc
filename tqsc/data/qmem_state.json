@@ -1,0 +1,13 @@
+{
+    "nombre": "O8",
+    "estado": "activo",
+    "buffer_size": 0,
+    "adn_length": 0,
+    "ultimo_hash": null,
+    "shadow_activo": false,
+    "hijos": [
+        "O8_1",
+        "O8_2"
+    ],
+    "hmac": "cf211af2fd4cffcb550f3573361b5131"
+}

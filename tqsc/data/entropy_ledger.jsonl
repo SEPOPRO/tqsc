@@ -1,0 +1,138 @@
+{"timestamp": "2026-07-09T00:03:12.285915", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "64f45554717004882601b8c65c682015c92192b03464d5a1a5a71ddb4ad2fb27"}
+{"timestamp": "2026-07-09T00:06:13.214126", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "8590d106499d270f9603c5d1e590a6fd54f48d70e13f4ac91d360b5627bdc1b6"}
+{"timestamp": "2026-07-09T00:06:27.122215", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "872a00b400e108ea8474cd8ab371fdc8a773d99a2072c2633f3c66b2869fe5ae"}
+{"timestamp": "2026-07-09T00:12:34.611397", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "7e9afc07b75a78d71296d0a1bdb472646ccb6f9243f10783f95ef261b6c2ca14"}
+{"timestamp": "2026-07-09T00:14:39.582739", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "0e708b3550c53ec3359b883fc554df156d65e5b5cd703d1005de7009a57f8298"}
+{"timestamp": "2026-07-09T00:14:51.856798", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "4bebff0949ef548ff1513e286c6dbb6918bcf8568aab06d1a0b2bda0133976a2"}
+{"timestamp": "2026-07-09T00:15:19.909186", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "7e982c8c22adcce0cdd8aacfc7c6431ee3bbd6cf11ad82eff767ea7889c723a4"}
+{"timestamp": "2026-07-09T00:15:36.830262", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "3bb46d53d4a03241cd2db8c5971c10b6ffe3e3d815300dc56af977dd84ef13a0"}
+{"timestamp": "2026-07-09T00:15:54.322521", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "8d1bc77a39ef33a0073331d255934353b75621b3d1d320fd800cbbbf90aaef53"}
+{"timestamp": "2026-07-09T00:34:36.096919", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "85aa9fa5c778bc1c48334106282c60e73752b45f4d697a67d7917257fd87edc2"}
+{"timestamp": "2026-07-09T00:35:12.240455", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "d7cd49536bbda648e8d663e33c0b47ab2c75586e667a39b83a0aa23a0fc595fb"}
+{"timestamp": "2026-07-09T00:35:29.606568", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "787b020ec8ed3dae8a738ce3b932f7d258bcc58b267019a6066ea0447bb1e365"}
+{"timestamp": "2026-07-09T00:36:19.947274", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "53289427909488aa8f60813c206a4bb5cd04512a4246f4564b7671a485a5d127"}
+{"timestamp": "2026-07-09T00:38:52.120790", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "1b57010328d8b7fcd5b2b76ba4df317f81bd832e00d77e19c4ff52732fcd0489"}
+{"timestamp": "2026-07-09T00:39:57.272263", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "e0e75d7d76d8046bc2ff9f658057b31fb12a37f175fca0e395dfb612adc6b901"}
+{"timestamp": "2026-07-09T00:46:02.104421", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "8afec66757588e4aae7f775a0b2298a3ee950ac2a039900d3b56f3bacb64e19c"}
+{"timestamp": "2026-07-09T00:46:43.265303", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "090ab2aca501cdbec3fc11491c2e294d70248451b07dcd4affacbfad7143829c"}
+{"timestamp": "2026-07-09T00:51:37.927219", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "7c94ca0ace72aa822f33a3496a877a3d3857462ec9205c0d48b25aafd06d56a5"}
+{"timestamp": "2026-07-09T00:52:07.129979", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "36e8b1d7a957ed2bc36cd11deaf5521e7be578d9378073afb408ecf4cb5b1b81"}
+{"timestamp": "2026-07-09T00:53:21.563578", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "8002d8ad517a48c66d51b031f3371a47cf28d25600142fedc573697189639a15"}
+{"timestamp": "2026-07-09T00:54:10.079531", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "7d6fa2a00a2e8d72b68dbc872aa6b732f6beb2a522aaa8268103ddbf59994dce"}
+{"timestamp": "2026-07-09T00:59:44.836148", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "b0156b60f43684af353ad7672ae5fb9af9c4dc123b03eece64a77c70422c441e"}
+{"timestamp": "2026-07-09T01:00:13.564744", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "22b8b63c5296a9008adf8bfb80b9adb97a19bf3fbd55deb3c14232148825fbd4"}
+{"timestamp": "2026-07-09T10:09:33.993085", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "8323a4022e6019d0b238117ab2b9b4e3d85c1b9d8300310cde64558da016da28"}
+{"timestamp": "2026-07-09T10:17:13.690247", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "31f2eef4975b9ea15f2dca11607a81573cb0c29c8746657b979312de2d9f072d"}
+{"timestamp": "2026-07-09T10:17:32.630474", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "47187dc9fafc2ad489153b054b33701d61794757f3f6bb56a052f5815ba5b8da"}
+{"timestamp": "2026-07-09T10:17:51.716396", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "19f7144b19aabfe1e88dd2b1ec33cf3038b400b5e2fbb9e747433b090faa4f96"}
+{"timestamp": "2026-07-09T10:27:29.790692", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "92f8dad0e58c3e8c70132d0913d0d1bfb6bd90ce81de4131644af653fecc8b32"}
+{"timestamp": "2026-07-09T10:28:33.953641", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "25ee88487e0ab404d55f1923f13a8ea88b076668b5993ac3ddef8339e0e96976"}
+{"timestamp": "2026-07-09T10:31:33.088753", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "072ec9971ee916dd47f05a489ee916493cedb9b94c26a70ba3acd45bfe877d22"}
+{"timestamp": "2026-07-09T10:31:43.388768", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "0fd1088351bb65fbe0868eb8f04d66975af8054f2441ad935b24cf65bb685229"}
+{"timestamp": "2026-07-09T10:31:56.635185", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "804aea205024c5dff281fdc928a1aec63c894c5e2d61fa3467d4bec56a4021b2"}
+{"timestamp": "2026-07-09T10:32:07.596215", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "c48fc0dd5a69b4da888129fc76f2a6e19dbe774adc7c97a5ef0ec30f28142e34"}
+{"timestamp": "2026-07-09T10:32:22.717368", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "9beaa2558900e287b78ef15d1516c98dcc5fe351453525f751a363e049e12961"}
+{"timestamp": "2026-07-09T10:33:10.894664", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "33002f4ec68894c5f15587c93c1d934f22ad227565126625af258957c7217647"}
+{"timestamp": "2026-07-09T10:37:37.581151", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "4e023be9770db05f95c10dd1d4d7e0259b11d82a80de07b77dae5bcc2e9a1db6"}
+{"timestamp": "2026-07-09T10:38:08.880759", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "0682ac4cc59233c011736921cc6dab1f5f5a62321cd076febc098618efa13207"}
+{"timestamp": "2026-07-09T10:40:52.857488", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "517baccef6e8369f944ef7257e28c3a79d3dcd1d7d6f7dd03e6b0b20344c6729"}
+{"timestamp": "2026-07-09T10:41:54.341542", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "6de94b16bf30261f8be84fb73bdfdf75fee5dddceba9b3e267228011e0f1348f"}
+{"timestamp": "2026-07-09T10:45:50.544682", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "8545431449e3c5576d45f1190648eb8af96876091b56682f788d1f33804426c0"}
+{"timestamp": "2026-07-09T10:47:46.826135", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "ef5a7d27040d51dcf78835a75cb66128c9127c5c5aa88e421a2f3e01a244831f"}
+{"timestamp": "2026-07-09T10:50:15.074488", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "f6361b6aa15780f6641dd8864e0f9c87859b59da8566f78485e59c292c6ad3c7"}
+{"timestamp": "2026-07-09T10:54:36.475474", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "fff582f9ed897b2b1b3f9d53a9061f5bf3a840f369097a8950c1a758d27864bf"}
+{"timestamp": "2026-07-09T10:55:23.119502", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "30cdbdbac4b4a28c047a46eeeb7aea19914489ea2722be5d0bb273959cc4b6a3"}
+{"timestamp": "2026-07-09T10:56:51.300861", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "dc7803255f94b2e6477e6354b25743b6045d6db54849d3eb08be210c30678386"}
+{"timestamp": "2026-07-09T10:58:41.498527", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "37478bf752f09d2570aae2546ff93e9c22c96e8ae3b2b034bb0202ff5052585e"}
+{"timestamp": "2026-07-09T10:59:27.918649", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "f6efedcb6f551fe4f1d20afefbf3055739822f467c1f76db8d729793a53a55f0"}
+{"timestamp": "2026-07-09T11:03:38.350852", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "71ad18dc83ec012e00fb7faf4b02392c5d97867c2244f605e2cc100d92cbc82c"}
+{"timestamp": "2026-07-09T11:08:22.809416", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "4d4bc47b5f8ca832eb54eb30b675ef707e8a18fecbbcfa23e786b4440b038d3b"}
+{"timestamp": "2026-07-09T11:09:07.141874", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "2df5fb9eb9ace91920ef1fe4d9e38e36ff54af51ea7848345c2a928a279a202e"}
+{"timestamp": "2026-07-09T11:09:41.647448", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "07f109dcb0dd1632b8c31895df93eaaa9249f01759b8fcf8e4c26b1f34cdbd49"}
+{"timestamp": "2026-07-09T11:10:08.264308", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "66201ce00287e76e9dcb3ceeb842b61ad65b67049fb2a79926c5d02b648493b5"}
+{"timestamp": "2026-07-09T11:11:18.040845", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "b04da93560500daf0699500255c212964448048f14e80185c89d34491f8b137f"}
+{"timestamp": "2026-07-09T11:11:53.561401", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "e93769a9ded5886939a189a8d9f1b794a298fb7974fd6b02812f9f33875d974e"}
+{"timestamp": "2026-07-09T11:12:18.808317", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "f844d398eb4fc4ca047981de953323123c993b9cb07789d6b222867289dd14e3"}
+{"timestamp": "2026-07-09T11:13:00.811796", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "9b9a6480945a25287d4745177648342fb328ced7cd6c5aabe643247784345393"}
+{"timestamp": "2026-07-09T11:14:10.892589", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "9b66bd7a1feff816ac27d4ea23aade818cbe4bd65bf30b48d3b954d6242fa23d"}
+{"timestamp": "2026-07-09T11:19:59.252223", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "a4fdc37c1a586c08f926fa41f521260895c12341c29aba8d2092c4878b79ae97"}
+{"timestamp": "2026-07-09T11:20:40.060177", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "daeef9010ca9cb93bbcffd02fecc27a5d03c813d165195399701adf40e1db86f"}
+{"timestamp": "2026-07-09T11:22:39.424472", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "2913ea3d5cf5e99f818f401ec91202bacd4406601dd5683f46e30184241a1f67"}
+{"timestamp": "2026-07-09T11:23:18.490027", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "3fc561ef3ed99d700e852290b5e2d2787265164ee2074054aadf82a463367ef1"}
+{"timestamp": "2026-07-09T11:24:11.908776", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "8e59accbdac891f828656a81f2e2bf1ccda96fe20c0219779bf173d053298078"}
+{"timestamp": "2026-07-09T11:25:10.313809", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "ea2fa1b829cd2deddb641e989a8d19d7ecc8964ac1f82762dc3bf80828ba93c7"}
+{"timestamp": "2026-07-09T11:26:19.376117", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "9f4b379b565649c5a08df5c50020d7a3328474fc65f33b01ae77d64bea339e2e"}
+{"timestamp": "2026-07-09T11:29:08.101131", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "a135eb59e8b04f131f98151097a0165a98878cad2cc904e1538738fcef112cf8"}
+{"timestamp": "2026-07-09T11:29:32.669798", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "b3338cab3f1dd7899fee38a9ab797ca8fb7f7b083f38aa6b41b1fd0882d73718"}
+{"timestamp": "2026-07-09T11:29:50.768685", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "2cb0ed7f1aaf73f04863db9e8aa79d2eccc32eed6fe133441cec797f538c80c0"}
+{"timestamp": "2026-07-09T11:31:29.306072", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "984043f6ce532c1e61cf8905a7d2643de243a4f4c187e7dd44f4a7d2481b3b36"}
+{"timestamp": "2026-07-09T11:32:08.017477", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "b5d39a6d15c50745fe3a5e8308578e6327e578596d75de027f4f760967d09e35"}
+{"timestamp": "2026-07-09T11:33:30.463691", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "93202941dcfdefdc1b3103da3c71e3b2f81d16156f80be07d896f1587aa221f6"}
+{"timestamp": "2026-07-09T11:33:57.519896", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "70c327e174d81ab6bece63109b9f6f665e8fcb204d5efaab6d343b2c8f6ef52b"}
+{"timestamp": "2026-07-09T11:34:38.385907", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "8b9730230cc69b34e20cf24c1ed7c7f336caad132b40dfa85529aa277d12f215"}
+{"timestamp": "2026-07-09T11:36:37.674318", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "1527f91d372f51dfe05820e2fcb608b7a940fa50d67d21272a07ac6826ce5bfa"}
+{"timestamp": "2026-07-09T11:37:40.553011", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "2f9abeefa33f49b3770e67d41e1c508925b0d1d24d917b1adc60e6b3b5c03dbd"}
+{"timestamp": "2026-07-09T11:38:38.791258", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.9970800000000001}, "firma": "a106bc2ffff43c05", "hmac": "0623e9b130dd8ce4"}
+{"timestamp": "2026-07-09T11:38:46.540658", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.99702}, "firma": "65bd0bd1171673de", "hmac": "17e31cd9ec10a5e7"}
+{"timestamp": "2026-07-09T11:38:53.430223", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.99718}, "firma": "628dfb06381df523", "hmac": "a880dce0524ed4fa"}
+{"timestamp": "2026-07-09T11:39:36.390086", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.9971599999999998}, "firma": "ad1bd94b90b12772", "hmac": "54241021ddb8e1e1"}
+{"timestamp": "2026-07-09T11:41:06.709446", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.99726}, "firma": "b620c38306d03e64", "hmac": "dadd40346b6caf8e"}
+{"timestamp": "2026-07-09T11:41:13.469786", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.9970800000000001}, "firma": "a106bc2ffff43c05", "hmac": "660e4b063736a7bb"}
+{"timestamp": "2026-07-09T11:41:21.865323", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.99712}, "firma": "136b0e50aa0af8ae", "hmac": "423bf97f101e684a"}
+{"timestamp": "2026-07-09T11:41:28.653609", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.9971}, "firma": "4d1d50002f0a6ee4", "hmac": "d9dda9e7e50d7f63"}
+{"timestamp": "2026-07-09T11:42:12.742652", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.99702}, "firma": "65bd0bd1171673de", "hmac": "247e695e0730706c"}
+{"timestamp": "2026-07-09T11:58:47.337578", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.9971399999999999}, "firma": "63fada0acf03718c", "hmac": "495f57f50cfe37d4"}
+{"timestamp": "2026-07-09T11:59:52.789176", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.9971}, "firma": "4d1d50002f0a6ee4", "hmac": "177d4a65142bb08e"}
+{"timestamp": "2026-07-09T12:00:02.127707", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.99712}, "firma": "136b0e50aa0af8ae", "hmac": "34318e61b847710e"}
+{"timestamp": "2026-07-09T12:00:14.117724", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.9972}, "firma": "36d9b9b071d53334", "hmac": "2ed040d2e6f41208"}
+{"timestamp": "2026-07-09T12:00:24.409706", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.9973199999999999}, "firma": "27ce5d1f488390ed", "hmac": "e900e48a7d69b51a"}
+{"timestamp": "2026-07-09T12:01:11.850035", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.9968600000000001}, "firma": "20a503988fd03ea0", "hmac": "3f207cdc49cf946c"}
+{"timestamp": "2026-07-09T12:02:44.930370", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.9974000000000001}, "firma": "07205add4dcc9f85", "hmac": "5eac638c0dad44a1"}
+{"timestamp": "2026-07-09T12:02:53.951896", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.9972799999999999}, "firma": "54ca8499a801607c", "hmac": "a2c694323e3e0480"}
+{"timestamp": "2026-07-09T12:03:21.296335", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.9971399999999999}, "firma": "63fada0acf03718c", "hmac": "3180ba856a5eaccf"}
+{"timestamp": "2026-07-09T12:06:56.254898", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.9972}, "firma": "36d9b9b071d53334", "hmac": "4642cc52b94697d3"}
+{"timestamp": "2026-07-09T12:08:29.088599", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.9972199999999999}, "firma": "57c4af0ac564f9d1", "hmac": "8ea81c4d17df0fe7"}
+{"timestamp": "2026-07-09T12:10:55.700825", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.9970399999999999}, "firma": "6b3e93e861ee0ebe", "hmac": "4c617bb230a07f4c"}
+{"timestamp": "2026-07-09T12:11:06.221379", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.9972799999999999}, "firma": "54ca8499a801607c", "hmac": "6e3e7230e9eceedb"}
+{"timestamp": "2026-07-09T12:11:48.326197", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.99696}, "firma": "3ab8e8cfd5d950bb", "hmac": "14ca5c089eab952d"}
+{"timestamp": "2026-07-09T12:13:51.143550", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.9970000000000001}, "firma": "990c154c30e74868", "hmac": "3b907e0401c61d0f"}
+{"timestamp": "2026-07-09T12:14:20.432950", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.9972200000000001}, "firma": "202ee85609869390", "hmac": "b65204477cc41733"}
+{"timestamp": "2026-07-09T12:17:50.586793", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.99712}, "firma": "136b0e50aa0af8ae", "hmac": "8487dfcfd4f3dd82"}
+£πK`ç˙Jùc:ºZOÂF≥∆d5{@ï5x≥ò—ÍHw[”∆#iáàZ†∫‰\ü)®–ùÓ·kÜ™[ó}@-ÆCé™^dµ$Îú;•ñlj{tvƒqÆcã¯7"égT˛¡÷ßm£ÜNÒ‹+{Ù‡à_CN’Ñ⁄ÁT¶ïÄ»®§´!P=Z˙wıÍw©øzπYÈƒN©N/ i::º†$Â4«Ev83°õ«ã-∂Û›⁄âŸMf©xò–G/A`<npM»Fy™»IÕ∆Y1RXU∆2ôÁQƒÃ$
+¯´≈í:z◊'nkÉ4ˆÀ”∂R2c‰À_ªi£ØvŒ˚º0dï‰{>–xkL)ﬂ„5-Vsã†H®ﬂêb¸%º&b Œ%…ﬁ¿@O.s?é‘†”£r@^4ùﬁV¥DÇc‡vQ±ú¯;Í“É–Ü:#û‹¶u'êk/Jô◊6‰Âƒ®C¨´˚ÂÛN©áîÚt:ÚÎæÂª‚´B≠â˜ Àôn'ﬂ‘{7 tód¡ ÅE≥ô‘¢Òl°ä}âÎ°NÍK˘xt∑˚∑€€Qe›mmJá¸É∂Õ6Ω
+ }ö◊§zvÿZqu¬2Û¨X!6Ï§ËÈ\Ï§ü(ØÒÈ]ãt≤–[låÛY	-§ô-ÄG.≤ò¬ààà¡™Ù∆QuÑÏõ	æ≈µﬂq(ìõó'ì>ı‚JI≥ãCoªÕ5¯qa‹"FaätOmßﬂHbOä∏ärÉfº≠¿«é˛!ö™P|ûw/ ±Í¶°<f√®ÑØESÅ¡©!ÿ]…ê:úô â‰øœm+ôí†éÇwëo#∫ #XY>VËM“œb”E˜+Á;Sjt'ı’
+„(’0˙¶Ú»ıØÖﬂOE©ºs‡—R˛·!B∏ˇ˝#|‘£j◊Æ/¸}yVïªFU∫ë∫∞n?ÒwòyË;§'Ä¡Z-˛T&‚:¢PI’ÉÅõºõ®†å2÷~Tîè$$vÀƒél∑¨ï«YÙpOﬁë4Œ1:ßl$È£ây{!KTIxdπ
+#Jí≤?+e¬§›Ë7%$/ê‡≤‘<Õü<D§§Ê$òÁ◊ÊGnMÏ¿+≠Œñ‹∫=…îc˙/°eµ¨%Ï—£
+7ÃôJ≠ø∞TÀ…0ı∫›ü
+©f<ˆœÅwn»˛OiÄ«€îœ‹k‘ëˇÈæ_öÈ3P\<A˜ópgÊOÊå°ÂÒ†‚S+¸Ì£ÿ}g®êıΩ√¬3"ó\˜dØõé(…L†m
+"ﬂ“Ní¨Å>e©w‘µØÎæ ú•ï|éœ.G´ë†—©8ÆZ=Ä®€ù§xPw¨éÃ„≈ã	1fßÁ3H?Zf≠ÎK◊ïÃ‰m$ã|U›ßbÂå≥Za∑îõXvL]ô“_s≈ t’Bö IRdm<§®knıXGT#í_Éº¢Fåú!
+v‰r#¢Ó[ÂZ '5øÇkÀ√…ıx%a±8—≠‡.ñ≥ø∑Œ‰äG^W¶˜˘o1Ê˘´h§¬ïﬂ)FÉR‹Îö¨¯§Ø´ÙÉ0	¶x•ÅKT”páìﬁ[°•Ü⁄0
+æ√˜°U’ÀûdfBT©Dq∫¬›ÛâPXt‹°<¸≠á∞:xs;}.⁄@§+ÏET·fôı
+SıÚ¥x˘Rö£ÍË§}∏ó6¸Ã&Lm»äÇÔ¯FÑÆreÚë∂nJAÅWjkÚ‡;Û2 >õ¿`ù–∞∫˘
+…tºÒﬁqó∞
+¨Çõ˘ñç]0XöÔ$øª„´Æà%¶º+æ Ö⁄œ·>ñÖI86ú^4„|¨‘)Ôú?ça÷≥æPzëÂZµ$Ó⁄$	]¥•=~≤{™Çß∑’ª˚`-¯ ≥ kE∫\ˇâpb~£0éaëz≤Ñàˇi»Ó_†Æ·≠]˛©˝l·N…ç«Òº-æîØ*ß°êÚ˙JëóπØ{99l§ö˜Üf˘9Ä:¡.∞9…–542kE d	eUãgèÿM	!˙Ú^?ÉÛ<.úzÂ`;zG™.
+…pÓ^=ôÇµh≈ı¸πFÖ(4
+6ìe5}"ã6‚cˇÓ÷l‰¡$S¢Í‰◊óŒ·˚	Ú*r˜s	C¿ﬁôÿçpí‰Ñ¯ØU6UE$©’ıﬂ8°dÉÌEö¯&nzò(Q: ó8°cy∆ …,ŒDπÔÿ-ç±≈ŸÛT;…ÎÉÆÃ%76√Ï…3q“˘T+ıB…'¿”}æÃ√Ú|„õ+¶_,<RóB}_ÄÒ«˝/Øe%≠yº8\MuØ%H5)ŸÁ±ÍÑÓÛ:Qç)e¬
+ PÜ°Æ~“ocf“˛˜óRîe™´%€å≤lÙÃ-2úﬂUíŒVµÎå"U°*;U˘ªÀ¨Ú‡‰Oxº–zJòàE—™≥ôA¡˚.#b@cVró3…¡vÁ±9¥∏Ç©:ã“ëÖéK˘¡L2*$	qÓ_£áçÇ–mAÂÀâîü7‚Y1≤‘d3Dï‹∑Ÿ*+Yi3‹oJ~Spã\:√_”OÓÕN#É˚_4S“/v€Õ¨À\JÕë˛ﬂ?_ª≤"~Ü}êdÌı¿œu|e≈¿ÆûeI!
+Ò=ìíV^⁄[#‚v‘Â∞áÕ1D÷q"	jVô∏È≠Ñeø√’∆ñ;´u'øV|"≠ëƒˇ4b‰ÀÕXÑ?ﬁ=ø∞%˚{ºZT†'C™`∂">î˙7Ù©…À£@@y©»#&DfÉ"ÜLXËyV	®¬T:ÈÈ]¨6U˛t®πS≤àÎÁ◊m)Æ+£#fÄfxªÍvÅ˘®jÿ·„π]⁄F’|ﬁ{”p¬nìiCEÓV{ÔJƒœ≈ñΩ˚◊r∞Ã$SÖÀC^©*PRv‘Æç√B^YZµ›ä4ú6
+≈kåá]L·≥T≤/≠˛ü˝a)Í›j¨◊†w©ı~œó&q^He7úBø=S◊µMêu3”àF>aAÓ‹&∞’nÎå-ŒˇG;	—3ìË¢ôEÆ◊hçTí¢´¸y-Äµˆøêf˝‘Uö‰KÇv„yü<—£∏<µ¿	ˇò¬	v9´#d:ÄE~Kr6 RëP2ô_Tœb¸hºz°F∑U«á¶âü{ÛN◊~_Ä!ƒÅdYxÿ—ı…èAß˘£ßÅNó(ıkÅülTüÛ<Ödˆµék ¥√.Ä"£
+sÁ K&Jåâb‚d]⁄”ù/~T‚gˇQ¥çQ¿Å’Öä¶d’°π mí‘TJµï
+ÆÆøµ“ î·mG˘ íFFææz}ú/e∞¥~G´5ÁZÁÙ∆+;⁄Ëí≤ê»óg¯ÉÌ‘&≥#ˇéûÃTwøs9ÜÖß_Ä3tNóûOP°E¡E©ı|Aı@ÿ∆l`2biYé:ÕÜãπò~{tmÇ¿P˝≈eLÂ∏∑pù∂ΩÕ<¶,6?∆£⁄&3u–9 »≥öÌ§ê,Œm…îl¶¿‡$	∞RW`ï	lΩiRëŒ
+fê‘¶‹Ë‘î¢Ù·Óä‰‘:áﬁ§ºêJ-w«å$¶Ø`ïØôW¢xX˙Ê—16##Bœ›ﬁd)‡M=æÅKƒâÖ‹W‚g¿S4ƒèpmÆ\Î¿U/@ﬁ; "NF…Ò°ÈQ≤·â¬_∑ a6)õÇNT∏Õ˘œF?ïø]_Q£Û¸`¸ÏÓÎ;;«[Lê‚úã∆î8˘L∞Ç?V0—D?
+ú….É6]¸œÂ∏2	‡%ﬂYB∂tJ&∑	ÔÑVuÍ˝;`k…ã§éÕ¨ìd-:(ï∏O
+Ã!›àk‹Jr°ÑÈ≤8 &£AŒë†ƒÈ„Ö$v~©ŸGˆ:Ú¥∏òÿË‘™É`—s≥Œ "∞ÅNã∂Ã⁄-œõ@¨eÖ <õæ/U(‘3Ëá4´πΩ“E∏íë≠…x%U#Îx˙Œg…aP8J˚B9rÄ#T√'ˇ< |ºªà¢˜.Ûñﬁ°;BÑz|Áç?!H~±È≈·÷∏ÅÃ?„%≥ΩÊtS	¶∫g’oãkãîR p∑úè˘~∑¬æÈx–;Ò]s>øÉÜ:b˜îc+J%ñ·Uaœ
+Ùï»™E,‡Ÿ+œ1tmï/•aï◊@ŸÜ5‹±QZ%∑W¶—[R6ïzgFˇV°Ö«F!Û$‚S1[s4ä$ÇË9ë≥.-}xúwÓ0ÃFoÎj’⁄`Ü^◊ŸÕ‰{⁄)‹Ì≤W√◊’@~‰AZWäXuO+îà⁄ˇ¿ÚªY¡n¥Ë‡h^oæ≥Øçñ°öŒ/§æÊ§0±ë|@”Ãû?œ,W”oüÚŸ£Ì'räçÛ≠A«<Û@c˘<Œ”ñôÔ∂JyÖ ﬂ£ÅﬂÂày4	∂76ÉÒ∂i÷%πı¶Z
+˙ª”Ai∑≤‘≠¶aEAÒéŒIíáé_Z«ø≈—O	∂N[⁄E¿q‚2œíù„ÚJ$2ˆ”ıÚ{¸’Ò’¢≤W|.o.ÆXSo:˘1ÅÛË‹I˜Œ9w{E¨§–b4FOËÿf]1Ë#HNgã…
+Èı¬ËpCÄÁ⁄ó_xÇûO\w&ƒÿ
+T„8è∂"¡9√.Ñã1LÍ}ZÍe…Œ^EÖıÊÈEó˛P~∏2Ë-ê˘ÊÇR◊Ä¿k˜∏K x
+ÅF„ºL2û¥äAPy∂Å
+ˇ∂∑Ì&–@	Û‹ÏKtûŸqÿÙKfµ∫r(g‰z)à∫öΩÔ©_‹,¬ÁÆjØπÅ_Ù~OP<nç ≤6_+Öy-Ü§éÄdœòSâ”ÎÓ\HkQÊ#«MR@≤BõzAıÄÜq·´h§t˜0Pï‹u	–(Ô+E˘ô“©s[}≈É@Ä 
+H⁄
+œ¸Á“ÕÀI£t÷l‘%~ä˙õΩ∫~√–Üd˝…Ç;ZW∞$˜õô”íõcØã°PiπnX•◊±≥ÎBÖ,:∑â.≤•—_§
+JÑ`
+˜≤ARÉ¯D©J“C:89Yº¡˛>d€ã
+®BmÙÕ>îµróó›n(Ê'√ª˛∫BÂ4`
+dtâ¬á†`2œîp RÄß¡gZ+‘X—óΩ´ÙµVf¶	¢Ün∏˜Î˘â◊:´“˛ëAââ‹##Õ8 h9†ÿ˚Ä0r•»M˜5ﬁ´XÑ‰€x!˛•b˘∑ã…◊!CàÊzÜˆ-∂KˆÕVì˚$©’ |Æ‰z5WßSóO≤uÇ‹pë@§Ç˘5Ò◊2zäÒ¶KïòQ>Jm¨Ωë:Ãbˆ·òpº
+≈Øå!)d·˚_:57ë‰ëƒmá©wÍ.ﬁ{ë`äÌîo_°ò§∂ΩÚLîÁ7óq*nÙv1∞™CTÂÛx-z≤3˙Î†d¥Æª#Æ∑^<qmö/ÿÜf)_.Ywâg°w»svπ ™é˚MÌˆ¨Cµ“v∫¿ÙÛáëÎ¿&y£L”\gDÍeMí∂ﬁìKöG¯Ë`CJ¸çlíÁDÃ+I]gº$ùõBEÉÕá‘î±ÄP!¨ƒR‡ö|àØÑ±÷Øp⁄I}Hô≠}çvcêœ…(=ÈUîÄàé.¿	>ŸåcO™
+@Á¬ß5Íz¥`Ó◊—dÖﬁCﬁ“˝Ìˇ∞á 7ﬂù≤.hƒÚòX◊ËËÉBˇ4W¶	ˇò¿*˘>/.	}÷?®'xK`√Ÿ<hê˘µ¬EÆÍ0~[ﬁæ§_D$‹è•Ñ]#+säªˇ©Ô∂XÚ;öN7ﬁ¢‡iÜ…Âù¿„ÖwS/CsŸ£§oL0¶Ï ÏØtåÔêÄEJr
+Zìµ”z	:ôìjâÄFM †±|ÇÀjˇwVŒK‡Œœ*`ßË∑!otÎ€∏äﬂ÷Ù˘ìôı8≥‚’1

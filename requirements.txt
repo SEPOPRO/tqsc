@@ -1,0 +1,5 @@
+psutil>=7.0
+cryptography>=46.0
+geopy>=2.4
+PyNaCl>=1.5
+requests>=2.33

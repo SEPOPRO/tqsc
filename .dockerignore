@@ -1,0 +1,13 @@
+__pycache__
+*.pyc
+.git
+.venv
+target/
+data/
+tqsc-native/
+*.log
+*.jsonl
+*.json
+!.dockerignore
+!requirements.txt
+!Dockerfile

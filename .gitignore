@@ -1,0 +1,11 @@
+/data/
+__pycache__/
+*.pyc
+.venv/
+target/
+tqsc-native/.git/
+tqsc-native/target/
+*.pkl
+*.key
+*.crt
+*.pem

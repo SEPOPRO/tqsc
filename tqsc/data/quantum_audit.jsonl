@@ -1,0 +1,112 @@
+{"timestamp": "2026-07-09T00:03:13.077478", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "028b5be06a6694eed11fc8aa10af97cf"}
+{"timestamp": "2026-07-09T00:06:14.013160", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "d786bd32003467d3f4e8d48fcb774a20"}
+{"timestamp": "2026-07-09T00:06:14.015154", "evento_hash": 8153646086672240250, "decision": "aceptado", "confianza": 1.0, "firma": "efdd1eb9f1974676c1529e9c898cb42c"}
+{"timestamp": "2026-07-09T00:06:27.939844", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "b91d741b98317eecb02c6f83f76ade92"}
+{"timestamp": "2026-07-09T00:06:27.947430", "evento_hash": -2720897968460176697, "decision": "aceptado", "confianza": 1.0, "firma": "5d760a55efa6c470f2943018774c4406"}
+{"timestamp": "2026-07-09T00:12:35.405368", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "fc192dc9b13d4a2243a5f3c72cc00ea1"}
+{"timestamp": "2026-07-09T00:12:35.406368", "evento_hash": 3503575192787883091, "decision": "aceptado", "confianza": 1.0, "firma": "c3ce6bc0ee16e95652fd67c373cf59d6"}
+{"timestamp": "2026-07-09T00:14:40.360824", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "a4654db1f5b3b056cce723716e80fb14"}
+{"timestamp": "2026-07-09T00:14:40.362829", "evento_hash": 8812600809650758100, "decision": "aceptado", "confianza": 1.0, "firma": "4f3fec8e028bb7afdcb484f3a856c18c"}
+{"timestamp": "2026-07-09T00:14:52.620553", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "461836ea35c8369b290eeb7a12f50925"}
+{"timestamp": "2026-07-09T00:14:52.621552", "evento_hash": 4181118577248222635, "decision": "aceptado", "confianza": 1.0, "firma": "58dd2663312f1507131e5e318c1a3be3"}
+{"timestamp": "2026-07-09T00:15:20.666661", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "ae68e980ab9ba7023d416a45c94dd8d8"}
+{"timestamp": "2026-07-09T00:15:20.668749", "evento_hash": -1828819065475814771, "decision": "aceptado", "confianza": 1.0, "firma": "68f5b33f1bc3944a4bd2fcfa401968fb"}
+{"timestamp": "2026-07-09T00:15:37.621465", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "027ca3d7f6083e70a29ed7a176f25470"}
+{"timestamp": "2026-07-09T00:15:37.622529", "evento_hash": -2668467070855216657, "decision": "aceptado", "confianza": 1.0, "firma": "0fe363aa1ba90819efe6260d94ae9cf1"}
+{"timestamp": "2026-07-09T00:15:55.081016", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "c63121954c91c45a1727e1d35ca0988b"}
+{"timestamp": "2026-07-09T00:15:55.083091", "evento_hash": -4032506489320678054, "decision": "aceptado", "confianza": 1.0, "firma": "46cb98c0b7be88c41a884fe9c42850d5"}
+{"timestamp": "2026-07-09T00:34:36.955285", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "f46e3dc37899695fd210590b39b95072"}
+{"timestamp": "2026-07-09T00:34:36.957281", "evento_hash": 7760465886467727648, "decision": "aceptado", "confianza": 1.0, "firma": "50a83ec62d7831e629dbd6a76d443d2c"}
+{"timestamp": "2026-07-09T00:35:13.080334", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "ddfaaa6d03b80a4a010b4aa91b3121c7"}
+{"timestamp": "2026-07-09T00:35:13.082385", "evento_hash": -2804964929702713332, "decision": "aceptado", "confianza": 1.0, "firma": "6b3c2e696eaa3673e4a78accc06d7ce5"}
+{"timestamp": "2026-07-09T00:35:30.487566", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "5b6d697af0f2e8db75998d5eb47497e1"}
+{"timestamp": "2026-07-09T00:35:30.489831", "evento_hash": -5541118075413045134, "decision": "aceptado", "confianza": 1.0, "firma": "43560f79b0ee7be99c38e20717e611ba"}
+{"timestamp": "2026-07-09T00:36:20.763922", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "813e6d124960024c33c9a5a114033c10"}
+{"timestamp": "2026-07-09T00:36:20.764938", "evento_hash": -4265619166059063358, "decision": "aceptado", "confianza": 1.0, "firma": "d6c2f2057eb9e46c200689104ef0d84e"}
+{"timestamp": "2026-07-09T00:38:52.947500", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "750046d22f5bde0ba520cc41ccf7d0e7"}
+{"timestamp": "2026-07-09T00:38:52.949578", "evento_hash": 7280070935708428424, "decision": "aceptado", "confianza": 1.0, "firma": "51716c3a0487788f7652ac1758fcea7a"}
+{"timestamp": "2026-07-09T00:39:58.109421", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "fabb57bb81689fb7c1ffae82b364abfe"}
+{"timestamp": "2026-07-09T00:39:58.111579", "evento_hash": 3707478641151383699, "decision": "aceptado", "confianza": 1.0, "firma": "0679c97288b043610d0033de0e1ac307"}
+{"timestamp": "2026-07-09T00:46:02.963964", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "bf46b404a5187a78ff0f5aa0beb3672e"}
+{"timestamp": "2026-07-09T00:46:02.964965", "evento_hash": 1580129802036871941, "decision": "aceptado", "confianza": 1.0, "firma": "ff3eb8573fadcfc95fe2cbefb2358b87"}
+{"timestamp": "2026-07-09T00:46:44.138867", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "41b8ffd1379a252040022d0bc80ae4fa"}
+{"timestamp": "2026-07-09T00:46:44.139877", "evento_hash": 8649559920030848763, "decision": "aceptado", "confianza": 1.0, "firma": "39ba2c47cfdca703c448087c0be415a2"}
+{"timestamp": "2026-07-09T00:51:38.809437", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "856dbd2b2c79410868f8931915d53ee3"}
+{"timestamp": "2026-07-09T00:51:38.811440", "evento_hash": 427801199795276288, "decision": "aceptado", "confianza": 1.0, "firma": "a985fcd0366cbd11c51c84e7def1ae35"}
+{"timestamp": "2026-07-09T00:52:07.977969", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "69a9ed4a96cb7277d6af79ce262b34f0"}
+{"timestamp": "2026-07-09T00:52:07.978971", "evento_hash": 2030569206626060471, "decision": "aceptado", "confianza": 1.0, "firma": "7b73db8bc00776fe5c01af1bf7d45bce"}
+{"timestamp": "2026-07-09T00:53:22.397726", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "fef699815d7f842af6bbfc5fa48350d1"}
+{"timestamp": "2026-07-09T00:53:22.399727", "evento_hash": 167018328875241814, "decision": "aceptado", "confianza": 1.0, "firma": "b3b12c9a2fead4662142123d82e6f66b"}
+{"timestamp": "2026-07-09T00:54:10.935267", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "d0b906b1329f64061093702b4920f5c0"}
+{"timestamp": "2026-07-09T00:54:10.937269", "evento_hash": 4187849178014459030, "decision": "aceptado", "confianza": 1.0, "firma": "41fc9fe2d1558d8dbb1cba9bcedfdc65"}
+{"timestamp": "2026-07-09T00:59:45.698353", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "1476c9884d109aa236bc73bc1eda3818"}
+{"timestamp": "2026-07-09T00:59:45.700449", "evento_hash": -8805071982244259574, "decision": "aceptado", "confianza": 1.0, "firma": "4da41edabb2b02a04fde711d052dd8f6"}
+{"timestamp": "2026-07-09T01:00:14.369353", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "e3012499068a962e0e30faeca58ad6ee"}
+{"timestamp": "2026-07-09T01:00:14.370412", "evento_hash": 6821139543837899329, "decision": "aceptado", "confianza": 1.0, "firma": "0b7cedab958ca51ba293f5b03492ed5c"}
+{"timestamp": "2026-07-09T10:09:34.810291", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "10a1dcb1ebb21b3817f473d0e3ae0ff0"}
+{"timestamp": "2026-07-09T10:09:34.829834", "evento_hash": 3187160832414583199, "decision": "aceptado", "confianza": 1.0, "firma": "f86cb63e4fb9024c78f2a59debc5c7c0"}
+{"timestamp": "2026-07-09T10:17:14.497110", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "5141b5c1ddf302ad0ff412c1c5001f18"}
+{"timestamp": "2026-07-09T10:17:14.498165", "evento_hash": -1443453214341814032, "decision": "aceptado", "confianza": 1.0, "firma": "c6e0e64b6d4e32d3f1a8ba1a1e67920a"}
+{"timestamp": "2026-07-09T10:17:33.430024", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "a092945fbd7d4be350d63982f2b7555b"}
+{"timestamp": "2026-07-09T10:17:33.431023", "evento_hash": -653358972910664060, "decision": "aceptado", "confianza": 1.0, "firma": "f4f4b61c1f544888870b1efd93d5af87"}
+{"timestamp": "2026-07-09T10:17:52.496998", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "a963d9eb57db666cb502d3d392de4739"}
+{"timestamp": "2026-07-09T10:17:52.496998", "evento_hash": 7300656595343063621, "decision": "aceptado", "confianza": 1.0, "firma": "e73932f3c313f21e6eea734626f7b0d9"}
+{"timestamp": "2026-07-09T10:27:30.588948", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "4c254b0f58ddd8b376d29b0971c2123c"}
+{"timestamp": "2026-07-09T10:27:30.590949", "evento_hash": 3392172247231560461, "decision": "aceptado", "confianza": 1.0, "firma": "a660f26c45439573e70784afb2dc9673"}
+{"timestamp": "2026-07-09T10:28:34.935243", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "65c763cf7c1fa6406871833b6c603044"}
+{"timestamp": "2026-07-09T10:28:34.938547", "evento_hash": -4739785564373682034, "decision": "aceptado", "confianza": 1.0, "firma": "a490536d28723ea5e5c8c497ec464cb6"}
+{"timestamp": "2026-07-09T10:33:13.108074", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "b3ba31c80d437a1a3d84c03c51916f78"}
+{"timestamp": "2026-07-09T10:33:13.110332", "evento_hash": 5911684113228042150, "decision": "aceptado", "confianza": 1.0, "firma": "0a5761edd8804cee051fd0b840137fb6"}
+{"timestamp": "2026-07-09T10:37:38.424607", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "a14e527147106515fc19cd623c89c355"}
+{"timestamp": "2026-07-09T10:37:38.426706", "evento_hash": 5095196095506633572, "decision": "aceptado", "confianza": 1.0, "firma": "38ad6730f6c9cab1083d3aef96d467e0"}
+{"timestamp": "2026-07-09T10:38:09.736351", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "a7261900547a06fd7b6509003443a290"}
+{"timestamp": "2026-07-09T10:38:09.738860", "evento_hash": -5693087232918319175, "decision": "aceptado", "confianza": 1.0, "firma": "337257cf8f328f82575c618cc2197a23"}
+{"timestamp": "2026-07-09T10:40:53.706344", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "5b15b151e1d6d35be40cde5892a9ab38"}
+{"timestamp": "2026-07-09T10:40:53.708345", "evento_hash": 8766280612441734219, "decision": "aceptado", "confianza": 1.0, "firma": "a3bd035a2653d792b0c22a404be04117"}
+{"timestamp": "2026-07-09T10:41:55.169361", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "b9e724b63b4a02a42640f1c96e101699"}
+{"timestamp": "2026-07-09T10:41:55.171461", "evento_hash": -5704948511929347123, "decision": "aceptado", "confianza": 1.0, "firma": "5fc18756305d317823aea0069dec295a"}
+{"timestamp": "2026-07-09T10:45:51.373939", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "55da6f98b5862c0a58dbbd494c218a2a"}
+{"timestamp": "2026-07-09T10:45:51.377019", "evento_hash": -6996244409135396471, "decision": "aceptado", "confianza": 1.0, "firma": "520a3dd0ca181282849c4cc9ae0f1727"}
+{"timestamp": "2026-07-09T10:47:47.668203", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "d74fc796bc0015fefde9a75357626cf2"}
+{"timestamp": "2026-07-09T10:47:47.670728", "evento_hash": 1810949452295838462, "decision": "aceptado", "confianza": 1.0, "firma": "22e76f41a2e79ddde0e4baf169b48322"}
+{"timestamp": "2026-07-09T10:50:15.857360", "evento_hash": "abc", "decision": "aceptado", "confianza": 1.0, "firma": "2ad2f3f611c1183f18df3de37b22995e"}
+{"timestamp": "2026-07-09T10:50:15.860200", "evento_hash": 7349114760204137284, "decision": "aceptado", "confianza": 1.0, "firma": "d0159f7ac11233542300933be9d22d93"}
+{"timestamp": "2026-07-09T10:55:23.935124", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 1.0, "firma": "7dd65a0920fd9bc036c6378cdfa13199"}
+{"timestamp": "2026-07-09T10:56:52.080083", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 1.0, "firma": "8ba204cdc5c48ecde74b6bec378e680b"}
+{"timestamp": "2026-07-09T10:58:42.271985", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 1.0, "firma": "3f53440d8e3b0321a93aeeff31994e04"}
+{"timestamp": "2026-07-09T10:59:28.680535", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 1.0, "firma": "c2a3a040acb4dbde9144a1bad08149c9"}
+{"timestamp": "2026-07-09T11:03:39.130891", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 1.0, "firma": "086cce7d619947ab1f5c6cceabb78152"}
+{"timestamp": "2026-07-09T11:08:23.615780", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 1.0, "firma": "e2fb9786b9817855b2b778bf60648d09"}
+{"timestamp": "2026-07-09T11:09:07.936487", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 1.0, "firma": "6ff4129011798a24f392a2e397a458de"}
+{"timestamp": "2026-07-09T11:09:42.438598", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 1.0, "firma": "6b09350066f2a3b2728b8263df552b89"}
+{"timestamp": "2026-07-09T11:10:09.055029", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 1.0, "firma": "7cb03e58ebcbb0fd26044eec28fdfd4c"}
+{"timestamp": "2026-07-09T11:11:18.854266", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 1.0, "firma": "bd62af1adb3d4f0690de5bf11fefc327"}
+{"timestamp": "2026-07-09T11:11:54.798305", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 1.0, "firma": "23d1ccb08890ccce6b0e54e64f6bc28b"}
+{"timestamp": "2026-07-09T11:12:19.633936", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 1.0, "firma": "7d6e8818e106989b3a0502b0f7c55a04"}
+{"timestamp": "2026-07-09T11:13:01.639039", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 1.0, "firma": "1853f4e70f2ea9ac4bf66a25ec14bf55"}
+{"timestamp": "2026-07-09T11:14:11.718777", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 1.0, "firma": "45c3cfc6d31b12575e336de41a4eb524"}
+{"timestamp": "2026-07-09T11:20:00.129573", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 1.0, "firma": "76e7aff1b6e1de7e88743b46461ca01b"}
+{"timestamp": "2026-07-09T11:20:40.879104", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 1.0, "firma": "1e7c57eaedfaa2c0bba59e76a7ae5778"}
+{"timestamp": "2026-07-09T11:22:40.258028", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 1.0, "firma": "731f6360e337966182d20de0dc112a1e"}
+{"timestamp": "2026-07-09T11:23:19.294280", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 1.0, "firma": "1633e70106f8ad340774ee4c4cf529a3"}
+{"timestamp": "2026-07-09T11:25:11.190046", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 0.95, "firma": "8897a301455c9e6d2994d56480dd4877", "hmac": "4be4f2ffb667ca75"}
+{"timestamp": "2026-07-09T11:26:20.284309", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 0.95, "firma": "a5557c87d8a505c9e98d9a12b9d81d06", "hmac": "68a5f6de23d94e82"}
+{"timestamp": "2026-07-09T11:29:08.921056", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 0.95, "firma": "c3b64e51f6a360b747efb77e1962c2e6", "hmac": "77a8a4fefd1223b9"}
+{"timestamp": "2026-07-09T11:29:33.516794", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 0.95, "firma": "a0619c8dd19b55deca121285135cf42b", "hmac": "980beb217a482ed0"}
+{"timestamp": "2026-07-09T11:29:51.570452", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 0.95, "firma": "5512e467a0d45659655c07c51a5c8342", "hmac": "6348965c0d0eb575"}
+{"timestamp": "2026-07-09T11:31:30.112324", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 0.95, "firma": "0eef5ef226b1cba0c44bbc2e7ae014e8", "hmac": "c67eb41f68735f9f"}
+{"timestamp": "2026-07-09T11:32:08.851332", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 0.95, "firma": "21c1c760df6e83729dfb6c9583c82451", "hmac": "7765d30462b46b57"}
+{"timestamp": "2026-07-09T11:33:31.321614", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 0.95, "firma": "8c2e4db75e6d6cd63d2a5f2b2734d955", "hmac": "dffc25b047fa2c31"}
+{"timestamp": "2026-07-09T11:33:58.367656", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 0.95, "firma": "cc0c8bf0c2b94adb1e7308a44fd82d05", "hmac": "a7fe0e38eb930a66"}
+{"timestamp": "2026-07-09T11:34:39.224932", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 0.95, "firma": "ad433e6af09a1b9b86232e3aa3464e7a", "hmac": "60ef1ef76f4369c5"}
+{"timestamp": "2026-07-09T11:36:38.541510", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 0.95, "firma": "0093782b1ccebd4afe74a829fc3449ab", "hmac": "97ff00ad8893846f"}
+{"timestamp": "2026-07-09T11:37:41.390701", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 0.95, "firma": "445b34204f596ed4cc8d88ce24eefda4", "hmac": "16179b461ccddc8b"}
+{"timestamp": "2026-07-09T11:38:39.626777", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 0.95, "firma": "3a070af93849efe374be214c59b8b5cf", "hmac": "042d472bd44d877d"}
+{"timestamp": "2026-07-09T11:38:47.389301", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 0.95, "firma": "28537d2743f22da25585fd7dd21a4726", "hmac": "f5fd7a2dfdd38fe5"}
+{"timestamp": "2026-07-09T11:38:54.301013", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 0.95, "firma": "73207264d3f7793ad9fb4440418f06e8", "hmac": "5b6ad197e9208d56"}
+{"timestamp": "2026-07-09T11:39:37.237610", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 0.95, "firma": "a1a8e664c12165b56a0d727cd797a65e", "hmac": "373962263ae03402"}
+{"timestamp": "2026-07-09T11:41:07.574990", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 0.95, "firma": "40a82c558fdc53ff11873cb4e4393b2c", "hmac": "933b54b90ee7ad3c"}
+{"timestamp": "2026-07-09T11:41:14.356175", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 0.95, "firma": "c006e1d630ff81b26e652a86ca2f5290", "hmac": "9b418e3f92d488af"}
+{"timestamp": "2026-07-09T11:41:22.769999", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 0.95, "firma": "b9a502db2b0bbc0a67bb5287dc19aad1", "hmac": "17fab61323a5990d"}
+{"timestamp": "2026-07-09T11:41:29.553581", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 0.95, "firma": "32f7e1d27ef72a4a1cb5760e34f8a8e7", "hmac": "a56a93cab162a8e8"}
+{"timestamp": "2026-07-09T11:42:13.594171", "evento_hash": "c280857505cd06f6c3533bb1004c8c3d67ad2319492a2427cfa2fb4d1d034a48", "decision": "aceptado", "confianza": 0.95, "firma": "7cb08deb848adb01c5a9413de7663454", "hmac": "5dec6717ca6470a2"}

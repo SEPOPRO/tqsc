@@ -1,0 +1,26 @@
+# ELIMINAR INSTANCIA POR COMANDO
+
+## 1. Abrí Cloud Shell en Oracle
+En la consola de Oracle, arriba a la derecha:
+```
+>_  (Cloud Shell)
+```
+Es un botón con ese ícono. Se abre una terminal.
+
+## 2. Pegá esto exacto:
+```bash
+oci compute instance terminate \
+  --instance-id ocid1.instance.oc1.sa-santiago-1.anzwgljrsuw4rryc3gzwy7y7x22x4ojcucwfyix2dklwgdqpfgcdxaam7hja \
+  --preserve-boot-volume false \
+  --force
+```
+
+## 3. Confirmá
+Te va a pedir que escribas "YES". Escribí YES y Enter.
+
+## 4. Listo
+Después de eso, creamos una nueva instancia sin problemas.
+
+Si Cloud Shell no te funciona, el link directo para borrarla es:
+https://cloud.oracle.com/compute/instances/ocid1.instance.oc1.sa-santiago-1.anzwgljrsuw4rryc3gzwy7y7x22x4ojcucwfyix2dklwgdqpfgcdxaam7hja
+Ahí buscá "More Actions" → "Terminate".

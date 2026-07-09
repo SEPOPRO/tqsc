@@ -1,0 +1,34 @@
+# CÓMO ENCONTRAR LA IP DE TU VM EN ORACLE CLOUD
+
+## 1. Entra a Oracle Cloud Console
+Ve a: https://cloud.oracle.com
+
+## 2. Menú ≡ → Compute → Instances
+
+## 3. Ahí ves tu VM. La IP está en:
+```
+┌──────────────────────────────────────────────┐
+│  Instance: tqsc-pentest                      │
+│  ─────────────────────                       │
+│  Public IP Address:  158.xxx.xxx.xxx  ← ACÁ  │
+│  Private IP Address: 10.0.0.xxx              │
+│  Shape: VM.Standard.A1.Flex (4 OCPU, 24 GB)  │
+└──────────────────────────────────────────────┘
+```
+
+## 4. Dato importante
+La VM tiene DOS IPs:
+- **Public IP** → la que usás para todo (SSH, pentest, etc.)
+- **Private IP** → solo sirve dentro de Oracle (no te sirve)
+
+## 5. SSH key
+Cuando creaste la VM te pidió descargar una key. 
+Es un archivo `.key` o `.pem`.
+
+## 6. Conectar por SSH
+```bash
+ssh -i ~/Descargas/tu-key.pem ubuntu@158.xxx.xxx.xxx
+```
+
+## Si no tenés la IP visible
+Decime el nombre que le pusiste a la VM y te digo exactamente dónde está.

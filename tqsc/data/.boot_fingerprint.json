@@ -1,0 +1,24 @@
+{
+    "fingerprints": {
+        "__init__.py": "cfb92d36f051b5c9",
+        "fork_sealant.py": "75edda3cd0c558e7",
+        "ipc_red.py": "d582555eb3652049",
+        "config.py": "21939e6e2819d1f8",
+        "cortex.py": "7e9d9a4e671d634c",
+        "memoria_episodica.py": "55952c678d266219",
+        "octa_nucleo.py": "7300d4eff479c6a0",
+        "octarcq.py": "14804dcaeb70859a",
+        "protocolo_paz.py": "e9978663c8775097",
+        "geonoise.py": "6b34504dbbc118b8",
+        "syscall_monitor.py": "9d6b14db8e283f08",
+        "hud_display.py": "48ae98bf3b45308c",
+        "main.py": "1c3c666f3e78792a",
+        "native_bridge.py": "a8148237f2f6cce7",
+        "supervisor.py": "4cef2753bee030ac",
+        "entropy_engine.py": "aab32bb7d6034e2f",
+        "nucleus_daemon.py": "569201d02ca90216",
+        "secure_storage.py": "e9e54e820602c8aa"
+    },
+    "total": 18,
+    "generado": 1783616101.076275
+}
