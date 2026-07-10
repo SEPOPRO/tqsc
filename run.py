@@ -38,18 +38,15 @@ def main():
         print("✅ Test completado")
         return
 
-    if modo_hud:
-        from tqsc.hud.hud_display import HUDDisplay
-        hud = HUDDisplay(sistema)
-        hud.iniciar()
-        print("🖥️  HUD activo. Presiona Ctrl+C para salir.")
+    if "--hud" in args:
+        from tqsc.hud.hud_display import HUDServer
+        HUDServer(9090).iniciar()
+        print("🖥️  HUD en http://localhost:9090. Ctrl+C para salir.")
         try:
             while True:
                 time.sleep(1)
         except KeyboardInterrupt:
-            hud.detener()
-            sistema.detener()
-            print("\n👋 TQSC detenido.")
+            pass
     else:
         print(f"\n✅ TQSC operativo. {sum(sistema.nucleos_activos.values())}/9 módulos activos.")
         print("Usa --hud para interfaz visual, --test para test rápido.")

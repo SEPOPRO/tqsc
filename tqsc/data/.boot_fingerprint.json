@@ -13,12 +13,16 @@
         "syscall_monitor.py": "9d6b14db8e283f08",
         "hud_display.py": "48ae98bf3b45308c",
         "main.py": "1c3c666f3e78792a",
+        "dataset.py": "e406d91c3ee863fb",
+        "train.py": "97f0015802708c08",
         "native_bridge.py": "a8148237f2f6cce7",
-        "supervisor.py": "4cef2753bee030ac",
+        "supervised_main.py": "3684b5b38b54f8c1",
+        "supervisor.py": "a730de9fdf6dcd56",
         "entropy_engine.py": "aab32bb7d6034e2f",
-        "nucleus_daemon.py": "569201d02ca90216",
-        "secure_storage.py": "e9e54e820602c8aa"
+        "nucleus_daemon.py": "17510abcebf00d76",
+        "secure_storage.py": "e9e54e820602c8aa",
+        "tls.py": "f4e4ff64f7944c4e"
     },
-    "total": 18,
-    "generado": 1783616101.076275
+    "total": 22,
+    "generado": 1783632567.885188
 }

@@ -1,381 +1,326 @@
-# 🏗️ ARQUITECTURA TQSC v1.0 — DOCUMENTO COMPLETO
-## BlockDefender Titan Quantum Shield Core
-### 6 Núcleos · 68+ Subnúcleos · 2,200+ Líneas · 43 Tests
+# 🏗️ ARQUITECTURA TQSC v2.0 — DOCUMENTO COMPLETO
+## Sistema de Defensa Cibernética Autónomo
+### 9 Núcleos · 54+ Subnúcleos · ~15,000 Líneas · 12 Suites de Test · Rust Nativo
 
 ---
 
 ## 📐 DIAGRAMA DE ARQUITECTURA
 
 ```
-                            ┌─────────────────────────────┐
-                            │       ORQUESTADOR TQSC       │
-                            │         main.py + run.py     │
-                            │   Inicia, coordina, monitorea │
-                            └──────────┬──────────────────┘
-                                       │
-            ┌──────────────────────────┼──────────────────────────┐
-            │                          │                          │
-    ┌───────┴───────┐         ┌───────┴───────┐         ┌───────┴───────┐
-    │  NÚCLEO IA     │         │   DEFENSA      │         │   QUANTUM     │
-    │  OctaRCQ-X8    │         │   FÍSICA       │         │   Validación  │
-    │  18 subnúcleos │         │   10 subnúcleos │         │   6 subnúcleos│
-    └───────┬───────┘         └───────┬───────┘         └───────┬───────┘
-            │                          │                          │
-    ┌───────┴───────┐         ┌───────┴───────┐         ┌───────┴───────┐
-    │  BLOCKCHAIN   │         │   HONEYPOT    │         │   ENTROPÍA   │
-    │  ForkSealant  │         │   Cognitivo   │         │  NoiseEngine  │
-    │  5 subnúcleos │         │   4 subnúcleos │         │  3 subnúcleos │
-    └───────────────┘         └───────────────┘         └───────────────┘
-    
-    ┌───────────────────────────────────────────────────────────────────┐
-    │                  MÓDULOS FUTURISTAS (v10.0)                       │
-    │  Cortex de Confinamiento · Protocolo de Paz · Memoria Episódica   │
-    └───────────────────────────────────────────────────────────────────┘
+                    ┌──────────────────────────────────────────────┐
+                    │           SUPERVISOR (supervisor.py)          │
+                    │  Watchdog multiproceso · Rate limit · mTLS   │
+                    │  HUD Web (localhost:9090) · Event Bus         │
+                    └──────┬───────┬───────┬───────┬───────┬───────┘
+                           │       │       │       │       │
+         ┌─────────────────┘       │       │       │       └─────────────────┐
+         │         ┌───────────────┘       │       └───────────────┐         │
+    ┌────┴────┐ ┌──┴───┐ ┌───────┴──┐ ┌───┴────┐ ┌──┴───┐ ┌──────┴────┐
+    │IA CORE  │ │DEFEN │ │CLASSIC   │ │BLOCKCH │ │HONEY │ │ENTROPIA  │
+    │OctaRCQ  │ │FÍSICA│ │CRYPTO    │ │AIN     │ │POT   │ │NoiseEng  │
+    │18 subnúc│ │12 s/n│ │AES+GCM   │ │IPC real│ │30+   │ │Shannon   │
+    │World ML │ │Rust  │ │Ed25519   │ │7 nodos │ │cmd   │ │DNS Shield│
+    │Shadows  │ │native│ │HKDF      │ │mTLS    │ │ML    │ │          │
+    └────┬────┘ └──┬───┘ └──────┬───┘ └───┬────┘ └──┬───┘ └──────┬────┘
+         │         │            │         │         │            │
+    ┌────┴────┐ ┌──┴───┐ ┌─────┴───┐ ┌────┴────┐
+    │CORTEX  │ │PAZ   │ │MEMORIA  │ │GEONOISE │
+    │Descong │ │Proto │ │Episódica│ │WiFi+OSM │
+    │3 fases │ │Nonces│ │Watermark│ │Jitter   │
+    │HMAC    │ │mTLS  │ │HMAC     │ │HMAC logs│
+    └────────┘ └──────┘ └─────────┘ └─────────┘
+```
+
+### Infraestructura Base
+```
+┌─────────────────────────────────────────────────────────────┐
+│                      INFRAESTRUCTURA                         │
+├─────────────────────────────────────────────────────────────┤
+│ Supervisor watchdog  │ Boot Integrity HMAC                   │
+│ Secure Storage AES   │ Docker Compose (11 servicios)         │
+│ mTLS entre servicios │ Rust native (tqsc_native v0.1.0)     │
+│ 2 redes Docker:      │ World Model ML (13 cabezas sklearn)  │
+│   tqsc_internal      │ HUD Web SOC (localhost:9090)         │
+│   tqsc_exposed       │ Event Bus en vivo                    │
+└─────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
 ## 🧠 NÚCLEO 1: IA AUTOEVOLUTIVA (OctaRCQ-X8)
-### Archivo: `core/octarcq.py` + `core/octa_nucleo.py` + `ia/__init__.py`
-### Subnúcleos: 18 · Líneas: ~400
+### Archivo: `core/octarcq.py`, `core/octa_nucleo.py`, `ia/__init__.py`
+### Subnúcleos: 18 · Líneas: ~600
 
-### Descripción General
-Cerebro del sistema. Procesa eventos a través de una cadena cognitiva de 4
-filtros de seguridad, distribuye a 8 octantes de procesamiento paralelo,
-y mantiene sombras para failover inmediato.
-
-### Pipeline de Procesamiento (4 filtros en orden aleatorio)
-
+### Pipeline de Procesamiento (4 filtros cuánticos en orden aleatorio)
 ```
-Evento entrante
-    │
-    ├─ ❶ PatternGate
-    │   Filtra patrones de entrada adversarial (XSS, inyección, etc.)
-    │   Palabras bloqueadas: "bloqueado", "恶意", "<script"
-    │   └── Bloqueado → GhostMemory (evacuado, no perdido)
-    │
-    ├─ ❷ PreImpactSynthesizer
-    │   Anticipa amenazas antes de procesar
-    │   Señales de riesgo: drop, delete, shutdown, fork, exec
-    │   Umbral: 0.15 (1/5 señales activa evacuación)
-    │   └── Amenaza → GhostMemory
-    │
-    ├─ ❸ IA Judicial Interna
-    │   Módulo moral y legal. Acciones destructivas requieren aprobación
-    │   Acciones bloqueadas: delete_system, shutdown_all, escalate_privilege
-    │   └── Ilegal → GhostMemory
-    │
-    ├─ ❹ QuantumValidator
-    │   Verifica estructura lógica y coherencia del evento
-    │   Confianza mínima: 85% (VeracitySynthesizer)
-    │   └── Inválido → GhostMemory
-    │
-    └── ✅ Aceptado → ContextWeaver → 8 OctaNucleos
+Evento → QuantumValidator → VeracitySynthesizer → PreImpactSynthesizer → ContextWeaver → OctaRCQ
 ```
-
-### Subnúcleos Detallados
-
-| # | Subnúcleo | Archivo | Función |
-|:-:|:----------|:--------|:--------|
-| 1 | **OctaNucleo (x8)** | `core/octa_nucleo.py` | Unidad cognitiva base. Buffer de entrada, ADN hash (trazabilidad evolutiva), shadow clone para failover, estado (activo/aislado/latente). Cada octante tiene 2 sub-octantes hijos. |
-| 2 | **PatternGate** | `core/octa_nucleo.py` | Filtro de entrada. Bloquea patrones adversariales conocidos. |
-| 3 | **PreImpactSynthesizer** | `core/octa_nucleo.py` | Anticipa amenazas. Umbral configurable de señales de riesgo. |
-| 4 | **GhostMemoryZone** | `core/octa_nucleo.py` | Memoria para eventos evacuados (no procesados pero recuperables). Máx 100 eventos. |
-| 5 | **ContextWeaver** | `ia/__init__.py` | Fusiona patrón con contexto de origen. |
-| 6 | **PredictiveReinforcer** | `ia/__init__.py` | Refuerza patrones en núcleos según contenido. |
-| 7 | **ModelTrainer** | `ia/__init__.py` | Entrena modelos predictivos sobre patrones recibidos. |
-| 8 | **CognitiveLoopDetector** | `ia/__init__.py` | Detecta ciclos degenerativos (mismas respuestas, sin mejora). Aísla el núcleo si detecta ≤2 patrones únicos en últimos 10. |
-| 9 | **MetaCoreAdjuster** | `ia/__init__.py` | Reajusta hiperparámetros si la IA se estanca. Reactiva núcleos aislados si el historial es suficiente. |
-| 10 | **PatternTransfuser** | `ia/__init__.py` | Transfiere patrones entre núcleos con validación anti-envenenamiento. Bloquea transferencias desde núcleos aislados o con patrones maliciosos. |
-| 11 | **ShadowCloneManager** | `ia/__init__.py` | Gestiona clones shadow para failover inmediato. Si un núcleo principal se corrompe, su shadow toma el control. |
-| 12 | **IAJudicialInterna** | `ia/__init__.py` | Módulo moral/legal. Toda acción destructiva pasa por aquí. |
-| 13 | **EthicalConsensusGate** | `ia/__init__.py` | Requiere consenso entre múltiples decisiones (≥2/3). |
-| 14 | **MutationLogger** | `ia/__init__.py` | Registro completo de cada mutación del ADN del núcleo. |
-| 15 | **RCQNeuralShield** | `ia/__init__.py` | Escudo neural por núcleo. Aísla núcleos con comportamiento degenerativo. |
-| 16 | **PersistenceEngineQMem** | `core/octarcq.py` | Memoria latente con HMAC. Preserva estado entre reinicios. Verifica integridad al cargar. |
-| 17 | **OctaRCQ-X8** | `core/octarcq.py` | Orquestador principal. Integra los 18 subnúcleos. Recibe eventos, aplica filtros en orden aleatorio, distribuye a 8 octantes. |
-| 18 | **(Cortex de Confinamiento)** | `core/cortex.py` | 🆕 Supervisor externo. Monitorea ciclos del IA Core. Congela LoRA si detecta auto-envenenamiento recursivo. |
+- **8 octantes** de procesamiento en paralelo con sombras (shadows) para failover
+- **CognitiveLoopDetector** — detecta ciclos degenerativos (ventana de 8, threshold 3)
+- **MetaCoreAdjuster** — aísla núcleos con comportamiento degenerativo
+- **IAJudicialInterna** — 13 reglas dinámicas, 4 categorías, voto ponderado
+- **EthicalConsensusGate** — voto entre 3 agentes con pesos
+- **PatternTransfuser** — transfiere aprendizaje entre octantes (con anti-envenenamiento)
+- **MutationLogger** — registra todas las mutaciones con HMAC
+- **World Model ML** — clasificación híbrida reglas + sklearn (13 cabezas)
+- **GhostMemory** — memoria efímera por octante con HMAC
 
 ---
 
-## 🛡️ NÚCLEO 2: PROTECCIÓN FÍSICA ANTI-SIDE-CHANNEL
-### Archivo: `defense/__init__.py` + `defense/geonoise.py`
-### Subnúcleos: 12 · Líneas: ~370
+## 🛡️ NÚCLEO 2: DEFENSA FÍSICA
+### Archivo: `defense/__init__.py`, `defense/syscall_monitor.py`, `defense/geonoise.py`
+### Subnúcleos: 12 · Líneas: ~500
 
-### Descripción General
-Bloquea ataques que explotan fugas físicas del hardware: caché, temperatura,
-emisiones EM, syscalls, patrones térmicos. Incluye geolocalización por firma EM.
-
-### Subnúcleos Detallados
-
-| # | Subnúcleo | Función |
-|:-:|:----------|:--------|
-| 1 | **CPUUsageScanner** | Monitorea procesos con uso anómalo de CPU (>80%). Detecta nmap, cryptominers, fork bombs. |
-| 2 | **SyscallMonitor** | Intercepta llamadas críticas (NtCreateProcess, VirtualAlloc, WriteProcessMemory). Detecta inyección de DLL, fileless payloads. |
-| 3 | **CacheDisruptor** | Inyecta 1MB de ruido (os.urandom) en L1/L2 para romper predicciones side-channel. |
-| 4 | **ThermalSensor** | Monitorea temperatura CPU/GPU vía psutil.sensors_temperatures(). Si >80°C con actividad desproporcionada, activa alerta. Graceful en Windows (hasattr). |
-| 5 | **ProcessAffinityGuard** | Aísla procesos sospechosos a CPUs específicas para limitar su capacidad de escaneo/interferencia. |
-| 6 | **OpcodeInterruptionEngine** | Detecta secuencias de instrucciones sospechosas (NOP sleds, CALLs encadenados, JMP reflejados). |
-| 7 | **HeatMapDifferentialShield** | Correlaciona uso lógico (RAM, I/O, CPU) con firma térmica por PID. |
-| 8 | **PIDSignatureMatcher** | Compara hash SHA256 del binario en disco vs memoria. Detecta manipulación en caliente. |
-| 9 | **InterruptVectorValidator** | (Simulado) Verifica integridad de vectores IRQ e IDT contra rootkits. |
-| 10 | **SideChannelInhibitor** | (Simulado) Detecta actividad EM/sonora anómala. Genera interferencia inversa. |
-| 11 | **EMSignature** | Firma electromagnética de una conexión (nivel EM, armónicos, modulación en ms). |
-| 12 | **GeoNoiseTracker** | Geolocaliza origen por firma EM + latencia + huso horario + idioma + clock drift. Precisión: ±50-800m. Anti-spoofing vía jitter gaussiano. 20 ciudades. Mapa Google Maps. |
+| Subnúcleo | Función | Implementación |
+|-----------|---------|----------------|
+| CPUUsageScanner | Monitoreo CPU | psutil + umbral configurable (80%) + ventana 60s |
+| ProcessAffinityGuard | Aísla procesos | set affinity + verificación + rollback + historial |
+| CacheDisruptor | Inyecta entropía | **Rust nativo** (VirtualAlloc) + 3 patrones variables |
+| SyscallMonitor | Monitorea llamadas | **Rust nativo** (CreateToolhelp32Snapshot) |
+| PIDSignatureMatcher | Detecta hotpatch | **Rust nativo** (ReadProcessMemory) |
+| OpcodeInterruptionEngine | Detecta shellcode | 5 categorías de patrones + heurística frecuencias |
+| HeatMapDifferentialShield | Anomalía térmica | Ventana 60s + correlación CPU/temp + std deviation |
+| EntropyShield | Contramedidas activas | RAM noise, DNS tunneling checker, thermal injection |
+| GeoNoiseTracker | Geolocalización | **WiFi real (netsh) + OSM Nominatim** + jitter 15% |
+| DefenseCore | Orquestador | Inicia todos los módulos, reporta estado |
+| **Rust bridge** | Fallback graceful | `native_bridge.py` → tqsc_native o Python ctypes |
 
 ---
 
-## 🔬 NÚCLEO 3: VALIDACIÓN CUÁNTICA PREDICTIVA
-### Archivo: `quantum/__init__.py`
-### Subnúcleos: 5 · Líneas: 106
+## 🔐 NÚCLEO 3: CLASSIC CRYPTO (antes "Quantum")
+### Archivo: `classic_crypto/__init__.py`
+### Subnúcleos: 6 · Líneas: ~210
 
-### Descripción General
-Emula un entorno de validación tipo QKD sin hardware cuántico real.
-Verifica estructura lógica, asigna veracidad, predice manipulación,
-valida claves entrelazadas y audita decisiones.
-
-### Subnúcleos Detallados
-
-| # | Subnúcleo | Función |
-|:-:|:----------|:--------|
-| 1 | **QuantumValidator** | Verifica estructura lógica del evento. Retorna False si falta timestamp, hash o firma. |
-| 2 | **VeracitySynthesizer** | Asigna porcentaje de veracidad (0-1). Penalización progresiva por campos faltantes. Bonus por hash/firma. Umbral por defecto: 85%. |
-| 3 | **EntangledKeyValidator** | Verifica que una clave esté entrelazada con su origen. La clave debe ser SHA256(origen + timestamp). |
-| 4 | **QuantumAuditLogger** | Registra todas las decisiones con firma digital y persistencia a JSONL. |
-| 5 | **QuantumCore** | Orquestador del núcleo cuántico. Procesa evento completo: validar → veracidad → auditar. |
+| Componente | Algoritmo | Fallback |
+|------------|-----------|----------|
+| KeyManager | HKDF-SHA256 (RFC 5869) + HMAC integridad | SHA256 directo |
+| CifradorAES | AES-256-GCM | Error si no disponible |
+| FirmaDigital | Ed25519 (PyNaCl) | HMAC-SHA256 |
+| **Protección archivos** | chmod(read-only) | Regeneración automática |
 
 ---
 
-## ⛓️ NÚCLEO 4: BLOCKCHAIN MULTICANAL + INTEGRIDAD DISTRIBUIDA
-### Archivo: `blockchain/fork_sealant.py`
-### Subnúcleos: 7 · Líneas: 229
+## ⛓️ NÚCLEO 4: BLOCKCHAIN
+### Archivo: `blockchain/fork_sealant.py`, `blockchain/ipc_red.py`
+### Subnúcleos: 7 · Líneas: ~350
 
-### Descripción General
-Garantiza que los registros del sistema no puedan bifurcarse, falsificarse
-o manipularse. Consenso entre nodos testigo con reputación ponderada,
-desafíos criptográficos, firmas HMAC.
-
-### Subnúcleos Detallados
-
-| # | Subnúcleo | Función |
-|:-:|:----------|:--------|
-| 1 | **ForkSealant** | Detecta forks maliciosos en registros distribuidos. Verifica hash contra nodos registrados. Registra evento con firma HMAC. |
-| 2 | **CrossChainTracker** | Verifica consistencia entre nodos usando voto ponderado por reputación. Si peso <50%, inicia reconsenso. |
-| 3 | **ReconsensusAgent** | Votación distribuida ponderada por reputación. Cada nodo vota con peso = min(score, max_influencia). Log firma HMAC. |
-| 4 | **NodeReputationManager** | Sistema de reputación híbrida. Score se actualiza por consistencia de voto (+0.1 consistente, -0.25 inconsistente). Decaimiento temporal (-0.02/5min sin actividad). Techo de influencia por nodo (0.5). Penalización por fallar desafío (-0.4). |
-| 5 | **NodeChallenge** | Desafíos criptográficos HMAC-SHA256. Nonce de 16 bytes. Timeout 5s. Respuesta incorrecta → penalización. |
-| 6 | **_firmar()** | Firma HMAC-SHA256 de cualquier diccionario. Secreto rotado por sesión. |
-| 7 | **_persistir_log()** | Escribe cualquier log con firma HMAC incrustada. |
+| Componente | Función |
+|------------|---------|
+| ForkSealant | Prevención de forks con 7 nodos |
+| NodeReputationManager | Reputación con decay temporal (influencia máx 0.5) |
+| CrossChainTracker | IPC real via TCP + heartbeat + HMAC autenticación |
+| ReconsensusAgent | Voto ponderado con timeout por nodo (3s) |
+| NodeChallenge | Rate limiting (5/min) + backoff exponencial |
+| IPC Red | Comunicación entre nodos con mTLS |
 
 ---
 
-## 🍯 NÚCLEO 5: HONEYPOTS COGNITIVOS
+## 🎯 NÚCLEO 5: HONEYPOT COGNITIVO
 ### Archivo: `honeypot/__init__.py`
-### Subnúcleos: 5 · Líneas: 154
+### Subnúcleos: 5 · Líneas: ~370
 
-### Descripción General
-Sistema señuelo que atrae, observa, engaña y registra atacantes en
-tiempo real. No solo detecta: interactúa activamente para recolectar
-inteligencia.
+| Componente | Función |
+|------------|---------|
+| BehaviorCollector | Escucha en puerto 2222 + 6 señuelos |
+| HoneypotSession | Rastreo de sesión con fingerprinting de herramientas |
+| PatternInverter | **Clasificación híbrida (reglas + World Model ML)** |
+| ResponseShaper | 30+ comandos simulados, 7 usuarios falsos, login realista |
+| **Protecciones** | Rate limiting (3/min/IP) + TCP_NODELAY + timing realista |
 
-### Subnúcleos Detallados
-
-| # | Subnúcleo | Función |
-|:-:|:----------|:--------|
-| 1 | **HoneypotSession** | Registro completo de una sesión de atacante: IP, timestamp, comandos, credenciales, tipo de ataque. |
-| 2 | **PatternInverter** | Clasifica tipo de ataque por credenciales (brute-force, dictionary, scanner). Genera respuestas falsas (whoami → www-data). |
-| 3 | **ResponseShaper** | Recrea entorno de víctima falso con banner "Ubuntu 22.04 LTS". Directorios falsos: /etc, /var/log, /home/admin, /root. |
-| 4 | **BehaviorCollector** | Escucha en puerto 2222 TCP. Rate limiting (5 conexiones/min/IP). Máx 50 conexiones simultáneas. Lanza hilos por sesión. LOG de eventos. |
-| 5 | **_persistir()** | Guarda sesión a JSON con nombre basado en IP. |
+### Detección de Ataques (11 tipos)
+`brute-force` `dictionary` `scanner` `exploit` `sqli` `xss` `fuzzing` `rfi` `lfi` `cmd_inject` `desconocido`
 
 ---
 
-## 🔊 NÚCLEO 6: ENTROPY NOISE ENGINE
+## 🌡️ NÚCLEO 6: ENTROPÍA
 ### Archivo: `utils/entropy_engine.py`
-### Subnúcleos: 4 · Líneas: 126
+### Subnúcleos: 4 · Líneas: ~200
 
-### Descripción General
-Antifragilidad digital. Detecta y responde a manipulaciones en los niveles
-de entropía del sistema, típicas en cargas evasivas o técnicas stealth.
-
-### Subnúcleos Detallados
-
-| # | Subnúcleo | Función |
-|:-:|:----------|:--------|
-| 1 | **EntropyImpactEstimator** | Mide entropía del sistema vía os.urandom(4096). 10 muestras. Ratio de bytes únicos / 256. Si desviación >15% vs baseline (0.68), activa alarma. |
-| 2 | **EntropyShield** | Activa contramedidas: RAMNoiseInterceptor (procesos con >50MB RSS), IOTrafficNoiseChecker (tráfico de red >10MB). |
-| 3 | **EntropyTraceLedger** | Registro forense con firma SHA256. Persistencia a JSONL. |
-| 4 | **EntropyNoiseEngine** | Motor completo. Ejecuta ciclo: medir → detectar anomalía → activar shield → registrar. |
+| Subnúcleo | Función |
+|-----------|---------|
+| EntropyImpactEstimator | Baseline adaptativo cada hora + historial 500 muestras |
+| EntropyShield | DNS tunneling checker + RAM noise + IO traffic |
+| Ledger | Registro de todos los eventos de entropía con HMAC |
+| Circuit Breaker | Desactiva shield si hay demasiados falsos positivos |
 
 ---
 
-## 🖥️ MÓDULOS ADICIONALES
+## 🧠 NÚCLEO 7: CORTEX DE CONFINAMIENTO
+### Archivo: `core/cortex.py`
+### Subnúcleos: 4 · Líneas: ~180
 
-### HUD Visual
-**Archivo:** `hud/hud_display.py` (67 líneas)
-
-Panel visual estilo sala de mando DEFCON. Muestra en tiempo real:
-- Estado de cada núcleo (🟢 activo, 🔴 inactivo)
-- Métricas del sistema (versión, sesiones de honeypot)
-- Spinner animado
-
-Compatible con Windows (cls) y Linux/Mac (clear).
-
-### Configuración Global
-**Archivo:** `config.py` (37 líneas)
-
-Constantes centralizadas:
-- `DEFAULT_NODOS` — Hashes de nodos blockchain
-- `HPA_TENSION_MAX` — Umbral de tensión semántica (0.45/0.80)
-- `OCTA_NUCLEOS` — Número de octantes (8)
-- `VERACIDAD_MIN` — Umbral de veracidad cuántica (0.85)
-- `ENTROPY_BASELINE` — Baseline de entropía (0.68)
-- `HONEYPOT_PUERTO` — Puerto de honeypot (2222)
-
-### Orquestador Principal
-**Archivo:** `main.py` (126 líneas) + `run.py` (45 líneas)
-
-`main.py` — Clase TQSC que inicializa los 6 núcleos, los arranca en orden,
-captura errores con traceback completo.
-
-`run.py` — Punto de entrada CLI. Soporta:
-- `python run.py` → Modo normal (rotación IA Core cada 10s)
-- `python run.py --test` → Test rápido (arranca + detiene)
-- `python run.py --hud` → Modo visual con HUD
+- Descongelación gradual en 3 fases (umbrales dinámicos)
+- HMAC en toda evidencia de descongelación
+- Límite de 1000 evidencias en historial
 
 ---
 
-## 🆕 MÓDULOS FUTURISTAS (v10.0)
+## ☮️ NÚCLEO 8: PROTOCOLO DE PAZ
+### Archivo: `core/protocolo_paz.py`
+### Subnúcleos: 3 · Líneas: ~150
 
-### Cortex de Confinamiento
-**Archivo:** `core/cortex.py` (146 líneas)
-
-Supervisor autónomo que monitorea el estado del LoRA/IA Core.
-Detecta auto-envenenamiento recursivo midiendo:
-- Confianza cayendo entre ciclos
-- Hipótesis repetidas sin fuentes nuevas
-- Errores aumentando >1.5x
-- Confianza proyectada en descenso
-
-Si ≥2 señales se activan durante `max_deg` ciclos consecutivos:
-→ Congela el LoRA
-→ Persiste evidencia forense
-→ LOG crítico
-→ Espera descongelación manual
-
-### Protocolo de Paz entre Agentes
-**Archivo:** `core/protocolo_paz.py` (134 líneas)
-
-Handshake criptográfico para comunicación entre agentes autónomos:
-- `IdentidadAgente`: ID único + secreto HMAC
-- `MensajePaz`: Firma HMAC-SHA256 del contenido
-- `RegistroAgentes`: Estado de confianza (confiable/sospechoso/aislado)
-- `ProtocoloPaz`: Enviar/recibir/verificar mensajes
-
-### Memoria Episódica con Marca de Agua
-**Archivo:** `core/memoria_episodica.py` (126 líneas)
-
-Cada recuerdo lleva marca de agua estadística:
-- `Recuerdo`: contenido + timestamp + watermark SHA256(contenido:timestamp:key)[:8]
-- `MemoriaEpisodica`: almacén con verificación
-- `DetectorDeImplantacion`: analiza patrones (watermarks duplicados, ráfagas de timestamps)
-
-Probabilidad de falsificación: 1/4,294,967,296
+- Nonce anti-replay + límite 1000
+- IdentidadAgente basada en HMAC-SHA256
+- Timeout de acuerdos (10s)
 
 ---
 
-## 🔬 SUITE DE TESTS (43 tests)
+## 📀 NÚCLEO 9: MEMORIA EPISÓDICA
+### Archivo: `core/memoria_episodica.py`
+### Subnúcleos: 3 · Líneas: ~130
 
-| Archivo | Tests | ¿Qué prueba? |
-|:--------|:-----:|:-------------|
-| `test_entropy.py` | 3 | Estimador de entropía, ledger con firma, ciclo completo |
-| `test_fork_sealant.py` | 5 | Verificación de hashes, consenso por reputación, reconsenso |
-| `test_geonoise.py` | 5 | Firma multidimensional, precisión ciudad, determinismo, HTML, persistencia |
-| `test_ia_core.py` | 5 | OctaNucleo, aislamiento, shadow clone, PatternGate, GhostMemory |
-| `test_ia_core_octarcq.py` | 5 | OctaRCQ completo, filtros, rotación, shadow clones, ghost memory |
-| `test_reputacion.py` | 6 | Reputación inicial, penalización, recuperación, desafío exitoso, timeout, respuesta incorrecta |
-| `test_v10_futuro.py` | 8 | Cortex (normal, congelar, descongelar), ProtocoloPaz (handshake, falso), MemoriaEp (almacenar, implantación, detector) |
+- Watermark para detectar recuerdos inyectados
+- Límite 1000 recuerdos en historial
+- HMAC en toda implantación
 
 ---
 
-## 📊 ESTADÍSTICAS COMPLETAS
+## 🌍 GEONOISE TRACKER
+### Archivo: `defense/geonoise.py`
+### Líneas: ~170
 
-```
-Métrica                          Valor
-──────────────────────────────────────────────
-Total líneas de código           2,200+
-Archivos Python                   17
-Clases                            47
-Funciones                         116
-Tests                             43 en 7 suites
-Núcleos                          6
-Subnúcleos                       68+
-Módulos futuristas               3
-Páginas de documentación         6
-Simulaciones de ataque           2 (47min + 72h)
-Bugs corregidos                  19
-Dependencias externas            1 (psutil)
-```
+- **Escaneo WiFi real** vía `netsh wlan show networks mode=bssid`
+- **Geocodificación** con OSM Nominatim (vía geopy)
+- Jitter anti-fingerprint (15% + determinismo por ventana)
+- HMAC en todos los logs de geolocalización
+- Fallback a hash(SSID + timestamp) sin WiFi
 
 ---
 
-## 📁 ESTRUCTURA COMPLETA DE ARCHIVOS
+## 🦀 MÓDULO RUST NATIVO
+### Archivo: `tqsc-native/` (crate completo)
+### Versión: v0.1.0 · Rust 1.97.0
 
-```
-Proyecto TQSC/v1.0/
-│
-├── run.py                          ← CLI entry point (--test, --hud)
-├── requirements.txt                ← psutil
-│
-├── THREAT_INTEL_2025_2026.md       ← Amenazas actuales
-├── THREAT_INTEL_2031_FUTURISTA.md  ← Amenazas futuristas
-├── SIMULACION_ATAQUE_TQSC.md       ← Simulación 47min
-├── SIMULACION_ESTRES_3DIAS.md      ← Simulación 72h
-│
-├── tqsc/
-│   ├── __init__.py
-│   ├── config.py                   ← Constantes globales
-│   ├── main.py                     ← Orquestador TQSC
-│   │
-│   ├── core/                       ← NÚCLEO: IA Autoevolutiva
-│   │   ├── __init__.py
-│   │   ├── octa_nucleo.py          ← 4 subnúcleos base
-│   │   ├── octarcq.py              ← Orquestador 18 subnúcleos
-│   │   ├── cortex.py               ← 🆕 Cortex de Confinamiento
-│   │   ├── protocolo_paz.py        ← 🆕 Protocolo entre agentes
-│   │   └── memoria_episodica.py    ← 🆕 Memoria con marca de agua
-│   │
-│   ├── ia/                         ← NÚCLEO: Módulos IA (10 subnúcleos)
-│   │   └── __init__.py
-│   │
-│   ├── blockchain/                 ← NÚCLEO: Integridad Distribuida
-│   │   ├── __init__.py
-│   │   └── fork_sealant.py         ← 7 subnúcleos
-│   │
-│   ├── quantum/                    ← NÚCLEO: Validación Cuántica
-│   │   ├── __init__.py             ← 5 subnúcleos
-│   │
-│   ├── defense/                    ← NÚCLEO: Protección Física
-│   │   ├── __init__.py             ← 10 subnúcleos
-│   │   └── geonoise.py             ← 2 subnúcleos + 20 ciudades
-│   │
-│   ├── honeypot/                   ← NÚCLEO: Honeypots Cognitivos
-│   │   ├── __init__.py             ← 5 subnúcleos
-│   │
-│   ├── hud/                        ← MÓDULO: Interfaz Visual
-│   │   ├── __init__.py
-│   │   └── hud_display.py
-│   │
-│   └── utils/                      ← MÓDULO: Utilidades
-│       ├── __init__.py
-│       └── entropy_engine.py       ← 4 subnúcleos
-│
-└── tests/                          ← 43 TESTS
-    ├── test_entropy.py
-    ├── test_fork_sealant.py
-    ├── test_geonoise.py
-    ├── test_ia_core.py
-    ├── test_ia_core_octarcq.py
-    ├── test_reputacion.py
-    └── test_v10_futuro.py
-```
+| Función | Syscall Nativa | Fallback Python |
+|---------|---------------|-----------------|
+| enum_processes() | CreateToolhelp32Snapshot | psutil |
+| cache_disrupt() | VirtualAlloc + VirtualFree | ctypes |
+| pid_signature() | ReadProcessMemory | psutil + ctypes |
+
+Bridge: `native_bridge.py` con detección automática
+
+---
+
+## 📊 WORLD MODEL ML
+### Archivo: `ml/dataset.py`, `ml/train.py`, `ml/inference.py`
+### Modelo: ~1.1MB · 68 features · 13 cabezas sklearn
+
+| Cabeza | Predice | Score |
+|--------|---------|-------|
+| pi_tipo | Tipo de ataque (11 clases) | >0.90 |
+| pi_severidad | Severidad (regresión) | MSE 0.45 |
+| pi_accion | Acción a tomar (4 clases) | >0.90 |
+| cl_loop | ¿Loop degenerativo? | >0.90 |
+| cx_congelar | ¿Congelar núcleo? | >0.90 |
+| bc_fork | ¿Fork blockchain? | >0.90 |
+| cd_necesita | ¿Disrupción caché? | >0.90 |
+| en_anomalia | ¿Anomalía entropía? | >0.90 |
+| hm_anomalia | ¿Anomalía térmica? | >0.90 |
+| ij_aceptable | ¿Acción ética? | >0.90 |
+| me_implantacion | ¿Implantar recuerdo? | >0.90 |
+| oc_shellcode | ¿Shellcode? | >0.90 |
+| ps_reflectivo | ¿Proceso reflectivo? | >0.90 |
+
+Integración en vivo en PatternInverter (clasificación híbrida reglas + ML)
+
+---
+
+## 🖥️ HUD WEB (SOC COMMAND CENTER)
+### Archivo: `hud/hud_display.py`
+### Puerto: 9090 · Uso: `python run.py --hud`
+
+| Componente | Descripción |
+|------------|-------------|
+| Severidad | CRITICAL / HIGH / MEDIUM / LOW / INFORMATIONAL |
+| Núcleos | 9 tarjetas con estado en tiempo real |
+| Eventos | Timeline: hora | núcleo | ataque | resultado |
+| API REST | `/api` devuelve JSON con eventos + métricas + núcleos |
+| Auto-refresh | Cada 2 segundos |
+
+---
+
+## 🐳 DOCKER
+### Archivo: `Dockerfile`, `docker-compose.yml`
+
+| Servicio | Red | Puertos | mTLS |
+|----------|-----|---------|------|
+| tqsc-init-certs | — | — | Genera CA |
+| tqsc-supervisor | internal | — | ✅ |
+| tqsc-ia | internal | — | ✅ |
+| tqsc-blockchain | internal | — | ✅ |
+| tqsc-defense | internal | /proc:ro | ✅ |
+| tqsc-quantum | internal | — | ✅ |
+| tqsc-entropy | internal | — | ✅ |
+| tqsc-cortex | internal | — | ✅ |
+| tqsc-memoria | internal | — | ✅ |
+| tqsc-paz | internal | — | ✅ |
+| tqsc-honeypot | internal + exposed | 2222, 8080 | ✅ |
+
+Red `tqsc_internal`: bridge aislado (internal: true)
+
+---
+
+## ✅ CI/CD
+### Archivo: `.github/workflows/ci.yml`
+
+- Push/PR: Python 3.11, compile, lint, tests, boot check
+- Rust build: dtolnay/rust-toolchain + cargo build --release
+
+---
+
+## 📈 MÉTRICAS DEL SISTEMA
+
+| Métrica | Valor |
+|---------|-------|
+| Núcleos | 9 |
+| Subnúcleos | 54+ |
+| Líneas de código | ~15,000 |
+| Suites de test | 12 |
+| Tests individuales | ~80 |
+| Bugs corregidos (pentest) | 7 + 1 crítico |
+| Ataques soportados (pentest) | 49 (6 niveles) |
+| Conexiones máximas | 4,699 conns/s |
+| Crashes en pentest | 0 |
+| Rate limit efectividad | 99.97% |
+| Rust funciones | 3 (syscall, cache, pid) |
+| ML cabezas | 13 |
+| ML features | 68 |
+| ML accuracy | >90% (12/13 cabezas) |
+| Servicios Docker | 11 |
+| Redes Docker | 2 (1 aislada) |
+
+---
+
+## 🔧 ARCHIVOS CLAVE
+
+| Archivo | Propósito |
+|---------|-----------|
+| `run.py` | Entry point |
+| `tqsc/main.py` | Orquestador de núcleos |
+| `tqsc/supervisor.py` | Watchdog multiproceso |
+| `tqsc/native_bridge.py` | Puente Rust↔Python |
+| `tqsc/supervised_main.py` | Modo supervisado Docker |
+| `tqsc/core/octarcq.py` | IA OctaRCQ-X8 |
+| `tqsc/defense/__init__.py` | Defensa física |
+| `tqsc/defense/geonoise.py` | GeoNoise WiFi+OSM |
+| `tqsc/defense/syscall_monitor.py` | Syscall Rust |
+| `tqsc/classic_crypto/__init__.py` | AES + Ed25519 + HKDF |
+| `tqsc/blockchain/fork_sealant.py` | Blockchain IPC |
+| `tqsc/honeypot/__init__.py` | Honeypot cognitivo |
+| `tqsc/ia/__init__.py` | IA judicial + cognitive loop |
+| `tqsc/core/cortex.py` | Cortex descongelación |
+| `tqsc/core/protocolo_paz.py` | Protocolo de Paz |
+| `tqsc/core/memoria_episodica.py` | Memoria episódica |
+| `tqsc/utils/entropy_engine.py` | Entropía + DNS shield |
+| `tqsc/utils/secure_storage.py` | AES-256-GCM en reposo |
+| `tqsc/utils/boot_integrity.py` | Verificación arranque |
+| `tqsc/utils/tls.py` | mTLS local |
+| `tqsc/utils/event_bus.py` | Bus de eventos HUD |
+| `tqsc/hud/hud_display.py` | HUD Web SOC |
+| `tqsc/ml/inference.py` | World Model inference |
+| `tqsc/ml/dataset.py` | Dataset generator |
+| `tqsc/ml/train.py` | Model trainer |
+| `tqsc-native/src/lib.rs` | Rust FFI |
+| `tests/test_*.py` | 12 suites de test |
+| `Dockerfile` | Build imagen |
+| `docker-compose.yml` | 11 servicios + mTLS |

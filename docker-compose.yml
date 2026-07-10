@@ -1,5 +1,5 @@
 services:
-  # ── Generar certificados mTLS (se ejecuta una vez) ──
+  # ── Generar certificados mTLS ──
   tqsc-init-certs:
     build: .
     container_name: tqsc-init-certs
@@ -15,11 +15,8 @@ services:
     container_name: tqsc-supervisor
     command: ["python", "run.py", "--supervised"]
     networks: [tqsc_internal]
-    volumes:
-      - tqsc_data:/app/data
-      - tqsc_certs:/app/data/certs
-    environment:
-      - TQSC_HOME=/app/data
+    volumes: [tqsc_data:/app/data, tqsc_certs:/app/data/certs]
+    environment: [TQSC_HOME=/app/data]
     restart: unless-stopped
     depends_on:
       tqsc-init-certs:
@@ -33,7 +30,7 @@ services:
       "import sys,os; sys.path.insert(0,'/app'); from core.octarcq import OctaRCQX8; from utils.nucleus_daemon import NucleusDaemon; n=OctaRCQX8(); d=NucleusDaemon('ia_core',19102); d.iniciar(n); d.loop()"
     ]
     networks: [tqsc_internal]
-    volumes: [tqsc_data:/app/data]
+    volumes: [tqsc_data:/app/data, tqsc_certs:/app/data/certs]
     restart: unless-stopped
     depends_on: [tqsc-supervisor]
 
@@ -45,7 +42,7 @@ services:
       "import sys,os; sys.path.insert(0,'/app'); from blockchain.fork_sealant import ForkSealant,DEFAULT_NODOS; from utils.nucleus_daemon import NucleusDaemon; n=ForkSealant(nodos=DEFAULT_NODOS,data_dir='/app/data'); d=NucleusDaemon('blockchain',19103); d.iniciar(n); d.loop()"
     ]
     networks: [tqsc_internal]
-    volumes: [tqsc_data:/app/data]
+    volumes: [tqsc_data:/app/data, tqsc_certs:/app/data/certs]
     restart: unless-stopped
     depends_on: [tqsc-supervisor]
 
@@ -57,7 +54,7 @@ services:
       "import sys,os; sys.path.insert(0,'/app'); from defense import DefenseCore; from utils.nucleus_daemon import NucleusDaemon; n=DefenseCore(); n.iniciar(); d=NucleusDaemon('defense',19104); d.iniciar(n); d.loop()"
     ]
     networks: [tqsc_internal]
-    volumes: [tqsc_data:/app/data, /proc:/host/proc:ro]
+    volumes: [tqsc_data:/app/data, tqsc_certs:/app/data/certs, /proc:/host/proc:ro]
     restart: unless-stopped
     depends_on: [tqsc-supervisor]
 
@@ -69,7 +66,7 @@ services:
       "import sys,os; sys.path.insert(0,'/app'); from classic_crypto import ClassicCryptoCore; from utils.nucleus_daemon import NucleusDaemon; n=ClassicCryptoCore(data_dir='/app/data'); d=NucleusDaemon('quantum',19105); d.iniciar(n); d.loop()"
     ]
     networks: [tqsc_internal]
-    volumes: [tqsc_data:/app/data]
+    volumes: [tqsc_data:/app/data, tqsc_certs:/app/data/certs]
     restart: unless-stopped
     depends_on: [tqsc-supervisor]
 
@@ -81,7 +78,7 @@ services:
       "import sys,os; sys.path.insert(0,'/app'); from utils.entropy_engine import EntropyNoiseEngine; from utils.nucleus_daemon import NucleusDaemon; n=EntropyNoiseEngine(data_dir='/app/data'); d=NucleusDaemon('entropy',19106); d.iniciar(n); d.loop()"
     ]
     networks: [tqsc_internal]
-    volumes: [tqsc_data:/app/data]
+    volumes: [tqsc_data:/app/data, tqsc_certs:/app/data/certs]
     restart: unless-stopped
     depends_on: [tqsc-supervisor]
 
@@ -93,7 +90,7 @@ services:
       "import sys,os; sys.path.insert(0,'/app'); from core.cortex import CortexDeConfinamiento; from utils.nucleus_daemon import NucleusDaemon; n=CortexDeConfinamiento(max_deg=3,data_dir='/app/data'); d=NucleusDaemon('cortex',19107); d.iniciar(n); d.loop()"
     ]
     networks: [tqsc_internal]
-    volumes: [tqsc_data:/app/data]
+    volumes: [tqsc_data:/app/data, tqsc_certs:/app/data/certs]
     restart: unless-stopped
     depends_on: [tqsc-supervisor]
 
@@ -105,7 +102,7 @@ services:
       "import sys,os; sys.path.insert(0,'/app'); from core.memoria_episodica import MemoriaEpisodica; from utils.nucleus_daemon import NucleusDaemon; n=MemoriaEpisodica(data_dir='/app/data'); d=NucleusDaemon('memoria',19108); d.iniciar(n); d.loop()"
     ]
     networks: [tqsc_internal]
-    volumes: [tqsc_data:/app/data]
+    volumes: [tqsc_data:/app/data, tqsc_certs:/app/data/certs]
     restart: unless-stopped
     depends_on: [tqsc-supervisor]
 
@@ -117,7 +114,7 @@ services:
       "import sys,os; sys.path.insert(0,'/app'); from core.protocolo_paz import IdentidadAgente,ProtocoloPaz; from utils.nucleus_daemon import NucleusDaemon; a=IdentidadAgente('TQSC_Docker'); n=ProtocoloPaz(a); d=NucleusDaemon('paz',19109); d.iniciar(n); d.loop()"
     ]
     networks: [tqsc_internal]
-    volumes: [tqsc_data:/app/data]
+    volumes: [tqsc_data:/app/data, tqsc_certs:/app/data/certs]
     restart: unless-stopped
     depends_on: [tqsc-supervisor]
 
@@ -130,7 +127,7 @@ services:
     ]
     networks: [tqsc_internal, tqsc_exposed]
     ports: ["2222:2222", "8080:8080"]
-    volumes: [tqsc_data:/app/data]
+    volumes: [tqsc_data:/app/data, tqsc_certs:/app/data/certs]
     restart: unless-stopped
     depends_on: [tqsc-supervisor]
 

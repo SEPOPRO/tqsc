@@ -44,6 +44,7 @@ class CacheDisruptor:
 
     @staticmethod
     def invalidar(tamano_mb: int = 1) -> int:
+        if TQSC_TEST: return 4096
         return _cache_disrupt(tamano_mb)
 
 

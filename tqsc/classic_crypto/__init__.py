@@ -77,6 +77,12 @@ class KeyManager:
             ruta.parent.mkdir(parents=True, exist_ok=True)
             ruta.write_bytes(self._clave_maestra)
             self._ruta_firma().write_text(self._firmar_clave(self._clave_maestra))
+            # Proteger archivos contra escritura no autorizada
+            try:
+                import stat
+                ruta.chmod(stat.S_IREAD | stat.S_IRGRP | stat.S_IROTH)
+                self._ruta_firma().chmod(stat.S_IREAD | stat.S_IRGRP | stat.S_IROTH)
+            except: pass
 
     def derivar(self, contexto: str, longitud: int = 32) -> bytes:
         """HKDF extract-and-expand (RFC 5869). Fallback SHA256 si no hay cryptography."""
