@@ -3,7 +3,7 @@ TQSC v2.0 — SecureStorage
 Cifrado AES-256-GCM transparente para todos los logs/data en disco.
 Reemplaza json.dump + open() en todos los módulos que persisten datos.
 """
-import os, json, logging, base64
+import json, logging, base64
 from pathlib import Path
 from typing import Any, Optional
 
@@ -60,9 +60,10 @@ def append(path: Path, datos: Any):
         cifrador = _inicializar(str(path.parent))
         raw = json.dumps(datos, ensure_ascii=False, default=str).encode()
         ct = cifrador.cifrar(raw)
+        b64_ct = base64.b64encode(ct)
         path.parent.mkdir(parents=True, exist_ok=True)
         with open(path, "ab") as f:
-            f.write(ct + b"\n")
+            f.write(b64_ct + b"\n")
     except Exception as e:
         LOG.error("SecureStorage: error appending %s: %s", path.name, e)
 
@@ -79,7 +80,8 @@ def read_all(path: Path) -> list[Any]:
                 line = line.strip()
                 if not line:
                     continue
-                raw = cifrador.descifrar(line)
+                ct = base64.b64decode(line)
+                raw = cifrador.descifrar(ct)
                 resultados.append(json.loads(raw))
         return resultados
     except Exception as e:

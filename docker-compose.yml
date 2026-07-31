@@ -1,147 +1,38 @@
+# TQSC v2.0 — Docker Compose
+# Uso: TQSC_API_KEY=secreto docker compose up -d
 services:
-  # ── Generar certificados mTLS ──
-  tqsc-init-certs:
+  tqsc:
     build: .
-    container_name: tqsc-init-certs
-    entrypoint: ["python", "-c"]
-    command: [
-      "import sys; sys.path.insert(0,'/app'); from utils.tls import generar_todos; generar_todos()"
-    ]
-    volumes: [tqsc_certs:/app/data/certs]
-    restart: "no"
-
-  tqsc-supervisor:
-    build: .
-    container_name: tqsc-supervisor
-    command: ["python", "run.py", "--supervised"]
-    networks: [tqsc_internal]
-    volumes: [tqsc_data:/app/data, tqsc_certs:/app/data/certs]
-    environment: [TQSC_HOME=/app/data]
+    container_name: tqsc
     restart: unless-stopped
-    depends_on:
-      tqsc-init-certs:
-        condition: service_completed_successfully
-
-  tqsc-ia:
-    build: .
-    container_name: tqsc-ia
-    entrypoint: ["python", "-c"]
-    command: [
-      "import sys,os; sys.path.insert(0,'/app'); from core.octarcq import OctaRCQX8; from utils.nucleus_daemon import NucleusDaemon; n=OctaRCQX8(); d=NucleusDaemon('ia_core',19102); d.iniciar(n); d.loop()"
-    ]
-    networks: [tqsc_internal]
-    volumes: [tqsc_data:/app/data, tqsc_certs:/app/data/certs]
-    restart: unless-stopped
-    depends_on: [tqsc-supervisor]
-
-  tqsc-blockchain:
-    build: .
-    container_name: tqsc-blockchain
-    entrypoint: ["python", "-c"]
-    command: [
-      "import sys,os; sys.path.insert(0,'/app'); from blockchain.fork_sealant import ForkSealant,DEFAULT_NODOS; from utils.nucleus_daemon import NucleusDaemon; n=ForkSealant(nodos=DEFAULT_NODOS,data_dir='/app/data'); d=NucleusDaemon('blockchain',19103); d.iniciar(n); d.loop()"
-    ]
-    networks: [tqsc_internal]
-    volumes: [tqsc_data:/app/data, tqsc_certs:/app/data/certs]
-    restart: unless-stopped
-    depends_on: [tqsc-supervisor]
-
-  tqsc-defense:
-    build: .
-    container_name: tqsc-defense
-    entrypoint: ["python", "-c"]
-    command: [
-      "import sys,os; sys.path.insert(0,'/app'); from defense import DefenseCore; from utils.nucleus_daemon import NucleusDaemon; n=DefenseCore(); n.iniciar(); d=NucleusDaemon('defense',19104); d.iniciar(n); d.loop()"
-    ]
-    networks: [tqsc_internal]
-    volumes: [tqsc_data:/app/data, tqsc_certs:/app/data/certs, /proc:/host/proc:ro]
-    restart: unless-stopped
-    depends_on: [tqsc-supervisor]
-
-  tqsc-quantum:
-    build: .
-    container_name: tqsc-quantum
-    entrypoint: ["python", "-c"]
-    command: [
-      "import sys,os; sys.path.insert(0,'/app'); from classic_crypto import ClassicCryptoCore; from utils.nucleus_daemon import NucleusDaemon; n=ClassicCryptoCore(data_dir='/app/data'); d=NucleusDaemon('quantum',19105); d.iniciar(n); d.loop()"
-    ]
-    networks: [tqsc_internal]
-    volumes: [tqsc_data:/app/data, tqsc_certs:/app/data/certs]
-    restart: unless-stopped
-    depends_on: [tqsc-supervisor]
-
-  tqsc-entropy:
-    build: .
-    container_name: tqsc-entropy
-    entrypoint: ["python", "-c"]
-    command: [
-      "import sys,os; sys.path.insert(0,'/app'); from utils.entropy_engine import EntropyNoiseEngine; from utils.nucleus_daemon import NucleusDaemon; n=EntropyNoiseEngine(data_dir='/app/data'); d=NucleusDaemon('entropy',19106); d.iniciar(n); d.loop()"
-    ]
-    networks: [tqsc_internal]
-    volumes: [tqsc_data:/app/data, tqsc_certs:/app/data/certs]
-    restart: unless-stopped
-    depends_on: [tqsc-supervisor]
-
-  tqsc-cortex:
-    build: .
-    container_name: tqsc-cortex
-    entrypoint: ["python", "-c"]
-    command: [
-      "import sys,os; sys.path.insert(0,'/app'); from core.cortex import CortexDeConfinamiento; from utils.nucleus_daemon import NucleusDaemon; n=CortexDeConfinamiento(max_deg=3,data_dir='/app/data'); d=NucleusDaemon('cortex',19107); d.iniciar(n); d.loop()"
-    ]
-    networks: [tqsc_internal]
-    volumes: [tqsc_data:/app/data, tqsc_certs:/app/data/certs]
-    restart: unless-stopped
-    depends_on: [tqsc-supervisor]
-
-  tqsc-memoria:
-    build: .
-    container_name: tqsc-memoria
-    entrypoint: ["python", "-c"]
-    command: [
-      "import sys,os; sys.path.insert(0,'/app'); from core.memoria_episodica import MemoriaEpisodica; from utils.nucleus_daemon import NucleusDaemon; n=MemoriaEpisodica(data_dir='/app/data'); d=NucleusDaemon('memoria',19108); d.iniciar(n); d.loop()"
-    ]
-    networks: [tqsc_internal]
-    volumes: [tqsc_data:/app/data, tqsc_certs:/app/data/certs]
-    restart: unless-stopped
-    depends_on: [tqsc-supervisor]
-
-  tqsc-paz:
-    build: .
-    container_name: tqsc-paz
-    entrypoint: ["python", "-c"]
-    command: [
-      "import sys,os; sys.path.insert(0,'/app'); from core.protocolo_paz import IdentidadAgente,ProtocoloPaz; from utils.nucleus_daemon import NucleusDaemon; a=IdentidadAgente('TQSC_Docker'); n=ProtocoloPaz(a); d=NucleusDaemon('paz',19109); d.iniciar(n); d.loop()"
-    ]
-    networks: [tqsc_internal]
-    volumes: [tqsc_data:/app/data, tqsc_certs:/app/data/certs]
-    restart: unless-stopped
-    depends_on: [tqsc-supervisor]
-
-  tqsc-honeypot:
-    build: .
-    container_name: tqsc-honeypot
-    entrypoint: ["python", "-c"]
-    command: [
-      "import sys,os; sys.path.insert(0,'/app'); from honeypot import BehaviorCollector; from utils.nucleus_daemon import NucleusDaemon; n=BehaviorCollector(puerto=2222,data_dir='/app/data'); n.iniciar(); d=NucleusDaemon('honeypot',19110); d.iniciar(n); d.loop()"
-    ]
-    networks: [tqsc_internal, tqsc_exposed]
-    ports: ["2222:2222", "8080:8080"]
-    volumes: [tqsc_data:/app/data, tqsc_certs:/app/data/certs]
-    restart: unless-stopped
-    depends_on: [tqsc-supervisor]
-
-networks:
-  tqsc_internal:
-    driver: bridge
-    internal: true
-    name: tqsc_internal
-  tqsc_exposed:
-    driver: bridge
-    name: tqsc_exposed
+    ports:
+      - "${HUD_PORT:-9090}:9090"
+      - "${HONEYPOT_PORT:-2222}:2222"
+    environment:
+      - TQSC_API_KEY=${TQSC_API_KEY?API key requerida}
+      - TQSC_DOCKER=1
+      - TQSC_TEST_MODE=0
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - tqsc_data:/app/data
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    init: false  # tini ya está en la imagen
+    mem_limit: 1g
+    mem_reservation: 256m
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: "3"
+    healthcheck:
+      test: ["CMD", "curl", "-sf", "http://localhost:9090/api"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
 
 volumes:
   tqsc_data:
-    driver: local
-  tqsc_certs:
-    driver: local

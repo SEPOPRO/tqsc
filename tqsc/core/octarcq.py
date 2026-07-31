@@ -1,5 +1,6 @@
 """
-TQSC v1.0 — OctaRCQ-X8: Orquestador de IA Autoevolutiva
+TQSC v1.0 — OctaCore: Orquestador de Procesamiento
+Contains classes: PersistenceEngineQMem, OctaCore
 """
 import logging, json, hmac, hashlib, secrets, time
 from pathlib import Path
@@ -7,7 +8,8 @@ from pathlib import Path
 logger = logging.getLogger("tqsc.ia_core")
 
 from core.octa_nucleo import OctaNucleo, PatternGate, PreImpactSynthesizer, GhostMemoryZone
-from classic_crypto import ClassicCryptoCore
+from core.octa_nucleo import OctaNucleo
+from tqsc.classic_crypto import ClassicCryptoCore
 from ia import (
     ContextWeaver,
     PredictiveReinforcer,
@@ -55,7 +57,9 @@ class PersistenceEngineQMem:
 
 LOG_IA = logging.getLogger("tqsc.ia_core")
 
-class OctaRCQX8:
+class OctaCore:
+    """OctaCore — Procesador principal (antes OctaRCQ-X8)."""
+    _OBSOLETO = "OctaRCQX8"  # backward compat
     """Orquestador completo de la IA Autoevolutiva — 18 subnúcleos."""
 
     def __init__(self, data_dir: str = "data"):
@@ -151,3 +155,6 @@ class OctaRCQX8:
                          for n in self.octantes],
             "ghost_size": len(self.ghost.zona),
         }
+
+# Backward compatibility alias
+OctaRCQX8 = OctaCore

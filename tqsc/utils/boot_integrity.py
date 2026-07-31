@@ -19,10 +19,15 @@ def _inicializar(base_dir: str = None) -> tuple[Path, bytes]:
     base = Path(base_dir)
     if not _CLAVE_RUTA: _CLAVE_RUTA = base / "data" / ".boot_key"
     if not _CLAVE:
-        if _CLAVE_RUTA.exists(): _CLAVE = _CLAVE_RUTA.read_bytes()[:32]
-        else:
+        try:
+            _CLAVE = _CLAVE_RUTA.read_bytes()[:32]
+        except FileNotFoundError:
             _CLAVE = secrets.token_bytes(32); _CLAVE_RUTA.parent.mkdir(parents=True, exist_ok=True)
             _CLAVE_RUTA.write_bytes(_CLAVE)
+            try:
+                os.chmod(_CLAVE_RUTA, 0o600)
+            except Exception:
+                pass
     return base, _CLAVE
 
 

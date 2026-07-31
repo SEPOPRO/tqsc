@@ -3,6 +3,7 @@ TQSC v1.0 — OctaNucleo
 Núcleo base del sistema IA autoevolutivo OctaRCQ-X8.
 """
 import hashlib, hmac, secrets
+import collections
 from datetime import datetime
 from typing import Any, Optional
 
@@ -27,7 +28,9 @@ class OctaNucleo:
         if self.estado == "aislado":
             return
         if len(self.buffer) >= MAX_BUFFER:
-            return  # silent drop, no OOM
+            import logging
+            logging.getLogger("tqsc.core").warning("Buffer lleno: %s (%d items)", self.nombre, MAX_BUFFER)
+            return
         self.buffer.append(patron)
         if contexto:
             self.contexto[patron] = contexto
@@ -49,16 +52,18 @@ class OctaNucleo:
         self.estado = "activo"
         self._mutar("reactivado")
 
-    def clonar_shadow(self) -> "OctaNucleo":
+    def clonar_shadow(self) -> Optional["OctaNucleo"]:
         if self.shadow:
             return self.shadow
+        if len([h for h in self.hijos if h.nombre.endswith("_shadow")]) >= 3:
+            return None
         self.shadow = OctaNucleo(f"{self.nombre}_shadow")
         self.shadow.adn_hash = list(self.adn_hash)
         self.shadow.historial = list(self.historial)
         return self.shadow
 
     def _mutar(self, evento: str):
-        """SHA256 en vez de hash() — no determinista detectable."""
+        """Generates a SHA256 hash of event_name + timestamp and appends to adn_hash list. Named 'mutation' metaphorically."""
         firma = hashlib.sha256(f"{evento}{datetime.now().isoformat()}".encode()).hexdigest()[:16]
         self.adn_hash.append(firma)
         self.historial.append(f"[{datetime.now().isoformat()}] {evento}")
@@ -86,22 +91,44 @@ class PatternGate:
         "system(", "exec(", "passthru(", "shell_exec(", "eval(",
         "select * from", "union select", "information_schema",
         "%00", "%0d%0a", "cmd.exe", "powershell.exe",
+        "boot.ini", "win.ini", ".env",
     ]
 
     @staticmethod
     def validar(patron: str) -> bool:
         p = patron.lower()
-        # URL decode bypass
+        # URL decode recursivo (hasta 5 capas)
         import urllib.parse
+        for _ in range(20):
+            prev = p
+            try:
+                p = urllib.parse.unquote(p)
+            except Exception:
+                break
+            if p == prev:
+                break
+        # Unicode normalization
+        import unicodedata
+        p = unicodedata.normalize("NFKC", p)
+        # Path traversal normalization: ....// → ../ (antes del check)
+        while "...." in p or "..." in p or "////" in p:
+            p = p.replace("....", "..").replace("...", "..").replace("////", "/").replace("\\\\", "\\")
+        # Check bloqueados DESPUÉS de normalizar path traversal
+        bloqueado = any(b in p for b in PatternGate.BLOQUEADOS)
+        if bloqueado:
+            return False
+        # Hex decode attempt (solo si pasó el check básico)
         try:
-            p = urllib.parse.unquote(p)
-        except Exception:
+            p2 = bytes.fromhex(p).decode("utf-8", errors="ignore").lower()
+            if any(b in p2 for b in PatternGate.BLOQUEADOS):
+                return False
+        except (ValueError, UnicodeDecodeError):
             pass
-        return not any(b in p for b in PatternGate.BLOQUEADOS)
+        return True
 
 
 class PreImpactSynthesizer:
-    """Anticipa amenazas con score normalizado (0-1) y umbral 0.3+."""
+    """Keyword-based substring matching for threats, not predictive analysis. Anticipa amenazas con score normalizado."""
 
     SEÑALES = {
         "destructivas": (1.0, ["drop ", "delete ", "shutdown", "fork", "exec", "rm ", "format", "wipe"]),
@@ -152,16 +179,16 @@ class GhostMemoryZone:
     """Zona de memoria con firma HMAC para detectar inyección."""
 
     def __init__(self, max_size: int = 100, secreto: str = ""):
-        self.zona: list[str] = []
+        self.zona = collections.deque()
         self.max_size = max_size
         self._secreto = secreto or secrets.token_hex(8)
         self._firmas: list[str] = []
 
     def evacuar(self, patron: str):
         self.zona.append(patron)
-        self._firmas.append(hashlib.sha256(f"{patron}{self._secreto}".encode()).hexdigest()[:8])
+        self._firmas.append(hmac.new(self._secreto.encode(), patron.encode(), hashlib.sha256).hexdigest()[:8])
         if len(self.zona) > self.max_size:
-            self.zona.pop(0)
+            self.zona.popleft()
             self._firmas.pop(0)
 
     def recuperar(self) -> list[str]:
@@ -174,7 +201,7 @@ class GhostMemoryZone:
         for i, p in enumerate(self.zona):
             if i >= len(self._firmas):
                 return False
-            esperado = hashlib.sha256(f"{p}{self._secreto}".encode()).hexdigest()[:8]
+            esperado = hmac.new(self._secreto.encode(), p.encode(), hashlib.sha256).hexdigest()[:8]
             if self._firmas[i] != esperado:
                 return False
         return True

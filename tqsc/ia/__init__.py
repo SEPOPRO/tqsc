@@ -4,7 +4,6 @@ TQSC v1.0 — IA Autoevolutiva
 import logging, json, hashlib
 from datetime import datetime
 from pathlib import Path
-from typing import Optional
 from core.octa_nucleo import OctaNucleo
 from utils.secure_storage import write as _write
 
@@ -23,12 +22,12 @@ class ContextWeaver:
             "timestamp": ahora,
             "confianza_origen": entorno.get("confianza", 0.5) if entorno else 0.5,
             "tipo_evento": entorno.get("tipo", "general") if entorno else "general",
-            "huella": hashlib.md5(f"{patron}{ahora}".encode()).hexdigest()[:12],
+            "huella": hashlib.sha256(f"{patron}{ahora}".encode()).hexdigest()[:12],
         }
 
 
 class PredictiveReinforcer:
-    """Refuerza patrones por frecuencia e importancia."""
+    """Frequency-based pattern reinforcer using Python dict counters. No ML or neural prediction."""
 
     def __init__(self):
         self.frecuencias: dict[str, int] = {}
@@ -42,7 +41,8 @@ class PredictiveReinforcer:
 
 
 class ModelTrainer:
-    """Entrena modelos predictivos sobre patrones."""
+    """Pattern frequency counter. Tracks how often each pattern is seen. NOT a machine learning model trainer."""
+    MAX_PATRONES = 100000
 
     def __init__(self):
         self.patrones_vistos: dict[str, int] = {}
@@ -51,11 +51,15 @@ class ModelTrainer:
         if not nucleo.buffer: return
         for pat in nucleo.buffer:
             self.patrones_vistos[pat] = self.patrones_vistos.get(pat, 0) + 1
+        # Podar si excede límite
+        if len(self.patrones_vistos) > self.MAX_PATRONES:
+            items = sorted(self.patrones_vistos.items(), key=lambda x: -x[1])[:self.MAX_PATRONES // 2]
+            self.patrones_vistos = dict(items)
         nucleo._mutar(f"modelo: {len(self.patrones_vistos)} patrones únicos vistos")
 
 
 class MutationLogger:
-    """Registro completo de mutaciones con exportación."""
+    """Registro completo de mutaciones con exportación. Note: 'mutations' are SHA256 hashes of event names, not genetic/neural mutations."""
 
     def __init__(self, data_dir: str = "data"):
         self.data_dir = Path(data_dir)
@@ -85,7 +89,7 @@ class MutationLogger:
 
 
 class CognitiveLoopDetector:
-    """Detecta ciclos degenerativos con ventana 5 y umbral 3+ variantes."""
+    """Detects repetitive patterns by counting unique values in a sliding window. Simple heuristic, not cognitive computing."""
     def __init__(self, nucleo: OctaNucleo = None):
         self.nucleo = nucleo
     def evaluar(self, nucleo: OctaNucleo = None) -> bool:
@@ -102,8 +106,15 @@ class CognitiveLoopDetector:
 
 
 class PatternTransfuser:
-    """Transfiere patrones entre núcleos con validación anti-envenenamiento."""
-    PATRONES_MALICIOSOS = ["rm -rf", "fork bomb", "shutdown", "delete_system"]
+    """Transfiere patrones entre núcleos con validación anti-envenenamiento. Note: 'transfer learning' is just copying blocked pattern lists between octants."""
+    PATRONES_MALICIOSOS = [
+        "rm -rf", "fork bomb", "shutdown", "delete_system",
+        "wget ", "curl ", "bash -c", "python3 -c",
+        "chmod 777", "sudo ", "chown ", "passwd ",
+        "/dev/null", ">/dev", "2>&1", "| sh", "| bash",
+        "base64 -d", "echo '", "import os", "subprocess",
+        "eval(", "exec(", "__import__",
+    ]
     @staticmethod
     def transferir(origen: OctaNucleo, destino: OctaNucleo) -> bool:
         if not origen.buffer: return False
@@ -155,11 +166,15 @@ class IAJudicialInterna:
         self.historial = []
         self.logger = logging.getLogger("tqsc.ia_judicial")
 
-    def juzgar(self, accion: str, contexto: Optional[dict] = None) -> bool:
-        a = accion.lower(); puntaje = 0; razones = []
+    def juzgar(self, accion: str, contexto: dict | None = None) -> bool:
+        a = accion.lower()
+        # Tokenizar para evitar bypass: "delete_systemm" no contiene "delete_system" como token
+        tokens = set(a.replace(",", " ").replace(";", " ").replace("(", " ").replace(")", " ").split())
+        puntaje = 0; razones = []
         for cat, reglas in self.reglas.items():
             for patron, sev, razon in reglas:
-                if patron in a:
+                # Check both token match and substring (for multi-word patterns)
+                if patron in tokens or (patron in a and len(patron) >= 6):
                     puntaje = max(puntaje, sev)
                     razones.append(f"[{cat}] {razon} (sev {sev})")
         aceptable = puntaje < 5
@@ -186,7 +201,7 @@ class IAJudicialInterna:
 
 
 class EthicalConsensusGate:
-    """Requiere consenso ponderado entre múltiples decisiones."""
+    """Weighted voting gate using simple float arithmetic. Not an ethical AI system."""
     def __init__(self):
         self.logger = logging.getLogger("tqsc.ethical_gate")
     def decidir(self, decisiones: list[tuple[bool, float]]) -> bool:
@@ -201,7 +216,7 @@ class EthicalConsensusGate:
 
 
 class MetaCoreAdjuster:
-    """Escudo neural que aísla núcleos con comportamiento degenerativo."""
+    """Isolates nuclei showing degenerate behavior (low pattern diversity). Heuristic check, not a neural shield."""
     def __init__(self, nucleo: OctaNucleo = None):
         self.nucleo = nucleo
     def evaluar(self, nucleo: OctaNucleo = None):
@@ -209,7 +224,7 @@ class MetaCoreAdjuster:
         if not n: return
         if len(set(n.historial[-10:])) <= 2 and len(n.historial) > 5:
             n.aislar()
-            logger.warning(f"{n.nombre} aislado por RCQ-NeuralShield")
+            logger.warning("%s aislado por RCQ-NeuralShield", n.nombre)
     ajustar = evaluar
 
 RCQNeuralShield = MetaCoreAdjuster

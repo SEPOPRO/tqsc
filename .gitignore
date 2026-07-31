@@ -9,3 +9,21 @@ tqsc-native/target/
 *.key
 *.crt
 *.pem
+
+# Repos clonados / no pertenecen al proyecto
+Anthropic-Cybersecurity-Skills/
+
+# Basura de Windows (redirect accidental a nul)
+nul
+
+# Datos de prueba con claves
+data_test_*/
+data_docker_test/
+
+# Artefactos de runtime
+tqsc/data/*.log
+tqsc/data/*.jsonl
+tqsc/data/fork_event.json
+tqsc/data/honeypot_*.json
+tqsc/data/qmem_state.json
+

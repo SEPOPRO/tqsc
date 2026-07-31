@@ -1,11 +1,12 @@
 """TQSC v1.0 — Protección Física Anti-Side-Channel"""
-import os, time, hashlib, logging, ctypes
-from pathlib import Path
+import os, time, hashlib, logging, math
+import secrets as _sec
 from typing import Optional
+from defense.syscall_monitor import SyscallMonitor
 
 from native_bridge import cache_disrupt as _cache_disrupt, pid_signature as _pid_signature, read_process_memory as _read_mem
 
-TQSC_TEST = os.environ.get("TQSC_TEST_MODE") == "1"
+TQSC_TEST = lambda: os.environ.get("TQSC_TEST_MODE") == "1"
 try:
     import psutil; HAS_PSUTIL = True
 except ImportError:
@@ -24,7 +25,7 @@ class CPUUsageScanner:
         if not HAS_PSUTIL: return []
         ahora = time.time(); s = []
         # Threshold randomizado: +/-5% anti-evasión
-        umbral_efectivo = self.umbral + (hash(f"{ahora//60}") % 10 - 5)
+        umbral_efectivo = self.umbral + (_sec.randbits(4) - 7)
         for proc in psutil.process_iter(["pid", "name", "cpu_percent", "create_time"]):
             try:
                 cpu = proc.info["cpu_percent"] or 0
@@ -44,7 +45,7 @@ class CacheDisruptor:
 
     @staticmethod
     def invalidar(tamano_mb: int = 1) -> int:
-        if TQSC_TEST: return 4096
+        if TQSC_TEST(): return 4096
         return _cache_disrupt(tamano_mb)
 
 
@@ -152,7 +153,7 @@ class OpcodeInterruptionEngine:
             freqs = {}
             for b in buffer:
                 freqs[b] = freqs.get(b, 0) + 1
-            entropia = -sum((c/len(buffer)) * __import__('math').log2(c/len(buffer)) for c in freqs.values())
+            entropia = -sum((c/len(buffer)) * math.log2(c/len(buffer)) for c in freqs.values())
             if entropia > 4.0 and len(buffer) > 16:
                 resultados.append({"patron": "alta_entropia", "offset": 0, "entropia": round(entropia, 2)})
         self.ultimo_analisis = {"resultados": len(resultados), "tamano": len(buffer)}
@@ -200,7 +201,7 @@ class PIDSignatureMatcher:
     """Detecta hot-patch vía Rust (tqsc_native) con fallback psutil."""
 
     def verificar(self, pid: int) -> Optional[dict]:
-        if TQSC_TEST:
+        if TQSC_TEST():
             return {"pid": pid, "exe": "test.exe", "hash": "a"*64, "reflectivo": False, "hotpatch": False}
         sig = _pid_signature(pid)
         if sig is None:
@@ -208,22 +209,29 @@ class PIDSignatureMatcher:
         # Detectar hotpatch comparando hash disco vs memoria
         hotpatch = False
         if not sig.get("reflectivo") and sig.get("exe"):
-            try:
-                with open(sig["exe"], "rb") as f:
-                    header = f.read(4096)
-                mem = _read_mem(pid, 4096)
-                if mem and len(mem) == 4096:
-                    import hashlib as _h
-                    hotpatch = _h.sha256(mem).hexdigest()[:32] != _h.sha256(header).hexdigest()[:32]
-            except Exception:
+            exe_path = sig["exe"]
+            if not isinstance(exe_path, str) or not exe_path.startswith(("/", "C:\\", "c:\\")):
+                LOG.warning("PIDSignature: exe path sospechoso: %s", exe_path)
                 pass
+            else:
+                try:
+                    # Usar el mismo PID para leer memoria (no confiar en exe entre llamadas)
+                    mem = _read_mem(pid, 4096)
+                    if mem and len(mem) == 4096:
+                        try:
+                            with open(exe_path, "rb") as f:
+                                header = f.read(4096)
+                            hotpatch = hashlib.sha256(mem).hexdigest()[:32] != hashlib.sha256(header).hexdigest()[:32]
+                        except (OSError, PermissionError, FileNotFoundError):
+                            LOG.debug("PIDSignature: no se pudo leer %s", exe_path)
+                except Exception:
+                    pass
         return {
             "pid": sig.get("pid"), "exe": sig.get("exe", ""),
             "hash": sig.get("hash_disco", ""),
             "reflectivo": sig.get("reflectivo", False),
             "hotpatch": hotpatch,
         }
-        return None
 
 
 class DefenseCore:
@@ -236,7 +244,7 @@ class DefenseCore:
         self.opcode = OpcodeInterruptionEngine()
         self.pid_check = PIDSignatureMatcher()
         self._ultimo_pids: set[int] = set()
-        from defense.syscall_monitor import SyscallMonitor
+        self._max_pids = 10000
         self.syscall = SyscallMonitor()
 
     def iniciar(self):
@@ -259,7 +267,8 @@ class DefenseCore:
                         if sig:
                             r["pid_signatures"].append(sig)
                             r["procesos_nuevos"].append(pid)
-                    except: continue
+                    except (psutil.NoSuchProcess, psutil.AccessDenied, OSError):
+                        continue
             self._ultimo_pids = pids_actuales
         # Verificar procesos aislados
         for pid in list(self.affinity.aislados.keys()):

@@ -17,6 +17,7 @@ CERTS_DIR = Path(os.environ.get("TQSC_HOME", "data")) / "certs"
 
 def _key_path(n: str) -> Path: return CERTS_DIR / f"{n}.key"
 def _cert_path(n: str) -> Path: return CERTS_DIR / f"{n}.crt"
+def _ca_cert_path() -> Path: return CERTS_DIR / "ca.crt"
 
 
 def generar_ca(sobrescribir: bool = False) -> tuple[bytes, bytes]:
@@ -93,7 +94,11 @@ class TLSWrapper:
         ctx.load_cert_chain(cf.name, kf.name)
         return ctx
 
-    def escuchar(self, puerto: int, handler: Callable, host: str = "0.0.0.0") -> socket.socket:
+    def ssl_context(self) -> ssl.SSLContext:
+        """Retorna contexto SSL para usar en HTTPServer."""
+        return self._ctx(ssl.Purpose.CLIENT_AUTH)
+
+    def escuchar(self, puerto: int, handler: Callable, host: str = "127.0.0.1") -> socket.socket:
         ctx = self._ctx(ssl.Purpose.CLIENT_AUTH)
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
@@ -114,7 +119,7 @@ class TLSWrapper:
     def __del__(self):
         for f in self._cleanup:
             try: os.unlink(f)
-            except: pass
+            except (OSError, FileNotFoundError): pass
 
 
 if __name__ == "__main__":

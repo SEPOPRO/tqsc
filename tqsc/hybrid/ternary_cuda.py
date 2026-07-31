@@ -1,10 +1,66 @@
 """
-ternary_cuda.py — MatMul ternario nativo en GPU.
-Sin decodificar a float32. Aritmética directa con trits empaquetados.
+Ternary weight simulation using standard PyTorch FP32 operations. No custom CUDA kernel is implemented. The ternary matmul decomposes into two FP32 matmuls which is SLOWER than a single standard matmul. This is a proof-of-concept for the ternary weight packing scheme.
 """
-import math, time, struct
+import time
+import logging
 import torch
 import torch.nn as nn
+
+LOG = logging.getLogger("tqsc.ternary_cuda")
+
+try:
+    import triton
+    import triton.language as tl
+    HAS_TRITON = True
+except ImportError:
+    HAS_TRITON = False
+
+if HAS_TRITON:
+    @triton.jit
+    def ternary_matmul_kernel(
+        x_ptr, w_zero_ptr, w_sign_ptr, out_ptr,
+        M, N, K,
+        stride_xm, stride_xk,
+        stride_wn, stride_wk,
+        stride_om, stride_on,
+        BLOCK_SIZE_M: tl.constexpr, BLOCK_SIZE_N: tl.constexpr, BLOCK_SIZE_K: tl.constexpr,
+    ):
+        pid = tl.program_id(axis=0)
+        num_pid_m = tl.cdiv(M, BLOCK_SIZE_M)
+        num_pid_n = tl.cdiv(N, BLOCK_SIZE_N)
+        pid_m = pid // num_pid_n
+        pid_n = pid % num_pid_n
+
+        offs_am = (pid_m * BLOCK_SIZE_M + tl.arange(0, BLOCK_SIZE_M)) % M
+        offs_bn = (pid_n * BLOCK_SIZE_N + tl.arange(0, BLOCK_SIZE_N)) % N
+        offs_k = tl.arange(0, BLOCK_SIZE_K)
+
+        x_ptrs = x_ptr + (offs_am[:, None] * stride_xm + offs_k[None, :] * stride_xk)
+        w_zero_ptrs = w_zero_ptr + (offs_bn[None, :] * stride_wn + offs_k[:, None] * stride_wk)
+        w_sign_ptrs = w_sign_ptr + (offs_bn[None, :] * stride_wn + offs_k[:, None] * stride_wk)
+
+        acc = tl.zeros((BLOCK_SIZE_M, BLOCK_SIZE_N), dtype=tl.float32)
+
+        for k in range(0, tl.cdiv(K, BLOCK_SIZE_K)):
+            k_mask_x = (offs_k[None, :] + k * BLOCK_SIZE_K) < K
+            x = tl.load(x_ptrs, mask=k_mask_x, other=0.0)
+            
+            k_mask_w = (offs_k[:, None] + k * BLOCK_SIZE_K) < K
+            w_z = tl.load(w_zero_ptrs, mask=k_mask_w, other=1.0)
+            w_s = tl.load(w_sign_ptrs, mask=k_mask_w, other=0.0)
+            
+            w_val = (1.0 - w_z) * (2.0 * w_s - 1.0)
+            acc += tl.dot(x, w_val)
+            
+            x_ptrs += BLOCK_SIZE_K * stride_xk
+            w_zero_ptrs += BLOCK_SIZE_K * stride_wk
+            w_sign_ptrs += BLOCK_SIZE_K * stride_wk
+
+        offs_cm = pid_m * BLOCK_SIZE_M + tl.arange(0, BLOCK_SIZE_M)
+        offs_cn = pid_n * BLOCK_SIZE_N + tl.arange(0, BLOCK_SIZE_N)
+        out_ptrs = out_ptr + stride_om * offs_cm[:, None] + stride_on * offs_cn[None, :]
+        c_mask = (offs_cm[:, None] < M) & (offs_cn[None, :] < N)
+        tl.store(out_ptrs, acc, mask=c_mask)
 
 # ═══════════════════════════════════════════
 #  POR QUÉ ESTO SÍ FUNCIONA EN HARDWARE ACTUAL
@@ -71,22 +127,42 @@ class TernaryMatMul:
         """
         MatMul ternario: input × W_ternary
         
-        En vez de decodificar W a float32 y hacer matmul normal,
-        aprovechamos que la multiplicación ternaria es:
-        - Si weight=0 → contribución 0 (no hay multiplicación)
-        - Si weight=±1 → es solo cambio de signo o nada
-        
-        Entonces: output = input @ sign_mask - input @ (1-zero_mask-sign_mask)
+        Usa Triton CUDA Kernel si está disponible, sino hace un fallback
+        a dos MatMul sobre tensores dispersos en FP32.
         """
-        # Pesos positivos: w_sign (donde w=1) sin los ceros
+        if HAS_TRITON and input_float.is_cuda:
+            try:
+                M, K = input_float.shape
+                N, K_w = w_zero.shape
+                
+                out = torch.empty((M, N), device=input_float.device, dtype=torch.float32)
+                
+                # Convertir a float16 o float32 para el Kernel de Triton (mejor compatibilidad con tl.dot)
+                inp = input_float.to(torch.float32)
+                w_z = w_zero.to(torch.float32)
+                w_s = w_sign.to(torch.float32)
+                
+                grid = lambda META: (triton.cdiv(M, META['BLOCK_SIZE_M']) * triton.cdiv(N, META['BLOCK_SIZE_N']), )
+                
+                ternary_matmul_kernel[grid](
+                    inp, w_z, w_s, out,
+                    M, N, K,
+                    inp.stride(0), inp.stride(1),
+                    w_z.stride(0), w_z.stride(1),
+                    out.stride(0), out.stride(1),
+                    BLOCK_SIZE_M=32, BLOCK_SIZE_N=32, BLOCK_SIZE_K=32,
+                )
+                return out
+            except Exception as e:
+                LOG.error("Triton kernel failed: %s", e)
+                
+        # Fallback a Pytorch puro
         pos = w_sign.float()
         
         # Pesos negativos: donde w=-1 (ni zero ni sign)
         neg = (1 - w_zero - w_sign).float()
         
         # MatMul: input @ positive - input @ negative
-        # Esto son 2 matmuls float32, pero los pesos son SPARSE (más de 50% son 0)
-        # En GPU esto es rápido porque los tensores son pequeños y contiguos
         out_pos = torch.matmul(input_float, pos.T)
         out_neg = torch.matmul(input_float, neg.T)
         
@@ -275,6 +351,8 @@ if __name__ == "__main__":
     
     # 4. Proyección a modelos reales
     print("\n📊 4. PROYECCIÓN A MODELOS REALES")
+    print(f"  WARNING: These are PROJECTED synthetic speedups, not measured.")
+    print(f"  The current implementation is slower than float32.")
     print(f"  MatMul ternario nativo evita:")
     print(f"  • Decodificar trits → float32")
     print(f"  • Almacenar float32 temporales")

@@ -26,6 +26,8 @@ def test_crosschain_mayoria():
     t = CrossChainTracker(nodos=TEST_NODOS, sealant=s)
     # "aaa" está en 1/3 nodos → con reputación igualitaria, peso=0.33 < 0.5 → reconsenso
     result = t.verificar("aaa")
+    assert isinstance(result, bool)
+    assert result is False
     print(f"✅ CrossChain: hash minoritario → {'aceptado' if result else 'rechazado'} por reconsenso")
 
 
@@ -44,6 +46,8 @@ def test_crosschain_divergencia():
     s = ForkSealant(nodos=TEST_NODOS, data_dir="data/test")
     t = CrossChainTracker(nodos=TEST_NODOS, sealant=s)
     result = t.verificar("unknown_hash")
+    assert isinstance(result, bool)
+    assert result is False
     print(f"✅ CrossChain: divergencia → {'aceptado' if result else 'rechazado'}")
 
 

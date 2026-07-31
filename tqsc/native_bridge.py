@@ -61,6 +61,32 @@ def read_process_memory(pid: int, size: int = 4096) -> Optional[bytes]:
     return None
 
 
+def firewall_block(ip: str, puerto: int = 0, protocolo: str = "tcp") -> bool:
+    """Bloquea IP/puerto vía Rust (más rápido que subprocess netsh/iptables).
+    Args:
+        ip: Dirección IP a bloquear
+        puerto: 0 = todos los puertos
+        protocolo: "tcp", "udp", "any"
+    Returns:
+        True si se aplicó la regla exitosamente
+    """
+    if HAS_NATIVE and not TQSC_TEST:
+        try:
+            return _native.firewall_block(ip, puerto, protocolo)
+        except Exception as e:
+            LOG.debug("firewall_block nativo falló: %s", e)
+    # Fallback Python: usar FirewallManager
+    try:
+        from utils.firewall import FirewallManager
+        fw = FirewallManager()
+        if puerto:
+            return fw.bloquear_puerto(puerto, protocolo)
+        return fw.bloquear_ip(ip, "native_bridge")
+    except Exception as e:
+        LOG.warning("firewall_block fallback falló: %s", e)
+        return False
+
+
 # ── Fallbacks Python ──────────────────────────────────────
 
 def _python_enum_processes() -> list[dict]:

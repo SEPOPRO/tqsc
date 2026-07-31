@@ -9,7 +9,7 @@ from random import choice, uniform, randint
 from utils.secure_storage import write as _write
 
 LOG = logging.getLogger("tqsc.honeypot")
-TQSC_TEST = os.environ.get("TQSC_TEST_MODE") == "1"
+TQSC_TEST = lambda: os.environ.get("TQSC_TEST_MODE") == "1"
 
 try:
     from utils.event_bus import evento as _evento
@@ -221,12 +221,15 @@ class ResponseShaper:
 
 class BehaviorCollector:
     def __init__(self, puerto: int = 2222, data_dir: str = "data",
-                 max_conexiones: int = 100, rate_limit: int = 3):
+                 max_conexiones: int = 100, rate_limit: int = 3,
+                 abh_profiler: Optional[object] = None):
         self.puerto = puerto; self.data_dir = Path(data_dir)
         self.sesiones: list[HoneypotSession] = []
         self._activo = False; self._conteo_ip: dict[str, list[float]] = {}
         self._puertos_extra: list[int] = []; self._max_conexiones = max_conexiones
         self._rate_limit = rate_limit; self._pattern = PatternInverter()
+        # ABH Engine: Behavioral Profiler hook
+        self._abh_profiler = abh_profiler
 
     def _check_rate_limit(self, ip: str) -> bool:
         ahora = time.time()
@@ -272,7 +275,7 @@ class BehaviorCollector:
                 conn, addr = s.accept()
                 time.sleep(uniform(5, 15))
                 conn.close()
-            except: continue
+            except (socket.timeout, OSError, ConnectionError): continue
 
     def _manejar(self, conn: socket.socket, addr: tuple, puerto: int):
         sesion = HoneypotSession(addr[0], puerto)
@@ -290,6 +293,14 @@ class BehaviorCollector:
             # Clasificar con ML + reglas
             clasif = self._pattern.clasificar(user=user_data, pwd=pwd_data)
             sesion.tipo_ataque = clasif["tipo"]
+            # ABH: Pipeline de Behavioral Profiling (credenciales)
+            if self._abh_profiler:
+                self._abh_profiler.process_observation(
+                    ip=addr[0],
+                    user=user_data, password=pwd_data,
+                    tool=sesion.herramienta, port=puerto,
+                    session_data={"user": user_data, "pass": pwd_data},
+                )
             ok, msg = shaper.login(user_data, pwd_data)
             if not ok:
                 conn.sendall(msg); time.sleep(uniform(0.5, 1.0))
@@ -304,6 +315,15 @@ class BehaviorCollector:
                 sesion.comandos.append({"t": "cmd", "data": cmd})
                 clasif = self._pattern.clasificar(comando=cmd)
                 sesion.tipo_ataque = clasif["tipo"] if clasif["tipo"] != "desconocido" else sesion.tipo_ataque
+                # ABH: Pipeline de Behavioral Profiling (comandos)
+                if self._abh_profiler:
+                    self._abh_profiler.process_observation(
+                        ip=addr[0],
+                        command=cmd,
+                        tool=sesion.herramienta,
+                        port=puerto,
+                        session_data={"user": user_data, "pass": pwd_data},
+                    )
                 time.sleep(self._pattern.retardo_realista(cmd))
                 conn.sendall(shaper.responder(cmd) + shaper.prompt())
         except (socket.timeout, ConnectionError, OSError, ValueError) as e:

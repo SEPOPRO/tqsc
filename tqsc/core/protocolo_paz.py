@@ -5,6 +5,7 @@ Handshake criptográfico con renovación de claves y anti-replay.
 import json, time, hashlib, hmac, secrets, logging
 from datetime import datetime, timedelta
 from typing import Optional
+from collections import deque
 
 LOG = logging.getLogger("tqsc.paz")
 
@@ -53,6 +54,7 @@ class RegistroAgentes:
         self.agentes: dict[str, IdentidadAgente] = {}
         self.estado: dict[str, str] = {}
         self._nonces_usados: set[str] = set()
+        self._nonces_orden: deque[str] = deque()
         self._max_mensajes = 1000
 
     def registrar(self, agente: IdentidadAgente):
@@ -78,8 +80,10 @@ class RegistroAgentes:
             self.aislar(mensaje.origen_id, "firma_invalida")
             return False
         self._nonces_usados.add(mensaje.nonce)
+        self._nonces_orden.append(mensaje.nonce)
         if len(self._nonces_usados) > 10000:
-            self._nonces_usados = set(list(self._nonces_usados)[-5000:])
+            viejo = self._nonces_orden.popleft()
+            self._nonces_usados.discard(viejo)
         return True
 
 

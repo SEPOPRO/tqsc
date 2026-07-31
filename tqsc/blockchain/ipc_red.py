@@ -5,7 +5,6 @@ Cada nodo corre un servidor ligero en segundo plano.
 """
 import json, socket, threading, time, hmac, hashlib, secrets, logging, os
 from datetime import datetime, timedelta
-from pathlib import Path
 from typing import Optional
 
 LOG = logging.getLogger("tqsc.blockchain.ipc")
@@ -22,7 +21,7 @@ class NodoRemoto:
     def __init__(self, nodo_id: str, host: str = "127.0.0.1", puerto: Optional[int] = None, secreto: str = ""):
         self.id = nodo_id
         self.host = host
-        self.puerto = puerto or IPC_PORT_BASE + hash(nodo_id) % 1000
+        self.puerto = puerto or IPC_PORT_BASE + int(hashlib.sha256(nodo_id.encode()).hexdigest(), 16) % 1000
         self.secreto = secreto or secrets.token_hex(16)
         self.ultimo_heartbeat: Optional[datetime] = None
         self.score: float = 1.0
@@ -47,14 +46,14 @@ class NodoRemoto:
             if not self.conectar(): return None
         try:
             payload = json.dumps(mensaje).encode()
-            checksum = hmac.new(self.secreto.encode(), payload, hashlib.sha256).hexdigest()[:8]
+            checksum = hmac.new(self.secreto.encode(), payload, hashlib.sha256).hexdigest()[:16]
             paquete = json.dumps({"data": mensaje, "hmac": checksum}).encode() + b"\n"
             self._socket.sendall(paquete)
             respuesta = self._socket.recv(65536)
             if respuesta:
                 self.ultimo_heartbeat = datetime.now()
                 return json.loads(respuesta.decode())
-        except (socket.timeout, ConnectionError, json.JSONDecodeError) as e:
+        except (socket.timeout, ConnectionError, json.JSONDecodeError, OSError) as e:
             LOG.warning("Error enviando a %s: %s", self.id, e)
             self._socket = None
         return None
@@ -62,7 +61,7 @@ class NodoRemoto:
     def cerrar(self):
         if self._socket:
             try: self._socket.close()
-            except: pass
+            except OSError: pass
             self._socket = None
 
 
@@ -73,7 +72,7 @@ class ServidorNodo:
         self.id = nodo_id
         self.puerto = puerto
         self.secreto = secreto
-        self.data_dir = Path(data_dir)
+        self.data_dir = data_dir
         self._activo = False
         self._hilo: Optional[threading.Thread] = None
         self.mensajes_recibidos: list[dict] = []
@@ -115,7 +114,7 @@ class ServidorNodo:
             msg_hmac = paquete.get("hmac", "")
             # Verificar HMAC
             payload = json.dumps(msg).encode()
-            esperado = hmac.new(self.secreto.encode(), payload, hashlib.sha256).hexdigest()[:8]
+            esperado = hmac.new(self.secreto.encode(), payload, hashlib.sha256).hexdigest()[:16]
             if msg_hmac != esperado:
                 conn.sendall(json.dumps({"status": "error", "razon": "hmac_invalido"}).encode())
                 return
@@ -129,7 +128,7 @@ class ServidorNodo:
                 conn.sendall(json.dumps({"status": "ok", "tipo": "voto_ack"}).encode())
             elif tipo == "challenge":
                 nonce = secrets.token_hex(16)
-                respuesta = hashlib.sha256(f"{nonce}{self.secreto}".encode()).hexdigest()
+                respuesta = hmac.new(self.secreto.encode(), nonce.encode(), hashlib.sha256).hexdigest()
                 conn.sendall(json.dumps({
                     "status": "ok", "tipo": "challenge_response",
                     "nonce": nonce, "respuesta": respuesta
@@ -153,9 +152,9 @@ class RedBlockchain:
                  data_dir: str = "data"):
         self.nodo_local_id = nodo_local_id
         self.nodos = nodos or {"Nodo_A": "127.0.0.1", "Nodo_B": "127.0.0.1", "Nodo_C": "127.0.0.1"}
-        self.data_dir = Path(data_dir)
+        self.data_dir = data_dir
         self.secreto_local = secrets.token_hex(16)
-        self.puerto_local = IPC_PORT_BASE + hash(nodo_local_id) % 1000
+        self.puerto_local = IPC_PORT_BASE + int(hashlib.sha256(nodo_local_id.encode()).hexdigest(), 16) % 1000
 
         # Servidor local
         self.servidor = ServidorNodo(nodo_local_id, self.puerto_local, self.secreto_local, data_dir)
