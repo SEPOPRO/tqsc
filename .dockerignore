@@ -1,13 +1,29 @@
-__pycache__
-*.pyc
-.git
-.venv
-target/
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Git
+.git/
+.gitignore
+
+# Data (volumen montado en runtime)
 data/
-tqsc-native/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+
+# Temp
+*.tmp
 *.log
-*.jsonl
-*.json
-!.dockerignore
-!requirements.txt
-!Dockerfile

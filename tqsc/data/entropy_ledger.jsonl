@@ -1,249 +1,0 @@
-{"timestamp": "2026-07-09T00:03:12.285915", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "64f45554717004882601b8c65c682015c92192b03464d5a1a5a71ddb4ad2fb27"}
-{"timestamp": "2026-07-09T00:06:13.214126", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "8590d106499d270f9603c5d1e590a6fd54f48d70e13f4ac91d360b5627bdc1b6"}
-{"timestamp": "2026-07-09T00:06:27.122215", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "872a00b400e108ea8474cd8ab371fdc8a773d99a2072c2633f3c66b2869fe5ae"}
-{"timestamp": "2026-07-09T00:12:34.611397", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "7e9afc07b75a78d71296d0a1bdb472646ccb6f9243f10783f95ef261b6c2ca14"}
-{"timestamp": "2026-07-09T00:14:39.582739", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "0e708b3550c53ec3359b883fc554df156d65e5b5cd703d1005de7009a57f8298"}
-{"timestamp": "2026-07-09T00:14:51.856798", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "4bebff0949ef548ff1513e286c6dbb6918bcf8568aab06d1a0b2bda0133976a2"}
-{"timestamp": "2026-07-09T00:15:19.909186", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "7e982c8c22adcce0cdd8aacfc7c6431ee3bbd6cf11ad82eff767ea7889c723a4"}
-{"timestamp": "2026-07-09T00:15:36.830262", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "3bb46d53d4a03241cd2db8c5971c10b6ffe3e3d815300dc56af977dd84ef13a0"}
-{"timestamp": "2026-07-09T00:15:54.322521", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "8d1bc77a39ef33a0073331d255934353b75621b3d1d320fd800cbbbf90aaef53"}
-{"timestamp": "2026-07-09T00:34:36.096919", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "85aa9fa5c778bc1c48334106282c60e73752b45f4d697a67d7917257fd87edc2"}
-{"timestamp": "2026-07-09T00:35:12.240455", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "d7cd49536bbda648e8d663e33c0b47ab2c75586e667a39b83a0aa23a0fc595fb"}
-{"timestamp": "2026-07-09T00:35:29.606568", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "787b020ec8ed3dae8a738ce3b932f7d258bcc58b267019a6066ea0447bb1e365"}
-{"timestamp": "2026-07-09T00:36:19.947274", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "53289427909488aa8f60813c206a4bb5cd04512a4246f4564b7671a485a5d127"}
-{"timestamp": "2026-07-09T00:38:52.120790", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "1b57010328d8b7fcd5b2b76ba4df317f81bd832e00d77e19c4ff52732fcd0489"}
-{"timestamp": "2026-07-09T00:39:57.272263", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "e0e75d7d76d8046bc2ff9f658057b31fb12a37f175fca0e395dfb612adc6b901"}
-{"timestamp": "2026-07-09T00:46:02.104421", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "8afec66757588e4aae7f775a0b2298a3ee950ac2a039900d3b56f3bacb64e19c"}
-{"timestamp": "2026-07-09T00:46:43.265303", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "090ab2aca501cdbec3fc11491c2e294d70248451b07dcd4affacbfad7143829c"}
-{"timestamp": "2026-07-09T00:51:37.927219", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "7c94ca0ace72aa822f33a3496a877a3d3857462ec9205c0d48b25aafd06d56a5"}
-{"timestamp": "2026-07-09T00:52:07.129979", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "36e8b1d7a957ed2bc36cd11deaf5521e7be578d9378073afb408ecf4cb5b1b81"}
-{"timestamp": "2026-07-09T00:53:21.563578", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "8002d8ad517a48c66d51b031f3371a47cf28d25600142fedc573697189639a15"}
-{"timestamp": "2026-07-09T00:54:10.079531", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "7d6fa2a00a2e8d72b68dbc872aa6b732f6beb2a522aaa8268103ddbf59994dce"}
-{"timestamp": "2026-07-09T00:59:44.836148", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "b0156b60f43684af353ad7672ae5fb9af9c4dc123b03eece64a77c70422c441e"}
-{"timestamp": "2026-07-09T01:00:13.564744", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "22b8b63c5296a9008adf8bfb80b9adb97a19bf3fbd55deb3c14232148825fbd4"}
-{"timestamp": "2026-07-09T10:09:33.993085", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "8323a4022e6019d0b238117ab2b9b4e3d85c1b9d8300310cde64558da016da28"}
-{"timestamp": "2026-07-09T10:17:13.690247", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "31f2eef4975b9ea15f2dca11607a81573cb0c29c8746657b979312de2d9f072d"}
-{"timestamp": "2026-07-09T10:17:32.630474", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "47187dc9fafc2ad489153b054b33701d61794757f3f6bb56a052f5815ba5b8da"}
-{"timestamp": "2026-07-09T10:17:51.716396", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "19f7144b19aabfe1e88dd2b1ec33cf3038b400b5e2fbb9e747433b090faa4f96"}
-{"timestamp": "2026-07-09T10:27:29.790692", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "92f8dad0e58c3e8c70132d0913d0d1bfb6bd90ce81de4131644af653fecc8b32"}
-{"timestamp": "2026-07-09T10:28:33.953641", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "25ee88487e0ab404d55f1923f13a8ea88b076668b5993ac3ddef8339e0e96976"}
-{"timestamp": "2026-07-09T10:31:33.088753", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "072ec9971ee916dd47f05a489ee916493cedb9b94c26a70ba3acd45bfe877d22"}
-{"timestamp": "2026-07-09T10:31:43.388768", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "0fd1088351bb65fbe0868eb8f04d66975af8054f2441ad935b24cf65bb685229"}
-{"timestamp": "2026-07-09T10:31:56.635185", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "804aea205024c5dff281fdc928a1aec63c894c5e2d61fa3467d4bec56a4021b2"}
-{"timestamp": "2026-07-09T10:32:07.596215", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "c48fc0dd5a69b4da888129fc76f2a6e19dbe774adc7c97a5ef0ec30f28142e34"}
-{"timestamp": "2026-07-09T10:32:22.717368", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "9beaa2558900e287b78ef15d1516c98dcc5fe351453525f751a363e049e12961"}
-{"timestamp": "2026-07-09T10:33:10.894664", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "33002f4ec68894c5f15587c93c1d934f22ad227565126625af258957c7217647"}
-{"timestamp": "2026-07-09T10:37:37.581151", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "4e023be9770db05f95c10dd1d4d7e0259b11d82a80de07b77dae5bcc2e9a1db6"}
-{"timestamp": "2026-07-09T10:38:08.880759", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "0682ac4cc59233c011736921cc6dab1f5f5a62321cd076febc098618efa13207"}
-{"timestamp": "2026-07-09T10:40:52.857488", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "517baccef6e8369f944ef7257e28c3a79d3dcd1d7d6f7dd03e6b0b20344c6729"}
-{"timestamp": "2026-07-09T10:41:54.341542", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "6de94b16bf30261f8be84fb73bdfdf75fee5dddceba9b3e267228011e0f1348f"}
-{"timestamp": "2026-07-09T10:45:50.544682", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "8545431449e3c5576d45f1190648eb8af96876091b56682f788d1f33804426c0"}
-{"timestamp": "2026-07-09T10:47:46.826135", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "ef5a7d27040d51dcf78835a75cb66128c9127c5c5aa88e421a2f3e01a244831f"}
-{"timestamp": "2026-07-09T10:50:15.074488", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "f6361b6aa15780f6641dd8864e0f9c87859b59da8566f78485e59c292c6ad3c7"}
-{"timestamp": "2026-07-09T10:54:36.475474", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "fff582f9ed897b2b1b3f9d53a9061f5bf3a840f369097a8950c1a758d27864bf"}
-{"timestamp": "2026-07-09T10:55:23.119502", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "30cdbdbac4b4a28c047a46eeeb7aea19914489ea2722be5d0bb273959cc4b6a3"}
-{"timestamp": "2026-07-09T10:56:51.300861", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "dc7803255f94b2e6477e6354b25743b6045d6db54849d3eb08be210c30678386"}
-{"timestamp": "2026-07-09T10:58:41.498527", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "37478bf752f09d2570aae2546ff93e9c22c96e8ae3b2b034bb0202ff5052585e"}
-{"timestamp": "2026-07-09T10:59:27.918649", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "f6efedcb6f551fe4f1d20afefbf3055739822f467c1f76db8d729793a53a55f0"}
-{"timestamp": "2026-07-09T11:03:38.350852", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "71ad18dc83ec012e00fb7faf4b02392c5d97867c2244f605e2cc100d92cbc82c"}
-{"timestamp": "2026-07-09T11:08:22.809416", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "4d4bc47b5f8ca832eb54eb30b675ef707e8a18fecbbcfa23e786b4440b038d3b"}
-{"timestamp": "2026-07-09T11:09:07.141874", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "2df5fb9eb9ace91920ef1fe4d9e38e36ff54af51ea7848345c2a928a279a202e"}
-{"timestamp": "2026-07-09T11:09:41.647448", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "07f109dcb0dd1632b8c31895df93eaaa9249f01759b8fcf8e4c26b1f34cdbd49"}
-{"timestamp": "2026-07-09T11:10:08.264308", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "66201ce00287e76e9dcb3ceeb842b61ad65b67049fb2a79926c5d02b648493b5"}
-{"timestamp": "2026-07-09T11:11:18.040845", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "b04da93560500daf0699500255c212964448048f14e80185c89d34491f8b137f"}
-{"timestamp": "2026-07-09T11:11:53.561401", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "e93769a9ded5886939a189a8d9f1b794a298fb7974fd6b02812f9f33875d974e"}
-{"timestamp": "2026-07-09T11:12:18.808317", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "f844d398eb4fc4ca047981de953323123c993b9cb07789d6b222867289dd14e3"}
-{"timestamp": "2026-07-09T11:13:00.811796", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "9b9a6480945a25287d4745177648342fb328ced7cd6c5aabe643247784345393"}
-{"timestamp": "2026-07-09T11:14:10.892589", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "9b66bd7a1feff816ac27d4ea23aade818cbe4bd65bf30b48d3b954d6242fa23d"}
-{"timestamp": "2026-07-09T11:19:59.252223", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "a4fdc37c1a586c08f926fa41f521260895c12341c29aba8d2092c4878b79ae97"}
-{"timestamp": "2026-07-09T11:20:40.060177", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "daeef9010ca9cb93bbcffd02fecc27a5d03c813d165195399701adf40e1db86f"}
-{"timestamp": "2026-07-09T11:22:39.424472", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "2913ea3d5cf5e99f818f401ec91202bacd4406601dd5683f46e30184241a1f67"}
-{"timestamp": "2026-07-09T11:23:18.490027", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "3fc561ef3ed99d700e852290b5e2d2787265164ee2074054aadf82a463367ef1"}
-{"timestamp": "2026-07-09T11:24:11.908776", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "8e59accbdac891f828656a81f2e2bf1ccda96fe20c0219779bf173d053298078"}
-{"timestamp": "2026-07-09T11:25:10.313809", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "ea2fa1b829cd2deddb641e989a8d19d7ecc8964ac1f82762dc3bf80828ba93c7"}
-{"timestamp": "2026-07-09T11:26:19.376117", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "9f4b379b565649c5a08df5c50020d7a3328474fc65f33b01ae77d64bea339e2e"}
-{"timestamp": "2026-07-09T11:29:08.101131", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "a135eb59e8b04f131f98151097a0165a98878cad2cc904e1538738fcef112cf8"}
-{"timestamp": "2026-07-09T11:29:32.669798", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "b3338cab3f1dd7899fee38a9ab797ca8fb7f7b083f38aa6b41b1fd0882d73718"}
-{"timestamp": "2026-07-09T11:29:50.768685", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "2cb0ed7f1aaf73f04863db9e8aa79d2eccc32eed6fe133441cec797f538c80c0"}
-{"timestamp": "2026-07-09T11:31:29.306072", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "984043f6ce532c1e61cf8905a7d2643de243a4f4c187e7dd44f4a7d2481b3b36"}
-{"timestamp": "2026-07-09T11:32:08.017477", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "b5d39a6d15c50745fe3a5e8308578e6327e578596d75de027f4f760967d09e35"}
-{"timestamp": "2026-07-09T11:33:30.463691", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "93202941dcfdefdc1b3103da3c71e3b2f81d16156f80be07d896f1587aa221f6"}
-{"timestamp": "2026-07-09T11:33:57.519896", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "70c327e174d81ab6bece63109b9f6f665e8fcb204d5efaab6d343b2c8f6ef52b"}
-{"timestamp": "2026-07-09T11:34:38.385907", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "8b9730230cc69b34e20cf24c1ed7c7f336caad132b40dfa85529aa277d12f215"}
-{"timestamp": "2026-07-09T11:36:37.674318", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "1527f91d372f51dfe05820e2fcb608b7a940fa50d67d21272a07ac6826ce5bfa"}
-{"timestamp": "2026-07-09T11:37:40.553011", "contexto": "ciclo_entropia", "resultado": "anomalia_detectada", "metadatos": {"entropia": 1.0}, "firma": "2f9abeefa33f49b3770e67d41e1c508925b0d1d24d917b1adc60e6b3b5c03dbd"}
-{"timestamp": "2026-07-09T11:38:38.791258", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.9970800000000001}, "firma": "a106bc2ffff43c05", "hmac": "0623e9b130dd8ce4"}
-{"timestamp": "2026-07-09T11:38:46.540658", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.99702}, "firma": "65bd0bd1171673de", "hmac": "17e31cd9ec10a5e7"}
-{"timestamp": "2026-07-09T11:38:53.430223", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.99718}, "firma": "628dfb06381df523", "hmac": "a880dce0524ed4fa"}
-{"timestamp": "2026-07-09T11:39:36.390086", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.9971599999999998}, "firma": "ad1bd94b90b12772", "hmac": "54241021ddb8e1e1"}
-{"timestamp": "2026-07-09T11:41:06.709446", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.99726}, "firma": "b620c38306d03e64", "hmac": "dadd40346b6caf8e"}
-{"timestamp": "2026-07-09T11:41:13.469786", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.9970800000000001}, "firma": "a106bc2ffff43c05", "hmac": "660e4b063736a7bb"}
-{"timestamp": "2026-07-09T11:41:21.865323", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.99712}, "firma": "136b0e50aa0af8ae", "hmac": "423bf97f101e684a"}
-{"timestamp": "2026-07-09T11:41:28.653609", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.9971}, "firma": "4d1d50002f0a6ee4", "hmac": "d9dda9e7e50d7f63"}
-{"timestamp": "2026-07-09T11:42:12.742652", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.99702}, "firma": "65bd0bd1171673de", "hmac": "247e695e0730706c"}
-{"timestamp": "2026-07-09T11:58:47.337578", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.9971399999999999}, "firma": "63fada0acf03718c", "hmac": "495f57f50cfe37d4"}
-{"timestamp": "2026-07-09T11:59:52.789176", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.9971}, "firma": "4d1d50002f0a6ee4", "hmac": "177d4a65142bb08e"}
-{"timestamp": "2026-07-09T12:00:02.127707", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.99712}, "firma": "136b0e50aa0af8ae", "hmac": "34318e61b847710e"}
-{"timestamp": "2026-07-09T12:00:14.117724", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.9972}, "firma": "36d9b9b071d53334", "hmac": "2ed040d2e6f41208"}
-{"timestamp": "2026-07-09T12:00:24.409706", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.9973199999999999}, "firma": "27ce5d1f488390ed", "hmac": "e900e48a7d69b51a"}
-{"timestamp": "2026-07-09T12:01:11.850035", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.9968600000000001}, "firma": "20a503988fd03ea0", "hmac": "3f207cdc49cf946c"}
-{"timestamp": "2026-07-09T12:02:44.930370", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.9974000000000001}, "firma": "07205add4dcc9f85", "hmac": "5eac638c0dad44a1"}
-{"timestamp": "2026-07-09T12:02:53.951896", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.9972799999999999}, "firma": "54ca8499a801607c", "hmac": "a2c694323e3e0480"}
-{"timestamp": "2026-07-09T12:03:21.296335", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.9971399999999999}, "firma": "63fada0acf03718c", "hmac": "3180ba856a5eaccf"}
-{"timestamp": "2026-07-09T12:06:56.254898", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.9972}, "firma": "36d9b9b071d53334", "hmac": "4642cc52b94697d3"}
-{"timestamp": "2026-07-09T12:08:29.088599", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.9972199999999999}, "firma": "57c4af0ac564f9d1", "hmac": "8ea81c4d17df0fe7"}
-{"timestamp": "2026-07-09T12:10:55.700825", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.9970399999999999}, "firma": "6b3e93e861ee0ebe", "hmac": "4c617bb230a07f4c"}
-{"timestamp": "2026-07-09T12:11:06.221379", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.9972799999999999}, "firma": "54ca8499a801607c", "hmac": "6e3e7230e9eceedb"}
-{"timestamp": "2026-07-09T12:11:48.326197", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.99696}, "firma": "3ab8e8cfd5d950bb", "hmac": "14ca5c089eab952d"}
-{"timestamp": "2026-07-09T12:13:51.143550", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.9970000000000001}, "firma": "990c154c30e74868", "hmac": "3b907e0401c61d0f"}
-{"timestamp": "2026-07-09T12:14:20.432950", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.9972200000000001}, "firma": "202ee85609869390", "hmac": "b65204477cc41733"}
-{"timestamp": "2026-07-09T12:17:50.586793", "contexto": "ciclo_entropia", "resultado": "anomalia", "metadatos": {"entropia": 0.99712}, "firma": "136b0e50aa0af8ae", "hmac": "8487dfcfd4f3dd82"}
-£¹K`úJc:¼ZOåF³Æd5{@•5x³˜ÑêHw[ÓÆ#i‡ˆZ ºä\Ÿ)¨Ğîák†ª[—}@-®Cª^dµ$ëœ;¥–lj{tvÄq®c‹ø7"gTşÁÖ§m£†NñÜ+{ôàˆ_CNÕ„ÚçT¦•€È¨¤«!P=Zúwõêw©¿z¹YğéÄN©N/ i::¼ $å4ÇEv83¡›Ç‹-¶óİÚ‰ÙMf©x˜ĞG/A`<npMÈFyªÈIÍÆY1RXUÆ2™çQÄÌ$
-ø«Å’:z×'nkƒ4öËÓ¶R2cäË_»i£¯vÎû¼0d•ä{>ĞxkL)ßã5-Vs‹ H¨ßbü%¼&b Î%ÉŞÀ@O.s?Ô Ó£r@^4ŞV´D‚càvQ±œø;êÒƒĞ†:#Ü¦u'k/J™×6äåÄ¨C¬«ûåóN©‡”òt:òë¾å»â«B­‰÷ Ë™n'ßÔ{7 t—dÁ E³™Ô¢ñl¡Š}‰ë¡NêKùxt·û·ÛÛQeİmmJ‡üƒ¶Í6½
- }š×¤zvØZquÂ2ó¬X!6ì¤èé\ì¤Ÿ(¯ñé]ğ‹t²Ğ[lŒóY	-¤™-€G.²˜ÂˆˆˆÁªôÆQu„ì›	¾Åµßq(“›—'“>õâJI³‹Co»Í5øqaÜ"FaŠtOm§ßHbOŠ¸Šrƒf¼­ÀÇş!šªP|w/Ê±ê¦¡<fÃ¨„¯ESÁ©!Ø]É:œ™ ‰ä¿Ïm+™’ ‚w‘o#º #XY>VèMÒÏbÓE÷+ç;Sjt'õÕ
-ã(Õ0ú¦òÈõ¯…ßOE©¼sàÑRşá!B¸ÿı#|Ô£j×®/ü}yV•»FUº‘º°n?ñw˜yè;¤'€ÁZ-şT&â:¢PIÕƒ›¼›¨ Œ2Ö~T”$$vËÄl·¬•ÇYôpOŞ‘4Î1:§l$é£‰y{!KTIxd¹
-#J’²?+eÂ¤İè7%$/à²Ô<ÍŸ<D¤ğ¤æ$˜ç×æGnMìÀ+­Î–Üº=É”cú/¡eµ¬%ìÑ£
-7Ì™J­¿°TËÉ0õºİŸ
-©f<öÏwnÈşOi€ÇÛ”ÏÜkÔ‘ÿé¾_šé3P\<A÷—pgæOæŒ¡åñ âS+üí£Ø}g¨õ½ÃÂ3"—\÷d¯›(ÉL m
-"ßÒN’¬>e©wÔµ¯ë¾Êœ¥•|Ï.G«‘ Ñ©8®Z=€¨Û¤xPw¬ÌãÅ‹	1f§ç3H?Zf­ëK×•Ìäm$‹|Uİ§båŒ³Za·”›XvL]™Ò_sÅ tÕBšÊIRdm<¤¨knõXGT#’_ƒ¼¢FŒœ!
-vär#¢î[åZÊ'5¿‚kËÃÉõx%a±8Ñ­à.–³¿·ÎäŠG^W¦÷ùo1æù«h¤Â•ß)FƒRÜëš¬ø¤¯«ôƒ0	¦x¥KTÓp‡“Ş[¡¥†Ú0
-¾Ã÷¡UÕËdfBT©DqºÂİó‰PğXtÜ¡<ü­‡°:xs;}.Ú@¤+ìETáf™õ
-Sõò´xùRš£êè¤}¸—6üÌ&LmÈŠ‚ïøF„®reò‘¶nJAWjkòà;ó2Ê>›À`Ğ°ºù
-Ét¼ñŞq—°
-¬‚›ù–]0Xšï$¿»ã«®ˆ%¦¼+¾Ê…ÚÏá>–…I86œ^4ã|¬Ô)ïœ?aÖ³¾Pz‘åZµ$îÚ$	]´¥=~²{ª‚§·Õ»û`-øÊ³ kEº\ÿ‰pb~£0a‘z²„ˆÿiÈî_ ®á­]ş©ıláNÉÇñ¼ğ-¾”¯*§¡òúJ‘—¹¯{99l¤š÷†fù9€:Á.°9ÉĞ542kE d	eU‹gØM	!úò^?ƒó<.œzå`;zGª.
-Épî^=™‚µhÅõü¹F…(4
-6“e5}"‹6âcÿîÖläÁ$S¢êä×—Îáû	ò*r÷s	CÀŞ™Øp’ä„ø¯U6UE$©Õõß8¡dƒíEšø&nz˜(Q: —8¡cyÆ É,ÎD¹ïØ-±ÅÙóT;Éëƒ®Ì%76ÃìÉ3qÒùT+õBğÉ'ÀÓ}¾ÌÃò|ã›+¦_,<R—B}_€ñÇı/¯e%­y¼8\Mu¯%H5)Ùç±ê„îó:Q)eÂ
- P†¡®~ÒocfÒş÷—R”eª«%ÛŒ²lôÌ-2œßU’ÎVğµëŒ"U¡*;Uù»Ë¬òàäOx¼ĞzJ˜ˆEÑª³™AÁû.#b@cVr—3ÉÁvç±9´¸‚©:‹Ò‘…KùÁL2*$	qî_£‡‚ĞmAåË‰”Ÿ7âY1²Ôd3D•Ü·Ù*+Yi3ÜoJ~Sp‹\:Ã_ÓOîÍN#ƒû_4SÒ/vÛÍ¬Ë\JÍ‘şß?_»²"~†}díõÀÏu|eÅÀ®eI!
-ñ=“’V^Ú[#âvÔå°‡Í1DÖq"	jV™¸é­„e¿ÃÕÆ–;«u'¿V|"­‘Äÿ4bäËÍX„?Ş=¿°%û{¼ZT 'Cª`¶">”ú7ô©ÉË£@@y©È#&Dfƒ"†LXèyV	¨ÂT:éé]¬6Uşt¨¹S²ˆëç×m)®+£#f€fx»êvù¨jØáã¹]ÚFÕ|Ş{ÓpÂn“iCEîV{ïJÄÏÅ–½û×r°Ì$S…ËC^©*PRvÔ®ÃB^YZµİŠğ4œ6
-ÅkŒ‡]Lá³T²/­şŸıa)êİj¬× w©õ~Ï—&q^He7œB¿=S×µMu3ÓˆF>aAîÜ&°ÕnëŒ-ÎÿG;	Ñ3“è¢™E®×hT’¢«üy-€µö¿fıÔUšäK‚vãyŸ<Ñ£¸<µÀ	ÿ˜Â	v9«#d:€E~Kr6 R‘P2™_TÏbüh¼z¡F·UÇ‡¦‰Ÿ{óN×~_€!ÄdYxØÑõÉA§ù£§N—(õkŸlTŸó<…döµk ´Ã.€"£
-sç K&JŒ‰bâd]ÚÓ/~TâgÿQ´QÀÕ…Š¦dÕ¡¹ m’ÔTJµ•
-®®¿µÒ ”ámGù ’FF¾¾z}œ/e°´~G«5çZçôÆ+;Úè’²È—gøƒíÔ&³#ÿÌTw¿s9†…§_€3tN—OP¡EÁE©õ|Aõ@ØÆl`2biY:Í†‹¹˜~{tm‚ÀPıÅeLå¸·p¶½Í<¦,6?Æ£Ú&3uĞ9 È³ší¤,ÎmÉ”l¦Àà$	°RW`•	l½iR‘Î
-fÔ¦ÜèÔ”¢ôáîŠäÔ:‡Ş¤¼J-wÇŒ$¦¯`•¯™W¢xXúæÑ16##BÏİŞd)àM=¾KÄ‰…ÜWâgÀS4Äpm®\ëÀU/@Ş; "NFÉñ¡éQ²á‰Â_· a6)›‚NT¸ÍùÏF?•¿]_Q£óü`üìîë;;Ç[Lâœ‹Æ”8ùL°‚?V0ÑD?
-œÉ.ƒ6]üÏå¸2	à%ßYB¶ğtJ&·	ï„Vuêı;`kÉ‹¤Í¬“d-:(•¸O
-Ì!İˆkÜJr¡„é²8 &£AÎ‘ Äéã…$v~©ÙGö:ò´¸˜ØèÔªƒ`Ñs³ÎÊ"°N‹¶ÌÚğ-Ï›@¬e…Ê<›¾/U(Ô3è‡4«¹½ÒE¸’‘­Éx%U#ëxúÎgÉaP8JûB9r€#TÃ'ÿ<Ê|¼»ˆ¢÷.ó–Ş¡;B„z|ç?!H~±éÅáÖ¸Ì?ã%³½ætS	¦ºgÕo‹k‹”RÊp·œù~·Â¾éxĞ;ñ]s>¿ƒ†:b÷”c+J%–áUaÏ
-ô•ÈªE,àÙ+Ï1tm•/¥a•×@Ù†5Ü±QZ%·W¦Ñ[R6•zgFÿV¡…ÇF!ó$âS1[s4Š$‚è9‘³.-}xœwî0ÌFoëjÕÚ`†^×ÙÍä{Ú)Üí²WÃ×Õ@~äAZWŠXuO+”ˆÚÿÀò»YÁn´èàh^o¾³¯–¡šÎ/¤¾æ¤0±‘|@ÓÌ?Ï,WÓoŸòÙ£í'rŠó­AÇ<ó@cù<ÎÓ–™ï¶Jy… ß£ßåˆy4	¶76ƒñ¶iÖ%¹õ¦Z
-ú»ÓAi·²Ô­¦aEAñÎI’‡_ZÇ¿ÅÑO	¶N[ÚEÀqâ2Ï’ãòJ$2öÓõò{üÕñÕ¢²W|.o.®XSo:ù1óèÜI÷Î9w{E¬¤Ğb4FOèØf]1è#HNg‹É
-éõÂèpC€çÚ—_x‚O\w&ÄØ
-Tã8¶"Á9Ã.„‹1Lê}ZêeÉÎ^E…õæéE—şP~¸2è-ùæ‚R×€Àk÷¸K x
-Fã¼L2´ŠAPy¶
-ÿ¶·í&Ğ@	óÜìKtÙqØôKfµºr(gäz)ˆºš½ï©_Ü,Âç®j¯¹_ô~OP<n ²6_+…y-†¤€dÏ˜S‰Óëî\HğkQæ#ÇMR@²B›zAõ€†qá«h¤t÷0P•Üu	Ğ(ï+Eù™Ò©s[}Åƒ@€Ê
-HÚ
-ÏüçÒÍËI£tÖlÔ%~Šú›½º~ÃĞ†dıÉ‚;ZW°$÷›™Ó’›c¯‹¡Pi¹nX¥×±³ëB…,:·‰.²¥Ñ_¤
-J„`
-÷²ARƒøD©JÒC:89Y¼Áş>dÛ‹
-¨BmôÍ>”µr——İn(æ'Ã»şºBå4`
-dt‰Â‡ `2Ï”p R€§ÁgZ+ÔXÑ—½«ôµVf¦	¢†n¸÷ëù‰×:«Òş‘A‰‰Ü##Í8Êh9 Øû€0r¥ÈM÷5Ş«X„äÛx!ş¥bù·‹É×!Cˆæz†ö-¶KöÍV“û$©Õ |®äz5W§S—O²u‚Üp‘@¤‚ù5ñ×2zŠñ¦K•˜Q>Jm¬½‘:Ìböá˜p¼
-Å¯Œ!)dáû_:57‘ä‘Äm‡©wê.Ş{‘`Ší”o_¡˜¤¶½òL”ç7—q*nôv1°ªCTåóx-z²3úë d´®»#®·^<qmš/Ø†f)_.Yw‰g¡wÈsv¹ÊªûMíö¬CµÒvºÀôó‡‘ëÀ&y£LÓ\gDêeM’¶Ş“KšGøè`CJül’çDÌ+I]g¼$›BEƒÍ‡Ô”±€P!¬ÄRàš|ˆ¯„±Ö¯pÚI}H™­}vcÏÉ(=éU”€ˆ.À	>ÙŒcOª
-@çÂ§5êz´`î×Ñd…ŞCŞÒıíÿ°‡ 7ß².hÄò˜X×èèƒBÿ4W¦	ÿ˜À*ù>/.	}Ö?¨'xK`ÃÙ<hùµÂE®ê0~[Ş¾¤_D$Ü¥„]#+sŠ»ÿ©ï¶Xò;šN7Ş¢ài†ÉåÀã…wS/CsÙ£¤oL0¦ì ì¯tŒï€EJr
-Z“µÓz	:™“j‰€FM  ±|‚ËjÿwVÎKàÎÏ*`§è·!otëÛ¸ŠßÖôù“™õ8³âÕ1
-íQÔ~Åœ~qƒ(YÕ"K•ı¡MhuüÌV}#Ü1GYS‰gˆŠ¸q.ÃÛ©z…Øş9(IÈ?V0×¼tâşç İÊÏé ˆh"ãÍzkİÊ£÷uéyêAĞÎ- ÇqIøÓ˜ŞH¹É—‡Æz€ä
-G‹¨ûóÚD«s³És˜¶2¶Ù¶!¸Nê™9¦·~yŸ"±o,mwœá¶@!iô èÛöøºĞ{ØùC 9u%è‚%ÆÙãÂšZƒJV½ı‹Œı®-Ü?2­<G`w R~ Ù¬ ò
-`œºÿp§ÿkgÈeÅ™1oßQÒêå™-NI“!3?,SõùüiIŸS‰¶^4ÿzÇm™Å™kB­”;ïi)^±š‹xÌ»#l(Yä¸-ò!üJKëÅ@bs<šĞ	©ë,.$œëä~
-ŸlSÖŒÚ®©¼Ï	ùSB¬U¸¯E©n
-¡ÔõÁF)—wd8Hï¸ ¿ÜïÒ‰áöÛ*äƒk¸)ÕÂôÍ‡ÉñçM„Àwğ€k	Ô$?Ì1duP˜£jpë¦û¦–Í…Eãêv¼´
-è=FØj|7TÊ¼ÏRß4oÅ]?>«£ê¾uŠªm\XŒPÒÙF—¿?ö†{_¥!›trêoDø†r@ä}‚ÚövÈÀ×üñP€v' J¹kNZpşŸ$OT£Ã/BoA—µ A~´±Xs Tİé<à¶ƒrÀÃHË‰‚-¨CbØ^…÷©¯ªÎwTBF¥3'¹_¢W¬‚nÚ„şÌğ‚¶½p€¢ïnLİE¡ÔdµÃ¾º¯¾.O3Ô„8ˆğ›¡5#±7iTfÊ¤geğ‹†T8ü/è
-²p‹º{‹ÀF@EdşÈ€™ıLÉÛ—ñöÂQëlSM0ïâ£è-“ûfé©^5®¼½N°© £DSœ>Î¹İœ¹CºĞ›9½s³)¢2†l½À‡½h˜Q–B+)d\HLYågÏ·jÎs(Ä2ÛDÌê[ÆÈ?s D6Ä"Æì^9,èUHÀ úì5bêµB”×}ÿ¹CÌTpPaHqëN	S•~t‡®ym:Á&‘©@À¾Ac]
-FÙ6Öšß^9ú$sB~s,­*:w2v¯—Åzìä8W
-²Z.d‘‡³3CéïR`êÚ]ãHÀİrï4j®æ!ùÏzGçYO†Ó!¢Í]-ÖJ¦Û3B‹£HÒBĞçô)ÀILG¿Ç“4¡¿¬üÅÏºñ¿AV°30KkuèÈ{ÎÌ<°Ò@×.v7çtÿ,UwÁÉ[IË†éâÒxñŠ…Uôº&ïéá†¾°Ç~¬‡€Z"ß xáuI–@O—™,8¿iŞhDÀ¦|%P9+ß*wM¦éŠ³{f¼™póm#µòJuE•ÏnûhõJQ([fñH¸®ikíÉtq[Wm
-èİ&N×:)‡^lÖ_ ®Í‹Ş›ÊlŠ,–•ÍŞ\ç³iV9 l0…v³7!]6ĞH:¿5øİıIíAîZ°®”¶ª0©œ"sY	‘©äi
-Äš>&æ`<åõŸ<×~¯cŠwß?¢(n u¤ŒS +Ìÿ¨Ñ$íôúäF¿~fwu¡¹4·e³Äæåw^‹V™Ãß°=œ?œ•^=Uœ±2!f*cO«	s\KËØ:Â°ŠzJhZ¿!Æm´â™¥A6 I	:â‚â·ÓnÜ…¡Õ¦
-_34$&UJtêÍÖŸ3{şH„äÑ­`ÎŠı€ØğY)Óëc ¡XÔ}f¥Í˜Pó‚ÖñÊP*zÚ’°p“®açêié¾5¤B>şè7™CÊæióGfáîGä‚•92W¸†M°tÊËıd,ÛïŠk£G²9Ÿ—t|[ë#ú!¸ü<èÆgyÉj²ˆ\ŒTÎeN	á†~v™‰SÕüÆÉ¬Ó\Ã–¥H{êòÓ›
-=€äĞ·&­1#µÑp„•­—ZeSöùR-%å¼ƒ;º7ÀvZıêÓ
-‡Ö¼ ²Y2Ú7şbD­SFYí’–âÜ`=K¸6;*\@I_v¥¨ŸpÇR+÷º%x‹TRßDL¸¤è¢Zx?áŠØ¯%ª¼§e<rš@×C"úÜòñ¸Ò!KèU¬ŞØ…G	b£>Ş…ú×¸c#KKzÎñ )¡é‡=IåÄ§®ˆ‹¥Š6qxŠK¬ø¯a_/àCE0BqÄïGg½/“cO/q¡–À9\üEà ³Ç©4¸åfÙB¦:7¢E®¼È±àºº¤ÑºÆ7û=ğ²‘š¨³ {®®Œ¡æV
-6TçœQÉÁD×ÁëzÛæ»`ïÓu3í´Š›Ä’ºD³¥{Ü#0_óUeƒº	ìTŒzHäHÇ5¿¾ÇA¾°'ùğ(e‘ô»"dNãíÓøêM“ÿŸï$¯{[+‹6c~2~kmkšjÎi‚"\u–şydÙ£îphÇ&Ğ‘Ì—ìÎkÎåŞ²ı= #PÅÁãÔş]>Î’eÀ¤n6s°ŠÀJï«[ühÅ},d{M+¶ëÂ¤j¾ûŞ'¡ƒiğĞ¿¬TüqÏ@™'ÃpËZ²Î
-mß¦[Gşœ5{mÂue\ùÇä‹)bqŸ?2àÃúÅÄÌx?«©Øq¾ªÒ‚D‚×³öI/é	×ôì–$–½kŒ?TtûIĞØV¦>ÒûÎBe«È=Oæ¢mÚ[_$CbÂß™ nü™;K_ş.˜(³×»÷ew-]P2.Iè`¡1·ğ\vËL,.·Óà¡&¨äå P‚?_z]ÃTÁhAz[Í“kJğ¸‡l¡nY:ZÃ‘âˆBı
-¹5ÑSG¾B°ßĞ—ã
-›N&ÿÚEË¦w
-×æx†“‘vá~óL—å‹´‘3é„fBÕ¥22³øæ¾ªænB‹Y—ƒ¨ÈÂ-wÀğ 
-x[ßÆ›¸/Pwí?›òd¦'Òâ‚äómyBÑlØšL=x¹ße¼£Ì£äccæR{Î–!sÖï8,8n(­ê-îßFoN~qj¿÷¹×¥™ï&Y³´hÚ ‚ÖÎuo†ğpb0ˆ^ƒ&Ùu|ñ	Œ;"$~úfœ‡ëÒé=M‹¥×ı;Pw{$¦ªÄJııªÓzcÉE”‚ì¡7İv«D¼
-uf×ù´‰ao/›%0é?®?öÉq¾4kX (\VJÂ\şÉ®Ò§‘“‹hºW‹çó´A¸_F¯;©ª'ûŞ¬Í)Qù¼šß)p¥Œü-TE˜fP{iìúÜ…ÈêQGë‚×øs:ğäÌQ`}wú´ÛãVÃ˜Dpº—û³ƒøî ßHÊCÍë%¦ÕÔA¢2İm#Åú¦_v›(3|A".¹VíĞ«Æg/‰–b>ËsÖÈXV XÓ=Ïß?Ò-\äÄÍªsÇ…ËßšÑJˆÀ#€
-˜;êXN`çš—ÕÉEqÇgàĞ™¼¾2şÅ€€ñn?PâyE7]}èœ=Qâ~½iUeœÄzšŞ™k+©6ùJ¯gÒŠ©fÆ¦û”;üR9ØÃ©ã×í‰½*¦@Y'ÁñRã³ù: Ø Ì„:(¤fq>!{”ÚÊBŸ2Æ#2¯†xqü0Ø¦/Ë®>ÙQ› ,'ÖÈ7–foš`·ÆECrÒËKÅµlK°zHÿEr¥L1)s=¸Ê(±i¡£´‚[©¯«$ûµWâùƒØùizä÷ÍŸÜ`İìó
-—ÜXùÆ§t³?ÂŠµ’úªPdÇUƒÙdm¶—ä`g‹@ĞŸºû:Ó}4+èëÑ”¨Ôu	?Ìzï‚¦“¶”o¯U:É´ê¥W‘÷#Ë+yH®ÒÖ¬b£VsAG°£æ~.V4õªÀo!~Õ?^i¿Tå{¡ÕäL›…«€Ø‚Ÿ†$ÑZ˜. úæß3Ğ«[½hgò¢¨¥9l-{?QÔÇ‰d9ü0”.	İÕ»ÎÕKWË®n{Öµy_Àù®PĞò•&qNÁ91õÙd0\}Ü{q—"
-àŸîCÆì÷ì€XÅ¾¤ã¨`‰EÈ“@ÙoÔi>Áš'cäÿŒª´Êªê’èß‡VïJ·ìh€’Ò£mòï9ÿ*Èë9!6Î½fI¥@ÂH#ÅñG#úì™3æù}I¨ûÇÊúAk“‡H<<ï–û÷Š³V@İ€õCs¡Ìß™®–}ÁëÌÏzlá¥#SH}KYÁŠ±¯C¼4Ì#$°–t¿‚wóğÎSŞ>Ÿ¨ÉÙ†7PgZ	ô‚ñ¬\ánOÛÒ»	=E`±Ï7Šãi›Sè	œ-:ÌCò»Ñ
-Dµåë=|`£Ã,È³å§fû¢ƒéBáğ£U×"­Ì‡`,VyóÆ"²ü‡S¯R[UÈPôôPTš)ÇE˜G¾óµ³!^‰ßxUaoçÀWW#*Ó0<ÕFÇyçfóìÃ
-¸»7´“yıTsSËö|i«ßP9R{—s¿Cô f×ø®Û¼ÇU©ë’VÖÌjX{El¢a;Ç	Íışt˜2GbÌ·|»~¥cËÜECj}v£ÿü¨ê@x†>]7†Hİï:;Á­n‹Ûaçé°Õ\K
-Uµ¼qá‰SZ¶£\,4ÚG$:…2şÑTX€–«fôfôÎ·RUÁ h²iÅxÀ¨ŞÄë[?ˆû-\ûâ·xå¹MDş™¤Qr”uåşê(ÉŸ¢ŸHdÜµéı*ip{G3 l!‘zfYªU‡şÚ¦e_ò-æaP`³ƒğ>=lĞ—²WæeF‘Ù`ámqÏı,lñÙ[†ªğú9„ÕëIÛ¤ƒğ±.ùz5İ3Œª r;‹{] 	îÿàÜòÊâ~k{<–JRp§¹M÷X9t„˜—y
-L‚ïåïşzâX2ëbX1ùõµKy9AR×M…êNítá¿øI)UÆ9EªK
-pŸjâLds™>+ë~¼%˜Öø\UÔ½¤ˆ£JR®˜pB9vøÅqÆ¥*”2Ô‹zÄ÷à{bx6ôè…º¡ñ ı6wpFš;(GcÑÔ–Ü¼,»¦­oóÉ‹EPm`l¿®eˆ?˜Ód„zÒ¶ƒc+¯K†lkæ®ùƒEù<š³x|‚¿ËêB¼
- ÓÀ›±‡(tŸFfÕI-q9€,4‹q/-•¿·á
-_¾JEfÿ•1ïFAX$ğ^UJn¦gõ‡RäI9İb1¹
-™¨Î•pÜYıqªöüCÄp&×ôn2Åƒ)FÒâh¢<«|h@S{6OÄáu…hƒÌ+bK9ñ×xÁ@Lû¹úv¾¾®Ğ¨ñâç½,ZÇ†ëš2ş!‹LÀ9Ç@v×QŒ¤b2=êHïmrdnkiĞÍÏ†¸•“'¡ÖIñtÖIcT3D@?_ %Ú°Ôl‡c;ìŞı•8ü®az6—¨ÙÇŒïÔ2[d1rŒšLlP
-…˜¡ Šk;¢ûcTë€A–iXG1ıø~;ğKZ¥˜¡cˆ¢¬îß-2r‹F«Í•uAÕúÈĞGjÏ†²q'3{B¿+ôó'Z`ÂAhd¾6ù#JÁô•äëŞoòı-šó|8™·1õ”êsï¯M‹²ˆãÙºk3œºØ ×ßw°×¬äÍ h!2D<Ê”îj£Q;ê¡ÛäŒ°!†N{Ù|Ãö1Ô [·Ç(²àó‘#sı&÷WGN¶}l_iV¨©#x_Ë¯*¥M¼6_°Í>„´v$Ó
- ×dæì¾ú Ğw˜.Š¦Æû~³”û¢zîä×éfèÔ¨ƒÿ™^)~ÛG(mzêÁ!°nËÈøe•82(Œ_mÍÕå¨Õ.Rêã7X§oŸÑcû¡bé:ÛmŞİ%©O…¢„ÅH¦£)„vDp£D\b|¡¼CSDİ}šâ­øÑ‘{y—W¸N¿“E•$qıiœ‡>¿„§ä³AÙNİêá²(#¸[×¬š¼ŠFîÃÑŒÒéëí7¤h@Ó¼a°k§¥} ŠèÍ˜E²óÈ#Î´ûÌØÖïÛ`§Wô©q
-]U|~ÃÿÿT°¯­&ëÈ¢].ö'ÿjArÀØªm\õZañ4ßQŒÕKa>!òm„]^­-[(Åøu¾¢üüŸÈWé¢ ¦è}Â¹Uj°Òt›¥©†îcÑNX*´çt­La¸0Kw|t¬+…`ÙàÄÕÖ7r¬µFÄçAßpXêİ÷"å+RÃ©ÆXï¡íŠ5çá«u¤UÖDìúˆü@uG™xÖ€«evuºI8]‚oÕÍbuôUz}YÑë{u‘<6Vˆ´¶ª„	¥õ¸
-ÿï0—w`šYÔx±îù%f}æšÓø`i² _"(m5Æ˜ßo¶©Ê=	¼×‘xC^’úµÕÓÜC­ÿ{xDøJ4.8	0·<‹L8õÒ¸à4ƒ>#MéŒ?8šÊAÂ`ğŸìûzz6Ïšíù¯Cı	¯ë°ëx¥A¾*}`	OúH/¸«ñ°“ÚùñĞ¢™úBDÍÚàr¾ÍÛÃ-É©ÓŞÏú7(HüUµ–C.şÎ/*åÎiÚˆ<CÅéøÖ² ’ªxSÅå¨ñx2ïÃu¿¦
-
-4T± íè.wS‡ÍˆÈ×Š"YtwŠ“ÕAu/õb5!ÄŸ ó¹ÆÜúÇ,xÍ'$eu4c£G&¶FUd ²ß€m9¶÷bJÇ/QL´,Áşâe™Ø7 Ù¦[ãáÛ"ŠXâíh¯k©ü/]`ú_©Çg‘Y<’:ĞFSä÷ÄIÛ`‰ş‹üå€ jA"’ÔXøGG*ÙL‰#¤fy)«ïyuˆö°ÃÑf;¨»/*€÷j†YC<¾ Eü}™nƒëÕÌ%Iøt©¨ÿØ®âõ|Zãè–%PzLôg<
-DcØs¡ĞG¬Ia‰#?âÏvâûQf©ëSc~SüKnI’r$1ø{
-¨†àİI<ÚŒË¦3‚ÓÏãiÑæ>'Q²‘ãäL8ı©ÆÔ¼$5+±¶•ê«R~)e_Ì,A\UÏ™øø—äˆĞëú	Y=#êí0ênBå»m!‡Ğá“õtwÂµïz<h\@HUcG“71œ"öÛ2´êH»"”Ç-°¹›Ê.1mc>Äåa„ÔòIXá|˜6a¾¼“,ï‹œ^gªª¬Ù+„—bûvÕ¬äThü
-µj6mwŒ¯Ş!,ò{°OÍ§½¤7fh#P¬k€E>Œ„"Â¡åi‘/©ãõˆdqÿ–£à j	Xt»s¸­ëC.7*@‡Š)Z³G´°L_½'ç’È*ıìéRç<É²¶[K3®U~bg2xÌŒ\}ÛÉÆŠåû×Œt4,&‘øB=¡>»¶Å²Œ(°Û#LT
-ÚÙš%è¸g!ÿ’Í´û”?YcrYbaÌ†©™}d>¤wMŞùJYk./gÂûïcµƒ Ì»=–œ«L^.Í=
-:°‚
-òˆ‰?ÉïáœĞnF™\k¡!!7…¥È".âZ—‰§¬d<w–l˜W.ÆÏûì•jŞİ¦­ÏØKëÑ¤RF?£èbf‰cä1ÙÏbó©Ûe¥ÊàG@~‰eÈ—Ñ%># İ2¡•1"¼×iµK¼ZæÂ—7rÄ…é™–«u# ¬N4…^°¤Âê¡t9×ĞRJ#'ı|ê'µkJ€®Çù·%?14ZyğÈ+t5VïpèâÜø”[CjxÄG?gâ<]ÈÒ–şñÂöš¥÷1\ş¹	6#l
-ìªlguˆÔ€2ğÕ£İ6&€ŠäJ<f°Ì°»™ëó¸ƒ€Ùİ¤>‡ôC%ì|”²ğª½“îR- İ€xÖÇ€Ï2d‰Å­Ÿ"±âºœ˜d"˜Óë!ä–½%ğAB£=Y¿â¨K)Á‘Is‘ƒ­zº¶„U Ö'jlÀMC{‹GÏ®º>¤³E¨Á¦õ)PlÅ>Gí_ÓÃ`@Fl¥íåÚl&æjŒİ—r|zB}¯;t_VÓÆ4òpĞéßPU®[°\Pá†m!Æ÷c< -Ğí* –‡wøJrgªÓ
-,Ü¨÷¼Md¼L¶µ×ªŒQ"[ët.‡u7·ìwÿúóE]…ĞÛ (g
-ûÀOH­”ÿdU_ˆZá;ÌğqæÆYˆ^íU@ø¸›È˜e+4¤ÙÿñVµX\s³˜˜øP‹C¡8†=çÑ6‡¹p<fX´ã ½MŠ"lu|¢(ÚŠŠ(%èÃÿHæ•§‚m«1:{zŸ›ß¢+Åb™0lÚãÖÆë¿À‹¥T‘ Ènv¡¡[Ç+ä1íHû·£MÍìÎ£ïÊÖ³T€€Q7²ºòA+uŞ(8®
-ñpDÃTÈŠ#]¢!¿iw5¦„è¸9Qº5u®>l.vVÈ3-
-¥}
-•õ÷\a¡KŒİtò•f§¢³M´ƒ+3„[£f' œPàƒ~xQ·j²°±#n)OÁÌÏ1,­{­˜™Ósr-Z¡~1TÍ·DjaÿY¼-Áœv˜=şOU—ˆ-Ôz‡­zmìf@ápê8K4\¬X¥Am“ĞHë¯µLF«pØåT Æ¨„ĞšªŞÆ§˜	A*LcúÉÇ©êvã	¦ëÛüĞïëáP}/«ziƒ
-;ñ*Ìµc=oaÆ3h’7â­óìğæ~†fB	2FÎ]xh»ò’`ÿ'´ğÆs™ Û™\|qd¶S 4‡{–LOGÃ9«GÒÒîÅFÑÉŞœØš{$¨q.‡‹ˆó
-Ï£-m¢®PPS¡ièŸ$ÑÈ<é‘ìÌÜv0°O•ïFp|½HŸşW×Ø8šÙäšx¸˜Î5y¾Ù›0U½$è«ÑvÆœY^ª{}_ÏLÈ\Œ˜¼ÔŸ´hÁ2~#$‡Š#‚gD¥†ÿÕ´¨®]wïº®“\HŒ 7Íİ8
-ëó@¨ÕÑ©‹u¼•Aè=?á)¸ñ‹¨éˆ¢î>!	QF@ºÆ˜† HûŠÛŸ~-‹ÏáÑ¡ciJ‡§¢İ  óÌ—©¿Jó’6¥sŸ‡ğõÂ(×9Ñ–¶2BJµ´wq+ AÖwÆY$2Ë¢êg‚2i‚~ê˜ÇbmÓ¿YÁÄ†8sü¼ßµ›ámİ!ü>¶d;81¯OXøSƒ×y×sÂKç/Sú.ïØ…€Ø¯²vd,D¶‚d>ñÏÇ:ûr­ğy^h55&uù
-b’öók€¯@Sd#÷6·¨à¥ˆ•mç=gôÍÉ¥fé'Õ£ØßgG-Àˆl…Â9Ê¨xXìóñODìw>:RttÎVÖ]¦ƒ¥Ğá›6ãî+»±‰Š€Î¡bÜÄ£CÓ¼/±×Ôi¾°úÈO-İ”İîÌÕaq5ë%ªe»áÏ[I÷ñ9±OyÇşâ¡”`)®‡vÓn(ıšŸRÿ‰^¨â* †¿ È¸©øÂû@™ÇVr·ë–F{¬ÍY_…ªSÙy×üYa´€É>òp.š¨
-ÈäøøùÖL´†"
->rœ»Éx	Î>Ñ«áéÅÈK}	ÒÁ±ŸácïE0é‡qtüK©†V}bgÜ<t„pÀï±j«6óµ$kï×OÅ„¼`˜ØàÎ€Ç£LFŸ4*fbNû+‡[R¨’`Å“T÷B@å°Ja]U^™è%ğÈplÂœO1
-ù›Ë:å¯]Eh-µft`¿É3ë»Ë½®—-À¶ˆ‚,pq®“dÕûÄRÅQ7WHŠÉÑï˜œAkˆVÏ¾ †“8­™"z¹	‡
-EÁæÄxÛ–ï ;éO·gvÏàÛ—`CÛ	=Šn"~1—Ó«ºçşÎÎf<
-ùŒöì±¯È€äØ5á1ì ú[çz6£÷|	ı³É”ğÕ]ƒ%–üƒ
-‹_ø•Œ+4*mæğ.U¥tÙØŞ¡Œ­<‚;"ïºÚ°ï·²1Ë‚_v»‹V4U’å@o"(È¢ÏlD™ã2‚šº½ƒáÜş@0ÇÛJLKº¯y·ZŸY×£Çsò•¾MÒ»ëç¼Ğ®áå·p%Î{‹N
-”k3ğ—WİÈT
-èÃß
-XF	éowálTìekáb¡áÕ²·6FÎûÈ¨NŠ5^í7YK”I:O´ØÚeÕ-w‚ıÑÏgÈÔÄº¯å
- CN+—èõ§‰T¾j7¥jêˆKCeŞ­=ï’ŠÀØFœ˜ñ¦şÀ¯ò?ßìí-Â³QjÀ¨[ìHÄ:‰,ªáµ@ ±"9Ö˜§²ébúòô…ëÉ]ËÖRñY<šsÚvJøõè”´¯}P{Æ1¢‡üaÀûZıÒàËWrÔÂ.¾ŠåG"~s¢¬½LcŠÅë
-dvÀÃê_–šª)ºsÏ±ä<ñÙŞÇã°hQÊÏ	{Ü6Õ”}ÿ«ÄLªxÑŒ&ÔU@¹İÖY­•ûßb/ÙmœĞĞVÜTÍÉ¨û„lÀ×ì»*º¶‰éRÒ|¼|€ıSb#í‰%(©AçÑW­\[.öçÊ ö¿¶0Ö‹$1c$CğpïL^‹gQgìó€UzÒ­õË-v¬ù[¨sH~ÒBı%mîOVóÇ Şˆšïıø1Q´YBôVv×"¡K¤	}MFÜuITío»B8M&€g
-±15ìÆ
-kzf1ğÑíú÷`]hQ_gGıJÜã”ëŒàâ[£¸¹ı…uo˜<×6Å_1#°ºKS[èt>7¤õpò¥Ò:Ué¦ò·2]l	-3“åãÖ€AÃ¬Â·d%T¹jï.(äHƒ_§	sUp“„÷JÏ8ñ°1ªW{–X)hs¶ß·[ºÖÑ§`ôâÑ^¨çæ2Âİd¼úê.ÓâÌ>A³lTVú|°Èœæ£µSæ-XÉ¸GŞ-¨fñ°ã±æ°6„³a{Œ×äÓdmu
-Œ±DÃBb›ÏèB=ƒlVzÎ‹âC*’êwÑNÅDú›¹m£RpÍû˜bØ<İ	?–êÊbÀz1/zMZLˆ1Í W•mR}]	vŸ#ÔuNß‡Xı²ÍCYÔKfÛš‚µ…q¶I¹.PvŒÜ%Çu5ã 7ñnİáİ¹nÑ^şÙ+áå€˜ÃM×„Á–™˜ÇL[eÜ¤â(Å‹×P.``ÄY^!ù¿)K³jXm4Sm''D`g!Ó]£4fØ¼fğ•º*vªñÑH
-.uÿ_äÜ?‰8¦
-„iä3&s .ÃNœ¾•’ëÊh¿cğ >d¸°MğÙ<j½wLõıVØìÎà™¼g0
-…hˆ/‹nÙé|º{|—‡Lb:|ÛÂå§À–emm˜‚V\#x¯±JvG±İ‘\û¹cĞÖõ]İĞ2«ær‰ q—­VfÌ~2£L>Á“3oŠ˜ùKn{ƒ–ö“»ß¾Å8ù#!©¾”Â"K5÷2Á›ºuÖhı[û¥­éÇ‹¦—bIòX¥% @gÙƒ£Ògä¿06Ï“GN–øg—õDtèi!
-ÃG÷}ŒA·şókQ–µİn„ò5•!=şİÄ!Ñçàşá* œÆDÔRáNØŠ!`5VI7äì8¯²[Ye M¾\kŠ {	×FèM¨€¯Cky&ed®S¿5˜¬aØ95hÆYõŞ%9ÙôH³šZ°İú²]‹ÆØ`úí1v~xŞ<B.79çk½¡[½ÁRiLöÎu%[z´ñİ•/²ÕúSó"ÿÚŠÈìE)o}(Ë9«ŸW’ài?yîÒ#†ü¬~w«>0MÈçcøÃè¡‡H–Í2¼yãC xYÛ…
-”T:\Ïñ°şşÃbM“Şİ"ßI==/(Vz`ävöª¨Ñ
-*&mL0Êz~ä¡ÜLt	Ù@…;>\à|áyÜ°òŠ€á£Ağñ—ÚT(Š8) ;‚áSV´Hïj–éM.ã]È½é€"'Ã—I:şĞÅ"ß1bN…óÌTÚj!‘øç2é`šÙ—Æ¹ÌTÒÙ!ñ r2Ãp®e|"öÊŸT<¯c¸Xuî7ì:D2ËVu¾àíû¨Ä][sÑÊŒaÚe³ÄfÀÏaÙC,r³Š@àÕ&²	,/AŸ„ €››
-'¼!ljøİoñğôåÁE+Q¿Ii€=pvá™2‚Èi)~“—©äğüøåyq»êm„#²&†ı¢,í­>FŞ›š46íé<Œ)×‹L™—ßQtÌÒ|ü<™ÆK"ÇDÄÄ˜–şñ· d„~O°Xú¾qyV/õÔl·Õëdñ0 'ãuCµ`ıÓjóÕ¯‰	*÷Yœ}^‘MĞº=eLÇ¶oHª‚_©×ïçî¦³V*½Y4SÙÑ{ËIõkş¥ê1ì¦´HOB,pñ]¬âÒ'B)øõ›œôã§™
-şƒˆëæ©Èg=º¯V!YW:Jšá9S´è'¸x	2{ªFŸYÎ›»YÎ-•Y†e[ë±•Á!_‘<B¨¨G·áÌÖ?|C“?×HÂ)âòhÀÕ<¥#»?¢¿ĞĞìLõ(}ç©Do@Gèêï¡‹âFºtàá «úÌüYôñArÏ©u|ŠNB‹‹åÂŸŸ$s+M¹ş)Ò¶<VwmW‹c2¬!~Èy//hMbueÕì¨âBˆ0q—ĞîˆY|VØåÖ9KDàÈÚ²Y‹õ”ó³–r¥#
-=Às’8
-]$Î)5ÙWr±B‰ÌhÌ/ìè¸û¦EB(G|ÂìA§fé¸ÄVKZ¡ã¸³ó>ş¢—ºët1†¼Øó‡¬ü
-õÌİ’ŠÇıôÃ6İhÚ|gSÑzñÓ*Èäì´	)	²ËHÒ€TdÅV?#°MJ”¦òîtÚ.5…W—©rœHŠ]8:vu;'Ô‰ÏâÎ1‡ä'©â±g@ÌÍ01Îâ×¼Hzç9M¿	\—%¦‹¬¿‡ë›<ÃLâÌ!aÇ•áÏ^®ÂÍÿ¢±1áÍ;Îl]îï
-°OßîÊÚÀœGC.©;qÛ‹`;–è8`M£Å*[n
-Ì£‘Ş—3xÙäG×üÓqåã{;´¨ÿSø…‹ÔææMì¤ı,‘*J‰µ©yçÊ÷W¬p—R”ÙÀ§ôÃfĞÎæ]	şàÅ{$|CEƒ£FÅz„‹}Ò@~£Êÿû\`Ÿñ$Á–Ô¦5="ÙWqÎŒ½¦UÈRx l\tğ¥Äğ™Ÿ‹póA_U\á4„ôŸzÙÚ¹˜»<dWã}
-´Göº Q2’dû)xšNdDíëPNò½@oá
-‹˜â ã8¢™1 :Ç„İ¥³¡!˜±¸¨Ç.”-¾nGoi.5‰Ÿ§ÛR4áî ¤ÿæ-{5P?yØ†@D¹ë%ƒSî3Ó	˜ÎĞ@ÉF|ùÈşh~üjŸY³_
-Ü¦ç%‰2¹æ¤÷N„ÁÀ¯+A=Ú~¹„D9qÛO¹n1ğê¾}dôl sëŸöo2c²ep8çi’6½ùd)tj”•ÑÊğ=ËŒ©ß†T°ài!q"ë¤2 Md¼¾û—áÈ¤
-)Í†[ áÿèõ—Ø¥ÀĞ¼ÀQıKŒìÓq­}J 
-(¼Ûøv,±§6à˜¯P>­b6Wp]ØŠ‹zIIíÔV#¦t¥Ûú5÷ëöşH_$ÿı=6.T˜[g;·ŸIşÎ)e7Ö½~4QÙî÷_ÑöœŒJg0JÌ&İó›lE$(Ğ“½éèÏ—†­Ní'EØ–8ª@‚ƒ1‘4ŠÚæ5S»‚‹ƒÜí¹k~
-"5Ë¦Ï¿^À-ãuÏï×²±dÍ‰ÈÏÿ•_+åE	HómÛåÊßúš,P–*%$9Êßó&»>Uñ8‰tõéÁ
-• :@¾¶ª0ó'¾\.©ÀTöOİ¸`¿•TÌ÷·C»Y@"ö·46Ï,bä•CÀV@£óŠ/´€•Z:ıİeº³4ÓßW•z]²ğ»€”ò‘MU¾nÊÿ)ï…^ºp†şª¢†^ô›xº¼!ö?CÈxüü°øÊp
-5¤ÅÀR#¾½¬cs…CmpĞefLUÓÏ˜òÑûñ©›v¶sµ$ë~—Îºô4S´ªÀÏ÷•	ˆ–íÄåğ¨ğ9·RC$ë°	uÂÊøát@®Kå@´y…]
-İSù«^8ğ¡¡jÕgªç ‹Hào¹^jTwŸƒØ„—• ³;D2ô>•r’çR€×œ³poÈÜE ÓiŸõ¹ŸªSáNüx¤lOQêÇ÷·—Ã’z#ZjàÁB'êêC·õy‹|Íi$M‘¢õí	¿šFÃ‚†pƒ_8¶4k„€êW§)Gú%¾Ì3­lÿê*–3¨[o¥¨ÄF@)»L$´X,«òô¡ëGß?»Ú™‡ûöoÔÉ`6=î¼¢1
-ºpĞZŒ†°¨ó(EoZ"A:ÕKG,
-½>)´¹Y¯
-«ƒ´h°ºÅfªãDqÊ‡°$FµºJîÁc9ú0ß¹ÈˆÔ:Ä—Áª³‰Ù±Û¡ÿWÓU\óê,FĞğ–ƒçbC@QÊ#.¹´5RN½÷«Q£^U'‚—š­Ø+@?~·®‚*¶	­!¾Ò`Á7oLÑå§‘ø•.]ÂK1Ûï¡ªï^§‚a˜
-‡4eA‡òcp¾»)èşÎµ–1;mg7FlÿlÄf x°€ú 5gDq=gbºÈoõvâÅ¦ê×7ùû49Û
-j‘8{ @Ú<È0²{ÄHöÆd'Ù´ÜÛÒü,¸iY°@HqmK¹FÎ‘•™ió¡‚*—2'À¬ëß¬Ÿ
-šÜşpUãÛ6*¿	÷Ø¶¥¾P©WÈäf·ùÖ÷[İÏüåã"£­ó-‚›ËÛ¨BË&‚ˆäÓ‰wåø—áÇ,åÙbÌë¡3swî˜®ß
-6:°õ˜Ô	½™ƒ}Õ@(Naç¼¡æe!o]¥Ağ(Çú¢7U7ãŸ48¯ğ œŠf3W ú§(I¦blÂ/-_ƒõ­ü`Pÿª<ÿ“ı¯µ÷ƒàû
-ıFddV6×78šÀÒæÎøX¯9f ©î¤-’Aî…š‡É¥º+?Ïæ KàÊZ9ÍtuıáÅòÕ¥ãqu¡­ü;ä˜TÌX„˜9è‘S|hs7:¼³D&Ì5+iáÆËÑ<åaDL§H#…f™GØJuµÓüÛP±Şß*á§ìøÖÕW“õtŞ“' `Ä˜(v·¸I–ÅB’*T¾ö³®Ç– x·ÜG
-;‚£A tE ‚ö±é;©©÷ç“Ö&ãÁ°ar/@^>›(µC´¶
-àccÍí¾ïj‚÷r‰÷ëp~7Î¿I¼d¹CR³?­SìNtm·›Ì¬PAÁah¦‚şî4(‰	TXphrÏs¯ğ÷Pò¸N ş,iÄŒëêËŞæÔ4¤âÉ‰µx:/ëÍÊï;ôôŒÀuÅÕ$PY&œ ìSË|‡ƒàısx§¯×ù+Z‹è.#6®øíJ²wMŸåOÌÆ&Å—Øi™¢“øåí£&{9~iÎõ”pâ	’’¯«¤§Ç1Cgºåá®f‡@ifÑ²
-Oêlñ·
-ÓM;u9ÇAb(CÏ/xNÁ+PGzÎzH
-²ƒxÁgI°fÃÿÁ?¥åj@
-%«Üƒ™ÿ@¢!„{“cC_kæMf>}³ƒÈ-UòUÒ„
-5ıüÑ¯,üIT|Òù!ZÛHµ©¢Dƒ¹òDxzí+yVĞf-ú§ó`FÕ§|l¦]Ñ•¼EúÔé “ÄRô\qcº¥’‹büØ—í_ß—¢Ö‹ø^:Îoy=†@¢í%êÇ`vyÍô¯¨la†áüá}É´3…İyÅ=Àea”ü8+7b) ªñµäª
-¾wúĞÒA¢zl¨ó‰¡…û44İ+X#;áißÑ(zÎávŠ(¬ÙË¿vıé°TFL›†-ú™c„™Ío•¥÷SËP¤%íítÎ·Õ?mö†âÀn¡y“À÷è Úx¯‡prîv2ÃÌHïñk(Y(LoXLGt·9ó’k/×] ¢ˆ×Ú—|JìÊÀŒwÕS-'°÷Íê£“í[Vp\p^NÜ›Ø½ıymî)¹ÙŞÀ+âŞ<ó~kÌx Ü×éO”(œ‘ëTwX@7 'Í-ŒÕóĞo´L®¡º
-±z”MÈèu0Ö2a»İÉœÉç.ĞY
-î:4Â˜!ªC\” ò—ÉH­e"®ñ=m.M3©,ıÏí!±¯bk0{ %ôMEpçîì¸-ÔÀ¯f?V»-ƒ[ç$qê*,°Šë¨Qi	ü/“#3ÅØDÎ'¸E;ä•Æ^3`+¾ª€P47Õbë6° ‰J1á·ÔÈõ!¥Ğ< 2}¼•›saó&M÷'çãO­	X+ïêh¤vDâW´¡3E{…-V9Û›¡–mN4ÂÅb“ÉÕäº(¥å…_Ë@Şã''#¡U
-à'-gVÊŞ$4e¯ÚXÕß9Ñ„¢³íšßõÊÓ8W…;î˜kÉwš?™mg–/.ÆŠZÇdLÅŒX•™ŸØb8µĞhÅvñ§Û¯åşâä°'óòFŠfë¶ëtnA…ºå»sêªˆÔà”tÍ®ş mékõÄBT¤–~p§HÖä>#¤êˆ½ctjï.Å÷Àå ¸¥¨œìÿÿ[m:`¢<†—5àv÷!óY¼†¨2÷.æŸÏƒµ‰}O×Åİ˜ç½{§Ú”ë«CËò_ÚËû§†Â
-ÙÔùçÎ™È÷šF?tÎï˜›Ùy)®üÓÏ«’ùG4íşì+ú^S…P>%õ¯{ @÷LuİÈƒ¹frÜ}!;%0tòØ5†V6·Ü”‹›A±O‡¡ï@6¹·Â‹å95ÆI“éusøç)@(ó-`–ùéœ'ajz–‚»rgŞ²V`XºxRÀ.h†ŠªSàŠº¶ªôMÌm‰ÀÇ^9*©_1ÔÇ·?Áyi3I’ÆH_·½Ì°ùgôx D|‘\MŸÍ	Ñy+ñ‘ãÀ­(0h¾—H®À1
-oëĞRHj­`§¸.)õÆı° L$·C<3 ;–NÒ©ROq]áÕşÔX¡»–fƒÜ¤°«å†BÑyéÉév ˆt}·ƒYqùÁíÔ@>Ú	]Å£$Óei“/Ò€×VoßF39ËL 8q^]~dÉÛ}ñıQjji¾»ÄbJ)—Ó'ƒrƒ€ÂØ®Iç'¦Aj8ËH¦æÿªãÌŸ'Ã²Sqˆé5³ØT¤íäC/X÷£ŠÁqyê·ş˜¬ûŠæ:ÙUdÚ f¥šp¦©ÃéÆD2

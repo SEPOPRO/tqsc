@@ -1,0 +1,6135 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "name": "TQSC v2.0",
+  "creationInfo": {
+    "created": "2026-07-11T02:42:35.379706Z",
+    "creators": [
+      "Tool: TQSC SBOM Generator"
+    ]
+  },
+  "packages": [
+    {
+      "name": "agent-client-protocol",
+      "versionInfo": "0.9.0",
+      "supplier": "None",
+      "SHA256": "f8bf8347948d023d"
+    },
+    {
+      "name": "aiohappyeyeballs",
+      "versionInfo": "2.6.1",
+      "supplier": "None",
+      "SHA256": "9a832800e062129e"
+    },
+    {
+      "name": "aiohttp",
+      "versionInfo": "3.14.1",
+      "supplier": "None",
+      "SHA256": "4482bdc24fdc5dcc"
+    },
+    {
+      "name": "aiosignal",
+      "versionInfo": "1.4.0",
+      "supplier": "None",
+      "SHA256": "0dedc2a6022b5ab2"
+    },
+    {
+      "name": "annotated-doc",
+      "versionInfo": "0.0.4",
+      "supplier": "None",
+      "SHA256": "91aa47e204704e75"
+    },
+    {
+      "name": "annotated-types",
+      "versionInfo": "0.7.0",
+      "supplier": "None",
+      "SHA256": "c369c0c3212f2e28"
+    },
+    {
+      "name": "anyio",
+      "versionInfo": "4.12.1",
+      "supplier": "None",
+      "SHA256": "644a1d66f17e909f"
+    },
+    {
+      "name": "attrs",
+      "versionInfo": "25.4.0",
+      "supplier": "None",
+      "SHA256": "8cc1d95ef8a01c84"
+    },
+    {
+      "name": "av",
+      "versionInfo": "17.1.0",
+      "supplier": "None",
+      "SHA256": "3ed11b836d730e9a"
+    },
+    {
+      "name": "beautifulsoup4",
+      "versionInfo": "4.15.0",
+      "supplier": "None",
+      "SHA256": "9da9a697ae424c14"
+    },
+    {
+      "name": "boto3",
+      "versionInfo": "1.42.89",
+      "supplier": "None",
+      "SHA256": "f145ea2b8006b7a3"
+    },
+    {
+      "name": "botocore",
+      "versionInfo": "1.42.97",
+      "supplier": "None",
+      "SHA256": "22eb0af55cd8d27e"
+    },
+    {
+      "name": "brotli",
+      "versionInfo": "1.2.0",
+      "supplier": "None",
+      "SHA256": "29fd4bf3b8514bc4"
+    },
+    {
+      "name": "brotlicffi",
+      "versionInfo": "1.2.0.1",
+      "supplier": "None",
+      "SHA256": "92af9486e7662c85"
+    },
+    {
+      "name": "cadquery",
+      "versionInfo": "2.8.0",
+      "supplier": "None",
+      "SHA256": "4d3b9980777215dd"
+    },
+    {
+      "name": "cadquery-ocp",
+      "versionInfo": "7.9.3.1.1",
+      "supplier": "None",
+      "SHA256": "922f94dce533d477"
+    },
+    {
+      "name": "cadquery-ocp-proxy",
+      "versionInfo": "7.9.3.1.1",
+      "supplier": "None",
+      "SHA256": "dd2d87c782259b03"
+    },
+    {
+      "name": "casadi",
+      "versionInfo": "3.7.2",
+      "supplier": "None",
+      "SHA256": "b7aaa07a530a0ad3"
+    },
+    {
+      "name": "certifi",
+      "versionInfo": "2026.5.20",
+      "supplier": "None",
+      "SHA256": "4704c226cf1db226"
+    },
+    {
+      "name": "cffi",
+      "versionInfo": "2.0.0",
+      "supplier": "None",
+      "SHA256": "6526d6d8370970e9"
+    },
+    {
+      "name": "charset-normalizer",
+      "versionInfo": "3.4.4",
+      "supplier": "None",
+      "SHA256": "c45ed9c47c910835"
+    },
+    {
+      "name": "click",
+      "versionInfo": "8.4.2",
+      "supplier": "None",
+      "SHA256": "aa9fe9c814ab20d3"
+    },
+    {
+      "name": "colorama",
+      "versionInfo": "0.4.6",
+      "supplier": "None",
+      "SHA256": "54041873a24e42be"
+    },
+    {
+      "name": "concurrent-log-handler",
+      "versionInfo": "0.9.29",
+      "supplier": "None",
+      "SHA256": "475b2b5260946c46"
+    },
+    {
+      "name": "contourpy",
+      "versionInfo": "1.3.3",
+      "supplier": "None",
+      "SHA256": "a5a0339db985f649"
+    },
+    {
+      "name": "croniter",
+      "versionInfo": "6.0.0",
+      "supplier": "None",
+      "SHA256": "c164860027fc4aa4"
+    },
+    {
+      "name": "cryptography",
+      "versionInfo": "46.0.7",
+      "supplier": "None",
+      "SHA256": "ee57ede016559e8d"
+    },
+    {
+      "name": "cssselect2",
+      "versionInfo": "0.9.0",
+      "supplier": "None",
+      "SHA256": "8637ce7ef2e7a5d4"
+    },
+    {
+      "name": "ctranslate2",
+      "versionInfo": "4.8.0",
+      "supplier": "None",
+      "SHA256": "7eaa48bf7a6e4abc"
+    },
+    {
+      "name": "cycler",
+      "versionInfo": "0.12.1",
+      "supplier": "None",
+      "SHA256": "7e6211e97b9d4c50"
+    },
+    {
+      "name": "davey",
+      "versionInfo": "0.1.6",
+      "supplier": "None",
+      "SHA256": "566237ebc347b76f"
+    },
+    {
+      "name": "defusedxml",
+      "versionInfo": "0.7.1",
+      "supplier": "None",
+      "SHA256": "4a4885e9d5627b13"
+    },
+    {
+      "name": "dependency-injector",
+      "versionInfo": "4.49.1",
+      "supplier": "None",
+      "SHA256": "860cba06f9a9bf62"
+    },
+    {
+      "name": "discord.py",
+      "versionInfo": "2.7.1",
+      "supplier": "None",
+      "SHA256": "25f231d72e7ad1df"
+    },
+    {
+      "name": "distro",
+      "versionInfo": "1.9.0",
+      "supplier": "None",
+      "SHA256": "9d4a4887275e4cce"
+    },
+    {
+      "name": "edge-tts",
+      "versionInfo": "7.2.7",
+      "supplier": "None",
+      "SHA256": "73fb238ae368a289"
+    },
+    {
+      "name": "et_xmlfile",
+      "versionInfo": "2.0.0",
+      "supplier": "None",
+      "SHA256": "8bfef723f3ee03f3"
+    },
+    {
+      "name": "ezdxf",
+      "versionInfo": "1.4.4",
+      "supplier": "None",
+      "SHA256": "a14e668e7196fa0d"
+    },
+    {
+      "name": "fastapi",
+      "versionInfo": "0.133.1",
+      "supplier": "None",
+      "SHA256": "4d7d54e60de1f49b"
+    },
+    {
+      "name": "faster-whisper",
+      "versionInfo": "1.2.1",
+      "supplier": "None",
+      "SHA256": "de6dbc5bab50126d"
+    },
+    {
+      "name": "filelock",
+      "versionInfo": "3.29.4",
+      "supplier": "None",
+      "SHA256": "072d238dbaf1eebc"
+    },
+    {
+      "name": "fire",
+      "versionInfo": "0.7.1",
+      "supplier": "None",
+      "SHA256": "b1304f7d5f6adfb4"
+    },
+    {
+      "name": "flatbuffers",
+      "versionInfo": "25.12.19",
+      "supplier": "None",
+      "SHA256": "929bf3cd2e62df57"
+    },
+    {
+      "name": "fonttools",
+      "versionInfo": "4.63.0",
+      "supplier": "None",
+      "SHA256": "a0c9f278d4839b0e"
+    },
+    {
+      "name": "frozenlist",
+      "versionInfo": "1.8.0",
+      "supplier": "None",
+      "SHA256": "6142684d34e02dd0"
+    },
+    {
+      "name": "fsspec",
+      "versionInfo": "2026.6.0",
+      "supplier": "None",
+      "SHA256": "eaedd83991cb86c4"
+    },
+    {
+      "name": "geographiclib",
+      "versionInfo": "2.1",
+      "supplier": "None",
+      "SHA256": "5562cc01150c5296"
+    },
+    {
+      "name": "geopy",
+      "versionInfo": "2.4.1",
+      "supplier": "None",
+      "SHA256": "2360f05d025b21e7"
+    },
+    {
+      "name": "google-api-core",
+      "versionInfo": "2.30.3",
+      "supplier": "None",
+      "SHA256": "6ff6ba0757a8d09c"
+    },
+    {
+      "name": "google-api-python-client",
+      "versionInfo": "2.194.0",
+      "supplier": "None",
+      "SHA256": "53966045847535a5"
+    },
+    {
+      "name": "google-auth",
+      "versionInfo": "2.55.1",
+      "supplier": "None",
+      "SHA256": "6a779a405da03ab0"
+    },
+    {
+      "name": "google-auth-httplib2",
+      "versionInfo": "0.3.1",
+      "supplier": "None",
+      "SHA256": "b085a4b192a3ed04"
+    },
+    {
+      "name": "google-auth-oauthlib",
+      "versionInfo": "1.3.1",
+      "supplier": "None",
+      "SHA256": "2a92df9e41bedd3c"
+    },
+    {
+      "name": "googleapis-common-protos",
+      "versionInfo": "1.73.0",
+      "supplier": "None",
+      "SHA256": "dd6940986935a896"
+    },
+    {
+      "name": "h11",
+      "versionInfo": "0.16.0",
+      "supplier": "None",
+      "SHA256": "ffb4ace323445488"
+    },
+    {
+      "name": "hermes-agent",
+      "versionInfo": "0.18.2",
+      "supplier": "None",
+      "SHA256": "d801deb32139f255"
+    },
+    {
+      "name": "hf-xet",
+      "versionInfo": "1.5.1",
+      "supplier": "None",
+      "SHA256": "9c204e09becda93f"
+    },
+    {
+      "name": "httpcore",
+      "versionInfo": "1.0.9",
+      "supplier": "None",
+      "SHA256": "85672de12e269906"
+    },
+    {
+      "name": "httplib2",
+      "versionInfo": "0.31.2",
+      "supplier": "None",
+      "SHA256": "a0a64b2b808cbd9f"
+    },
+    {
+      "name": "httptools",
+      "versionInfo": "0.7.1",
+      "supplier": "None",
+      "SHA256": "c6e383e00251efa7"
+    },
+    {
+      "name": "httpx",
+      "versionInfo": "0.28.1",
+      "supplier": "None",
+      "SHA256": "2ba7d39036ce9694"
+    },
+    {
+      "name": "httpx-sse",
+      "versionInfo": "0.4.3",
+      "supplier": "None",
+      "SHA256": "32356f50ed64c793"
+    },
+    {
+      "name": "huggingface_hub",
+      "versionInfo": "1.2.3",
+      "supplier": "None",
+      "SHA256": "f304df02bd6ffe17"
+    },
+    {
+      "name": "idna",
+      "versionInfo": "3.15",
+      "supplier": "None",
+      "SHA256": "fac8327a3884cf1f"
+    },
+    {
+      "name": "Jinja2",
+      "versionInfo": "3.1.6",
+      "supplier": "None",
+      "SHA256": "658b3c6d751e49c2"
+    },
+    {
+      "name": "jiter",
+      "versionInfo": "0.13.0",
+      "supplier": "None",
+      "SHA256": "1e58a9b7f122e7fb"
+    },
+    {
+      "name": "jmespath",
+      "versionInfo": "1.1.0",
+      "supplier": "None",
+      "SHA256": "d1ab9eda3b96406e"
+    },
+    {
+      "name": "joblib",
+      "versionInfo": "1.5.3",
+      "supplier": "None",
+      "SHA256": "c6ed42943b12fb03"
+    },
+    {
+      "name": "jsonschema",
+      "versionInfo": "4.26.0",
+      "supplier": "None",
+      "SHA256": "a26971f5ccca66fb"
+    },
+    {
+      "name": "jsonschema-specifications",
+      "versionInfo": "2025.9.1",
+      "supplier": "None",
+      "SHA256": "ef2974c2cd94bc8c"
+    },
+    {
+      "name": "kiwisolver",
+      "versionInfo": "1.5.0",
+      "supplier": "None",
+      "SHA256": "c3167dd194c1bb18"
+    },
+    {
+      "name": "llvmlite",
+      "versionInfo": "0.47.0",
+      "supplier": "None",
+      "SHA256": "e78046e65db97eaa"
+    },
+    {
+      "name": "lxml",
+      "versionInfo": "6.1.1",
+      "supplier": "None",
+      "SHA256": "2836fb8645165319"
+    },
+    {
+      "name": "Markdown",
+      "versionInfo": "3.10.2",
+      "supplier": "None",
+      "SHA256": "8fa8b2e0c67633a4"
+    },
+    {
+      "name": "markdown-it-py",
+      "versionInfo": "4.0.0",
+      "supplier": "None",
+      "SHA256": "04de474db186f8fd"
+    },
+    {
+      "name": "MarkupSafe",
+      "versionInfo": "3.0.3",
+      "supplier": "None",
+      "SHA256": "d7ba51f8c239d44e"
+    },
+    {
+      "name": "matplotlib",
+      "versionInfo": "3.11.0",
+      "supplier": "None",
+      "SHA256": "34b4c420cf240fa0"
+    },
+    {
+      "name": "maturin",
+      "versionInfo": "1.14.1",
+      "supplier": "None",
+      "SHA256": "7495d3ae0d3d7e2c"
+    },
+    {
+      "name": "mcp",
+      "versionInfo": "1.26.0",
+      "supplier": "None",
+      "SHA256": "a8338c234f9f598b"
+    },
+    {
+      "name": "mdurl",
+      "versionInfo": "0.1.2",
+      "supplier": "None",
+      "SHA256": "d100e0694342078c"
+    },
+    {
+      "name": "microsoft-teams-api",
+      "versionInfo": "2.0.13.4",
+      "supplier": "None",
+      "SHA256": "035d26dd05c6e748"
+    },
+    {
+      "name": "microsoft-teams-apps",
+      "versionInfo": "2.0.13.4",
+      "supplier": "None",
+      "SHA256": "7046e0f979e68739"
+    },
+    {
+      "name": "microsoft-teams-cards",
+      "versionInfo": "2.0.13.4",
+      "supplier": "None",
+      "SHA256": "d6409813090a0d90"
+    },
+    {
+      "name": "microsoft-teams-common",
+      "versionInfo": "2.0.13.4",
+      "supplier": "None",
+      "SHA256": "83ada9f4fa3885e1"
+    },
+    {
+      "name": "more-itertools",
+      "versionInfo": "11.1.0",
+      "supplier": "None",
+      "SHA256": "8eeb88d3a0f4b69d"
+    },
+    {
+      "name": "mpmath",
+      "versionInfo": "1.3.0",
+      "supplier": "None",
+      "SHA256": "a38960ebfb413e68"
+    },
+    {
+      "name": "msal",
+      "versionInfo": "1.37.0",
+      "supplier": "None",
+      "SHA256": "d86520ddc00cea33"
+    },
+    {
+      "name": "msgpack",
+      "versionInfo": "1.2.1",
+      "supplier": "None",
+      "SHA256": "83c530ccd4bc9290"
+    },
+    {
+      "name": "multidict",
+      "versionInfo": "6.7.1",
+      "supplier": "None",
+      "SHA256": "aa76463e1f0efe00"
+    },
+    {
+      "name": "multimethod",
+      "versionInfo": "1.12",
+      "supplier": "None",
+      "SHA256": "eca0245031808b44"
+    },
+    {
+      "name": "narwhals",
+      "versionInfo": "2.23.0",
+      "supplier": "None",
+      "SHA256": "494f889fe9d5a4ff"
+    },
+    {
+      "name": "networkx",
+      "versionInfo": "3.6.1",
+      "supplier": "None",
+      "SHA256": "3aa1d38fac9cf8f2"
+    },
+    {
+      "name": "nlopt",
+      "versionInfo": "2.10.0",
+      "supplier": "None",
+      "SHA256": "4ee25a91a701313f"
+    },
+    {
+      "name": "numba",
+      "versionInfo": "0.65.1",
+      "supplier": "None",
+      "SHA256": "f1185ffe1e77dcc3"
+    },
+    {
+      "name": "numpy",
+      "versionInfo": "2.4.3",
+      "supplier": "None",
+      "SHA256": "092dd97abe3652c6"
+    },
+    {
+      "name": "numpy-stl",
+      "versionInfo": "4.0.0",
+      "supplier": "None",
+      "SHA256": "4a4642c653e84453"
+    },
+    {
+      "name": "oauthlib",
+      "versionInfo": "3.3.1",
+      "supplier": "None",
+      "SHA256": "7eea5ede5481503f"
+    },
+    {
+      "name": "onnxruntime",
+      "versionInfo": "1.27.0",
+      "supplier": "None",
+      "SHA256": "9a69e764e74c96a7"
+    },
+    {
+      "name": "openai",
+      "versionInfo": "2.24.0",
+      "supplier": "None",
+      "SHA256": "a8d07df0bfcb2fd9"
+    },
+    {
+      "name": "openpyxl",
+      "versionInfo": "3.1.5",
+      "supplier": "None",
+      "SHA256": "627bc65a550873ed"
+    },
+    {
+      "name": "packaging",
+      "versionInfo": "26.0",
+      "supplier": "None",
+      "SHA256": "164be9356e9eb212"
+    },
+    {
+      "name": "pandas",
+      "versionInfo": "3.0.3",
+      "supplier": "None",
+      "SHA256": "8a4d559628280240"
+    },
+    {
+      "name": "pathspec",
+      "versionInfo": "1.1.1",
+      "supplier": "None",
+      "SHA256": "8ee9317ccd91cc93"
+    },
+    {
+      "name": "pillow",
+      "versionInfo": "12.2.0",
+      "supplier": "None",
+      "SHA256": "a1cdf1555308d872"
+    },
+    {
+      "name": "pip",
+      "versionInfo": "24.0",
+      "supplier": "None",
+      "SHA256": "3541840fa4506ab2"
+    },
+    {
+      "name": "portalocker",
+      "versionInfo": "3.2.0",
+      "supplier": "None",
+      "SHA256": "92122e05422bf7ba"
+    },
+    {
+      "name": "prompt_toolkit",
+      "versionInfo": "3.0.52",
+      "supplier": "None",
+      "SHA256": "3c863ea8f5868efc"
+    },
+    {
+      "name": "propcache",
+      "versionInfo": "0.4.1",
+      "supplier": "None",
+      "SHA256": "b30dd24c42b98480"
+    },
+    {
+      "name": "proto-plus",
+      "versionInfo": "1.27.2",
+      "supplier": "None",
+      "SHA256": "4956dcd7053e22cf"
+    },
+    {
+      "name": "protobuf",
+      "versionInfo": "6.33.5",
+      "supplier": "None",
+      "SHA256": "58c8223a0de58270"
+    },
+    {
+      "name": "psutil",
+      "versionInfo": "7.2.2",
+      "supplier": "None",
+      "SHA256": "6a0037bacdb18945"
+    },
+    {
+      "name": "pyasn1",
+      "versionInfo": "0.6.3",
+      "supplier": "None",
+      "SHA256": "cb4c3de3d875cd41"
+    },
+    {
+      "name": "pyasn1_modules",
+      "versionInfo": "0.4.2",
+      "supplier": "None",
+      "SHA256": "2d5ef84ad46b5422"
+    },
+    {
+      "name": "pycparser",
+      "versionInfo": "3.0",
+      "supplier": "None",
+      "SHA256": "f42cd4f8204b9dbe"
+    },
+    {
+      "name": "pydantic",
+      "versionInfo": "2.13.4",
+      "supplier": "None",
+      "SHA256": "0f08aca7f18873f1"
+    },
+    {
+      "name": "pydantic_core",
+      "versionInfo": "2.46.4",
+      "supplier": "None",
+      "SHA256": "35262be42d026d99"
+    },
+    {
+      "name": "pydantic-settings",
+      "versionInfo": "2.13.1",
+      "supplier": "None",
+      "SHA256": "b32e2924c493031d"
+    },
+    {
+      "name": "pydyf",
+      "versionInfo": "0.12.1",
+      "supplier": "None",
+      "SHA256": "e3575b0f5e924b80"
+    },
+    {
+      "name": "pyglet",
+      "versionInfo": "1.5.31",
+      "supplier": "None",
+      "SHA256": "2f996fe22f6a092b"
+    },
+    {
+      "name": "Pygments",
+      "versionInfo": "2.19.2",
+      "supplier": "None",
+      "SHA256": "3988c770cb02c8ef"
+    },
+    {
+      "name": "PyJWT",
+      "versionInfo": "2.13.0",
+      "supplier": "None",
+      "SHA256": "5fb6344bd78839dd"
+    },
+    {
+      "name": "pymupdf",
+      "versionInfo": "1.28.0",
+      "supplier": "None",
+      "SHA256": "434d9ce2c2b27a9c"
+    },
+    {
+      "name": "PyNaCl",
+      "versionInfo": "1.5.0",
+      "supplier": "None",
+      "SHA256": "2c27e9d2ea001d3b"
+    },
+    {
+      "name": "pyngrok",
+      "versionInfo": "8.1.2",
+      "supplier": "None",
+      "SHA256": "2fb2af26c922b89d"
+    },
+    {
+      "name": "pypandoc",
+      "versionInfo": "1.17",
+      "supplier": "None",
+      "SHA256": "7a1a447e39985767"
+    },
+    {
+      "name": "pyparsing",
+      "versionInfo": "3.3.2",
+      "supplier": "None",
+      "SHA256": "b1c89b9be879b3fd"
+    },
+    {
+      "name": "pyphen",
+      "versionInfo": "0.17.2",
+      "supplier": "None",
+      "SHA256": "71441bd28d2130f3"
+    },
+    {
+      "name": "python-dateutil",
+      "versionInfo": "2.9.0.post0",
+      "supplier": "None",
+      "SHA256": "4b79958bf84ec23c"
+    },
+    {
+      "name": "python-docx",
+      "versionInfo": "1.2.0",
+      "supplier": "None",
+      "SHA256": "3bf5060aeabfa302"
+    },
+    {
+      "name": "python-dotenv",
+      "versionInfo": "1.2.2",
+      "supplier": "None",
+      "SHA256": "3e1a332ea2f1fb65"
+    },
+    {
+      "name": "python-multipart",
+      "versionInfo": "0.0.27",
+      "supplier": "None",
+      "SHA256": "ca269967a6c5a48e"
+    },
+    {
+      "name": "python-telegram-bot",
+      "versionInfo": "22.6",
+      "supplier": "None",
+      "SHA256": "9e286127d02a888d"
+    },
+    {
+      "name": "python-utils",
+      "versionInfo": "3.9.1",
+      "supplier": "None",
+      "SHA256": "c12851a111ac73a1"
+    },
+    {
+      "name": "pytz",
+      "versionInfo": "2025.2",
+      "supplier": "None",
+      "SHA256": "29e24b808ee751f9"
+    },
+    {
+      "name": "pywin32",
+      "versionInfo": "311",
+      "supplier": "None",
+      "SHA256": "d00da7bf33fbcd7a"
+    },
+    {
+      "name": "pywinpty",
+      "versionInfo": "2.0.15",
+      "supplier": "None",
+      "SHA256": "b88f37e9c39ec43f"
+    },
+    {
+      "name": "PyYAML",
+      "versionInfo": "6.0.3",
+      "supplier": "None",
+      "SHA256": "1c708c337246e7a9"
+    },
+    {
+      "name": "referencing",
+      "versionInfo": "0.37.0",
+      "supplier": "None",
+      "SHA256": "290e7d5d996718a1"
+    },
+    {
+      "name": "regex",
+      "versionInfo": "2026.6.28",
+      "supplier": "None",
+      "SHA256": "7a5158aa8ce0473e"
+    },
+    {
+      "name": "requests",
+      "versionInfo": "2.33.0",
+      "supplier": "None",
+      "SHA256": "17ebd1b084b3cd1b"
+    },
+    {
+      "name": "requests-oauthlib",
+      "versionInfo": "2.0.0",
+      "supplier": "None",
+      "SHA256": "c6848001e361f910"
+    },
+    {
+      "name": "rich",
+      "versionInfo": "14.3.3",
+      "supplier": "None",
+      "SHA256": "9b8d722d6957822e"
+    },
+    {
+      "name": "rpds-py",
+      "versionInfo": "0.30.0",
+      "supplier": "None",
+      "SHA256": "efc2b8dbb9b868b5"
+    },
+    {
+      "name": "ruamel.yaml",
+      "versionInfo": "0.18.17",
+      "supplier": "None",
+      "SHA256": "8657f141f5fb571a"
+    },
+    {
+      "name": "ruamel.yaml.clib",
+      "versionInfo": "0.2.15",
+      "supplier": "None",
+      "SHA256": "82595a27d861d955"
+    },
+    {
+      "name": "runtype",
+      "versionInfo": "0.5.3",
+      "supplier": "None",
+      "SHA256": "0fcf8ef2f8707ed3"
+    },
+    {
+      "name": "s3transfer",
+      "versionInfo": "0.16.1",
+      "supplier": "None",
+      "SHA256": "10fc9bc88db31661"
+    },
+    {
+      "name": "safetensors",
+      "versionInfo": "0.8.0",
+      "supplier": "None",
+      "SHA256": "81f2de7dc396c572"
+    },
+    {
+      "name": "scikit-learn",
+      "versionInfo": "1.9.0",
+      "supplier": "None",
+      "SHA256": "ba442c6c060bf35e"
+    },
+    {
+      "name": "scipy",
+      "versionInfo": "1.17.1",
+      "supplier": "None",
+      "SHA256": "a2dbb315874cb125"
+    },
+    {
+      "name": "seaborn",
+      "versionInfo": "0.13.2",
+      "supplier": "None",
+      "SHA256": "19df95703e5eb7e6"
+    },
+    {
+      "name": "sentence-transformers",
+      "versionInfo": "5.6.0",
+      "supplier": "None",
+      "SHA256": "cfffeee2ed925feb"
+    },
+    {
+      "name": "setuptools",
+      "versionInfo": "65.5.0",
+      "supplier": "None",
+      "SHA256": "a72ef4cb8a34e66f"
+    },
+    {
+      "name": "shellingham",
+      "versionInfo": "1.5.4",
+      "supplier": "None",
+      "SHA256": "7b431bb1a00a89b8"
+    },
+    {
+      "name": "simple-term-menu",
+      "versionInfo": "1.6.6",
+      "supplier": "None",
+      "SHA256": "3317ab22ce8f7350"
+    },
+    {
+      "name": "six",
+      "versionInfo": "1.17.0",
+      "supplier": "None",
+      "SHA256": "2d11e7e236209694"
+    },
+    {
+      "name": "slack_bolt",
+      "versionInfo": "1.27.0",
+      "supplier": "None",
+      "SHA256": "202e20a8355e94db"
+    },
+    {
+      "name": "slack_sdk",
+      "versionInfo": "3.40.1",
+      "supplier": "None",
+      "SHA256": "0242b1fe83464b37"
+    },
+    {
+      "name": "sniffio",
+      "versionInfo": "1.3.1",
+      "supplier": "None",
+      "SHA256": "b0a9ca00f305df4c"
+    },
+    {
+      "name": "socksio",
+      "versionInfo": "1.0.0",
+      "supplier": "None",
+      "SHA256": "408d5e0f9ef9811d"
+    },
+    {
+      "name": "sounddevice",
+      "versionInfo": "0.5.5",
+      "supplier": "None",
+      "SHA256": "cad42520d3f39d61"
+    },
+    {
+      "name": "soupsieve",
+      "versionInfo": "2.8.4",
+      "supplier": "None",
+      "SHA256": "a3ef2c246fadf753"
+    },
+    {
+      "name": "sse-starlette",
+      "versionInfo": "3.3.2",
+      "supplier": "None",
+      "SHA256": "093c1921a706a03a"
+    },
+    {
+      "name": "starlette",
+      "versionInfo": "1.0.1",
+      "supplier": "None",
+      "SHA256": "2faef51b6ae4aa7a"
+    },
+    {
+      "name": "sympy",
+      "versionInfo": "1.14.0",
+      "supplier": "None",
+      "SHA256": "ebe23d7562a2d044"
+    },
+    {
+      "name": "tabulate",
+      "versionInfo": "0.10.0",
+      "supplier": "None",
+      "SHA256": "e8d9b40ba39aed3d"
+    },
+    {
+      "name": "tenacity",
+      "versionInfo": "9.1.4",
+      "supplier": "None",
+      "SHA256": "cc118d11d39b6a06"
+    },
+    {
+      "name": "termcolor",
+      "versionInfo": "3.3.0",
+      "supplier": "None",
+      "SHA256": "033cd9531dca200e"
+    },
+    {
+      "name": "threadpoolctl",
+      "versionInfo": "3.6.0",
+      "supplier": "None",
+      "SHA256": "f325142d92f4d1e3"
+    },
+    {
+      "name": "tinycss2",
+      "versionInfo": "1.5.1",
+      "supplier": "None",
+      "SHA256": "893ad3551f52be10"
+    },
+    {
+      "name": "tinyhtml5",
+      "versionInfo": "2.1.0",
+      "supplier": "None",
+      "SHA256": "39a70f16336a528a"
+    },
+    {
+      "name": "tokenizers",
+      "versionInfo": "0.22.2",
+      "supplier": "None",
+      "SHA256": "7d7a7a6cab0dfdfb"
+    },
+    {
+      "name": "torch",
+      "versionInfo": "2.12.1",
+      "supplier": "None",
+      "SHA256": "238629c08e47a032"
+    },
+    {
+      "name": "tornado",
+      "versionInfo": "6.5.7",
+      "supplier": "None",
+      "SHA256": "2281ff38f648b515"
+    },
+    {
+      "name": "tqdm",
+      "versionInfo": "4.67.3",
+      "supplier": "None",
+      "SHA256": "8984394a39543dab"
+    },
+    {
+      "name": "trame",
+      "versionInfo": "3.13.2",
+      "supplier": "None",
+      "SHA256": "a698f6ddd1fd9de6"
+    },
+    {
+      "name": "trame-client",
+      "versionInfo": "3.13.2",
+      "supplier": "None",
+      "SHA256": "67da5f44616beb79"
+    },
+    {
+      "name": "trame-common",
+      "versionInfo": "1.2.4",
+      "supplier": "None",
+      "SHA256": "8bfd5a7912c2f4fd"
+    },
+    {
+      "name": "trame-components",
+      "versionInfo": "2.5.0",
+      "supplier": "None",
+      "SHA256": "5a99fd2993d5d29b"
+    },
+    {
+      "name": "trame-server",
+      "versionInfo": "3.12.5",
+      "supplier": "None",
+      "SHA256": "6d26c5de1c07a42e"
+    },
+    {
+      "name": "trame-vtk",
+      "versionInfo": "2.11.12",
+      "supplier": "None",
+      "SHA256": "756e373724447226"
+    },
+    {
+      "name": "trame-vuetify",
+      "versionInfo": "3.2.2",
+      "supplier": "None",
+      "SHA256": "ffbd6d4c3cd2d81a"
+    },
+    {
+      "name": "transformers",
+      "versionInfo": "5.13.0",
+      "supplier": "None",
+      "SHA256": "5fb40aa284ee2a2b"
+    },
+    {
+      "name": "trimesh",
+      "versionInfo": "4.12.2",
+      "supplier": "None",
+      "SHA256": "ee03442039240481"
+    },
+    {
+      "name": "typer",
+      "versionInfo": "0.25.1",
+      "supplier": "None",
+      "SHA256": "e6f2755f092f5cad"
+    },
+    {
+      "name": "typer-slim",
+      "versionInfo": "0.24.0",
+      "supplier": "None",
+      "SHA256": "86f86e3bc5e7c5d6"
+    },
+    {
+      "name": "typing_extensions",
+      "versionInfo": "4.15.0",
+      "supplier": "None",
+      "SHA256": "a06d54f937171c58"
+    },
+    {
+      "name": "typing-inspection",
+      "versionInfo": "0.4.2",
+      "supplier": "None",
+      "SHA256": "7ea9cd6491ffa5ac"
+    },
+    {
+      "name": "tzdata",
+      "versionInfo": "2025.3",
+      "supplier": "None",
+      "SHA256": "01f3fd98949cf306"
+    },
+    {
+      "name": "uritemplate",
+      "versionInfo": "4.2.0",
+      "supplier": "None",
+      "SHA256": "8990258f4f1a623f"
+    },
+    {
+      "name": "urllib3",
+      "versionInfo": "2.7.0",
+      "supplier": "None",
+      "SHA256": "29ab39e4e67f7790"
+    },
+    {
+      "name": "uvicorn",
+      "versionInfo": "0.41.0",
+      "supplier": "None",
+      "SHA256": "f62c6ce487441555"
+    },
+    {
+      "name": "vtk",
+      "versionInfo": "9.6.2",
+      "supplier": "None",
+      "SHA256": "f88a4653a6ed285a"
+    },
+    {
+      "name": "watchfiles",
+      "versionInfo": "1.1.1",
+      "supplier": "None",
+      "SHA256": "9a7bd92dffd64cd9"
+    },
+    {
+      "name": "wcwidth",
+      "versionInfo": "0.6.0",
+      "supplier": "None",
+      "SHA256": "361bae3a819142bf"
+    },
+    {
+      "name": "weasyprint",
+      "versionInfo": "69.0",
+      "supplier": "None",
+      "SHA256": "ca71bce38dcbf975"
+    },
+    {
+      "name": "webencodings",
+      "versionInfo": "0.5.1",
+      "supplier": "None",
+      "SHA256": "c9db6b1a76e0ad28"
+    },
+    {
+      "name": "websockets",
+      "versionInfo": "15.0.1",
+      "supplier": "None",
+      "SHA256": "b641f3bc85786cb4"
+    },
+    {
+      "name": "wslink",
+      "versionInfo": "2.5.7",
+      "supplier": "None",
+      "SHA256": "43217d8165917626"
+    },
+    {
+      "name": "yarl",
+      "versionInfo": "1.22.0",
+      "supplier": "None",
+      "SHA256": "92f2ec57c2535f5a"
+    },
+    {
+      "name": "youtube-transcript-api",
+      "versionInfo": "1.2.4",
+      "supplier": "None",
+      "SHA256": "9d6be32ac7106f3d"
+    },
+    {
+      "name": "zopfli",
+      "versionInfo": "0.4.3",
+      "supplier": "None",
+      "SHA256": "61397159f01ae338"
+    }
+  ],
+  "files": [
+    {
+      "path": "run.py",
+      "size": 2224,
+      "sha256": "8a55d36b0e7bccbc"
+    },
+    {
+      "path": "tests\\__init__.py",
+      "size": 12,
+      "sha256": "df575e3c044e33f8"
+    },
+    {
+      "path": "tests\\test_aislamiento.py",
+      "size": 2417,
+      "sha256": "8af4d0fe57d994b4"
+    },
+    {
+      "path": "tests\\test_entropy.py",
+      "size": 1389,
+      "sha256": "b379e875c3b756a8"
+    },
+    {
+      "path": "tests\\test_fork_sealant.py",
+      "size": 2093,
+      "sha256": "6223d1acc5dd124d"
+    },
+    {
+      "path": "tests\\test_geonoise.py",
+      "size": 2138,
+      "sha256": "4c908b35deeb7883"
+    },
+    {
+      "path": "tests\\test_ia_core.py",
+      "size": 1652,
+      "sha256": "7e3d1736a3e1cf65"
+    },
+    {
+      "path": "tests\\test_ia_core_octarcq.py",
+      "size": 1524,
+      "sha256": "6a28f7ab02d5579b"
+    },
+    {
+      "path": "tests\\test_ia_judicial.py",
+      "size": 3871,
+      "sha256": "5c83164bd6ecd3e2"
+    },
+    {
+      "path": "tests\\test_isolation.py",
+      "size": 3305,
+      "sha256": "881955c73f21da26"
+    },
+    {
+      "path": "tests\\test_reputacion.py",
+      "size": 2645,
+      "sha256": "08c62bc14046723e"
+    },
+    {
+      "path": "tests\\test_supervisor.py",
+      "size": 1694,
+      "sha256": "9db806f992c9e92b"
+    },
+    {
+      "path": "tests\\test_v10_futuro.py",
+      "size": 3662,
+      "sha256": "de410949336e178b"
+    },
+    {
+      "path": "tools\\sbom.py",
+      "size": 3113,
+      "sha256": "6d56c59913661718"
+    },
+    {
+      "path": "tqsc\\__init__.py",
+      "size": 56,
+      "sha256": "93ce9f3ab0f88514"
+    },
+    {
+      "path": "tqsc\\blockchain\\__init__.py",
+      "size": 12,
+      "sha256": "df575e3c044e33f8"
+    },
+    {
+      "path": "tqsc\\blockchain\\fork_sealant.py",
+      "size": 13445,
+      "sha256": "6becb27832c6f6b0"
+    },
+    {
+      "path": "tqsc\\blockchain\\ipc_red.py",
+      "size": 9422,
+      "sha256": "147eca2a63c83ade"
+    },
+    {
+      "path": "tqsc\\classic_crypto\\__init__.py",
+      "size": 9156,
+      "sha256": "f63b6c213a866a08"
+    },
+    {
+      "path": "tqsc\\config.py",
+      "size": 1364,
+      "sha256": "fc0549f8b3483df6"
+    },
+    {
+      "path": "tqsc\\core\\__init__.py",
+      "size": 12,
+      "sha256": "df575e3c044e33f8"
+    },
+    {
+      "path": "tqsc\\core\\cortex.py",
+      "size": 4661,
+      "sha256": "8feaa4c5414781d4"
+    },
+    {
+      "path": "tqsc\\core\\memoria_episodica.py",
+      "size": 3389,
+      "sha256": "e3845eeee00932eb"
+    },
+    {
+      "path": "tqsc\\core\\octa_nucleo.py",
+      "size": 7668,
+      "sha256": "032729769fcdad33"
+    },
+    {
+      "path": "tqsc\\core\\octarcq.py",
+      "size": 5940,
+      "sha256": "aedd7c0bba65b648"
+    },
+    {
+      "path": "tqsc\\core\\protocolo_paz.py",
+      "size": 4577,
+      "sha256": "9f83019a6c958f94"
+    },
+    {
+      "path": "tqsc\\defense\\__init__.py",
+      "size": 12149,
+      "sha256": "29620aa95a2778a0"
+    },
+    {
+      "path": "tqsc\\defense\\geonoise.py",
+      "size": 6308,
+      "sha256": "b8390ca46a22df93"
+    },
+    {
+      "path": "tqsc\\defense\\syscall_monitor.py",
+      "size": 4046,
+      "sha256": "2909bfa8e6c03776"
+    },
+    {
+      "path": "tqsc\\honeypot\\__init__.py",
+      "size": 16084,
+      "sha256": "132e36a05f7b2aa2"
+    },
+    {
+      "path": "tqsc\\hud\\__init__.py",
+      "size": 12,
+      "sha256": "df575e3c044e33f8"
+    },
+    {
+      "path": "tqsc\\hud\\hud_display.py",
+      "size": 14277,
+      "sha256": "3262b07fa898609c"
+    },
+    {
+      "path": "tqsc\\hybrid\\colab_real_weights.py",
+      "size": 2694,
+      "sha256": "7f1d1b47a2ce1b5b"
+    },
+    {
+      "path": "tqsc\\hybrid\\colab_ternario_final.py",
+      "size": 2816,
+      "sha256": "60ba6471434c37e1"
+    },
+    {
+      "path": "tqsc\\hybrid\\hybrid_lora.py",
+      "size": 14303,
+      "sha256": "c095e85c8985611b"
+    },
+    {
+      "path": "tqsc\\hybrid\\packed_ternary.py",
+      "size": 14179,
+      "sha256": "4b119f6ca714b5c6"
+    },
+    {
+      "path": "tqsc\\hybrid\\ternary_cuda.py",
+      "size": 13081,
+      "sha256": "714d9d34d4aa0a54"
+    },
+    {
+      "path": "tqsc\\ia\\__init__.py",
+      "size": 9689,
+      "sha256": "82c9e33f75582cf3"
+    },
+    {
+      "path": "tqsc\\main.py",
+      "size": 7238,
+      "sha256": "ba8ccd73a04ac19b"
+    },
+    {
+      "path": "tqsc\\ml\\dataset.py",
+      "size": 11014,
+      "sha256": "ed9b3228953a3685"
+    },
+    {
+      "path": "tqsc\\ml\\inference.py",
+      "size": 7984,
+      "sha256": "1fd8c45a5c202b17"
+    },
+    {
+      "path": "tqsc\\ml\\integration.py",
+      "size": 11061,
+      "sha256": "d9fa9711a1bdcd0e"
+    },
+    {
+      "path": "tqsc\\ml\\train.py",
+      "size": 5912,
+      "sha256": "48b5bb5a65ae29dc"
+    },
+    {
+      "path": "tqsc\\native_bridge.py",
+      "size": 4132,
+      "sha256": "de013bddf40ccb21"
+    },
+    {
+      "path": "tqsc\\quantum\\__init__.py",
+      "size": 8182,
+      "sha256": "94dce2a74d3122a4"
+    },
+    {
+      "path": "tqsc\\supervised_main.py",
+      "size": 2518,
+      "sha256": "eb727599daddcfa1"
+    },
+    {
+      "path": "tqsc\\supervisor.py",
+      "size": 5782,
+      "sha256": "51734289b5925773"
+    },
+    {
+      "path": "tqsc\\utils\\__init__.py",
+      "size": 22,
+      "sha256": "f0234af542af8458"
+    },
+    {
+      "path": "tqsc\\utils\\audit.py",
+      "size": 5953,
+      "sha256": "53ff8a0060ef6380"
+    },
+    {
+      "path": "tqsc\\utils\\auth.py",
+      "size": 3704,
+      "sha256": "1645130c59c18a17"
+    },
+    {
+      "path": "tqsc\\utils\\backup.py",
+      "size": 3149,
+      "sha256": "e3f78c56e6eb35dd"
+    },
+    {
+      "path": "tqsc\\utils\\boot_integrity.py",
+      "size": 3720,
+      "sha256": "5fe0769ec92c03bb"
+    },
+    {
+      "path": "tqsc\\utils\\entropy_engine.py",
+      "size": 8458,
+      "sha256": "e27c39c541962237"
+    },
+    {
+      "path": "tqsc\\utils\\event_bus.py",
+      "size": 2825,
+      "sha256": "e61ec60e38175287"
+    },
+    {
+      "path": "tqsc\\utils\\identity.py",
+      "size": 4879,
+      "sha256": "9a424d4a598c93f5"
+    },
+    {
+      "path": "tqsc\\utils\\mfa.py",
+      "size": 4058,
+      "sha256": "7f06fee51ca02f47"
+    },
+    {
+      "path": "tqsc\\utils\\nucleus_daemon.py",
+      "size": 2956,
+      "sha256": "763fbda50ac031fb"
+    },
+    {
+      "path": "tqsc\\utils\\secure_storage.py",
+      "size": 3577,
+      "sha256": "e2fabc658b267686"
+    },
+    {
+      "path": "tqsc\\utils\\siem.py",
+      "size": 3677,
+      "sha256": "a9d8f8cf4c5a4902"
+    },
+    {
+      "path": "tqsc\\utils\\tls.py",
+      "size": 6591,
+      "sha256": "b7c2580d9fa5c442"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\_distutils_hack\\__init__.py",
+      "size": 6128,
+      "sha256": "4d27a48545b57dd1"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\_distutils_hack\\override.py",
+      "size": 44,
+      "sha256": "12efecf8d17a5486"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\__init__.py",
+      "size": 355,
+      "sha256": "a009359c5a4b9945"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\__main__.py",
+      "size": 854,
+      "sha256": "5b36e11d74db484e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\__pip-runner__.py",
+      "size": 1444,
+      "sha256": "127adf2a628ccd60"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\__init__.py",
+      "size": 515,
+      "sha256": "8aa679f9842c415d"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\build_env.py",
+      "size": 10243,
+      "sha256": "d444a9ab0d22ba94"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\cache.py",
+      "size": 10370,
+      "sha256": "ba2603fbd17406fd"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\cli\\__init__.py",
+      "size": 132,
+      "sha256": "1641c1829c716fef"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\cli\\autocompletion.py",
+      "size": 6690,
+      "sha256": "fdbaffe4d812c52b"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\cli\\base_command.py",
+      "size": 8733,
+      "sha256": "8ae55619ada84eae"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\cli\\cmdoptions.py",
+      "size": 30064,
+      "sha256": "d44226f32322c503"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\cli\\command_context.py",
+      "size": 774,
+      "sha256": "4478083f0b4e6e1e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\cli\\main.py",
+      "size": 2816,
+      "sha256": "533c6dfd80f5848b"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\cli\\main_parser.py",
+      "size": 4338,
+      "sha256": "95a0e9b2e04397a9"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\cli\\parser.py",
+      "size": 10781,
+      "sha256": "296e82dfeefee04a"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\cli\\progress_bars.py",
+      "size": 1968,
+      "sha256": "4a8e263e84a35e45"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\cli\\req_command.py",
+      "size": 18369,
+      "sha256": "73bfd71c00675e60"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\cli\\spinners.py",
+      "size": 5118,
+      "sha256": "84827cdc67ab7458"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\cli\\status_codes.py",
+      "size": 116,
+      "sha256": "b0414751a5096eab"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\commands\\__init__.py",
+      "size": 3882,
+      "sha256": "e6844ef4eddd336b"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\commands\\cache.py",
+      "size": 7944,
+      "sha256": "c60efafd9144042e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\commands\\check.py",
+      "size": 1782,
+      "sha256": "45bd77436f32a0b8"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\commands\\completion.py",
+      "size": 4287,
+      "sha256": "1d3e250f46e0b1f9"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\commands\\configuration.py",
+      "size": 9766,
+      "sha256": "9fdf1e9f0a7acb46"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\commands\\debug.py",
+      "size": 6777,
+      "sha256": "eb7f7bdae50278c2"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\commands\\download.py",
+      "size": 5335,
+      "sha256": "7b8870d3cf331a8d"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\commands\\freeze.py",
+      "size": 3172,
+      "sha256": "daa8d0ac7f4a5a2e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\commands\\hash.py",
+      "size": 1703,
+      "sha256": "11554ebaf1ada0f1"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\commands\\help.py",
+      "size": 1132,
+      "sha256": "81c73a40391c8073"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\commands\\index.py",
+      "size": 4775,
+      "sha256": "08d5d07abfcf7992"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\commands\\inspect.py",
+      "size": 3188,
+      "sha256": "db048fb7dc9faf7a"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\commands\\install.py",
+      "size": 28782,
+      "sha256": "5710ddf810f76b6e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\commands\\list.py",
+      "size": 12450,
+      "sha256": "ef0454526772c8e9"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\commands\\search.py",
+      "size": 5697,
+      "sha256": "b1b059880451734e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\commands\\show.py",
+      "size": 6419,
+      "sha256": "b798e26b8cdc6094"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\commands\\uninstall.py",
+      "size": 3886,
+      "sha256": "388a8ef6da9a758f"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\commands\\wheel.py",
+      "size": 6476,
+      "sha256": "0929d7f0f99fd683"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\configuration.py",
+      "size": 14006,
+      "sha256": "5e4022052d21a73b"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\distributions\\__init__.py",
+      "size": 858,
+      "sha256": "1eaea4b7a8170608"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\distributions\\base.py",
+      "size": 1743,
+      "sha256": "a11484be7bf66630"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\distributions\\installed.py",
+      "size": 842,
+      "sha256": "4229c715b58043ca"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\distributions\\sdist.py",
+      "size": 6709,
+      "sha256": "e0add5d1534c9651"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\distributions\\wheel.py",
+      "size": 1277,
+      "sha256": "fa66b7b0eb54423d"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\exceptions.py",
+      "size": 23634,
+      "sha256": "4e617588d1449de4"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\index\\__init__.py",
+      "size": 30,
+      "sha256": "be9b7e25e4d979f8"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\index\\collector.py",
+      "size": 16590,
+      "sha256": "b07d2d2ff70ea029"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\index\\package_finder.py",
+      "size": 37843,
+      "sha256": "4bf9c2f20cd520c6"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\index\\sources.py",
+      "size": 8688,
+      "sha256": "7497a0891f5ff3a9"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\locations\\__init__.py",
+      "size": 15365,
+      "sha256": "0e1f0b2561bc2d19"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\locations\\_distutils.py",
+      "size": 6009,
+      "sha256": "1fd6472bfdf9add0"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\locations\\_sysconfig.py",
+      "size": 7680,
+      "sha256": "8f2355b547cc21fd"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\locations\\base.py",
+      "size": 2556,
+      "sha256": "45088f8b57781553"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\main.py",
+      "size": 340,
+      "sha256": "afe52751ef072e8e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\metadata\\__init__.py",
+      "size": 4339,
+      "sha256": "f695375b7b3ee87b"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\metadata\\_json.py",
+      "size": 2627,
+      "sha256": "473e4ce5c89236f2"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\metadata\\base.py",
+      "size": 25907,
+      "sha256": "9775a092ee31960a"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\metadata\\importlib\\__init__.py",
+      "size": 135,
+      "sha256": "8d4522768c671dc7"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\metadata\\importlib\\_compat.py",
+      "size": 1882,
+      "sha256": "1807bfa6b21f084e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\metadata\\importlib\\_dists.py",
+      "size": 8297,
+      "sha256": "50f975c14ba316a8"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\metadata\\importlib\\_envs.py",
+      "size": 7456,
+      "sha256": "5d36852181113f62"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\metadata\\pkg_resources.py",
+      "size": 10035,
+      "sha256": "a298f0e08052a87b"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\models\\__init__.py",
+      "size": 63,
+      "sha256": "dc31d477fab1a4fa"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\models\\candidate.py",
+      "size": 931,
+      "sha256": "8443eef15746139a"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\models\\direct_url.py",
+      "size": 6889,
+      "sha256": "170a2e60129ca9c9"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\models\\format_control.py",
+      "size": 2486,
+      "sha256": "c2db10a922bd1da5"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\models\\index.py",
+      "size": 1030,
+      "sha256": "b589cbf28c468b86"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\models\\installation_report.py",
+      "size": 2818,
+      "sha256": "cd1559a1acfedafb"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\models\\link.py",
+      "size": 20777,
+      "sha256": "5e2ace006bf58e03"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\models\\scheme.py",
+      "size": 738,
+      "sha256": "dc4150a7f202bbfb"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\models\\search_scope.py",
+      "size": 4643,
+      "sha256": "012572c99c622482"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\models\\selection_prefs.py",
+      "size": 1907,
+      "sha256": "299762eba82c47ef"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\models\\target_python.py",
+      "size": 4272,
+      "sha256": "df8124a2baccb91b"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\models\\wheel.py",
+      "size": 3600,
+      "sha256": "62a6b3a0867299af"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\network\\__init__.py",
+      "size": 50,
+      "sha256": "8dfe93b799d5ffbc"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\network\\auth.py",
+      "size": 20541,
+      "sha256": "4c2f8e716d8a5385"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\network\\cache.py",
+      "size": 3935,
+      "sha256": "e3c03def5a82cca3"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\network\\download.py",
+      "size": 6086,
+      "sha256": "8b44e7e79083e43e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\network\\lazy_wheel.py",
+      "size": 7638,
+      "sha256": "d8f5d576e6193c23"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\network\\session.py",
+      "size": 18698,
+      "sha256": "f6da840c3f098956"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\network\\utils.py",
+      "size": 4073,
+      "sha256": "e80e52ad42441141"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\network\\xmlrpc.py",
+      "size": 1838,
+      "sha256": "b00c7339a709f8dd"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\operations\\__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c14"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\operations\\build\\__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c14"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\operations\\build\\build_tracker.py",
+      "size": 4832,
+      "sha256": "cfe1f90ce92765d0"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\operations\\build\\metadata.py",
+      "size": 1422,
+      "sha256": "f52d02503f14dd0a"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\operations\\build\\metadata_editable.py",
+      "size": 1474,
+      "sha256": "54b2fb2ef9ed284f"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\operations\\build\\metadata_legacy.py",
+      "size": 2198,
+      "sha256": "a3e794db502cd7be"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\operations\\build\\wheel.py",
+      "size": 1075,
+      "sha256": "b13d761412c0c430"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\operations\\build\\wheel_editable.py",
+      "size": 1417,
+      "sha256": "c8eb681face9024a"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\operations\\build\\wheel_legacy.py",
+      "size": 3064,
+      "sha256": "0bd8faaee920408d"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\operations\\check.py",
+      "size": 6806,
+      "sha256": "7eca80f3c8866aa7"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\operations\\freeze.py",
+      "size": 9816,
+      "sha256": "baaa1e4c07fa1ce6"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\operations\\install\\__init__.py",
+      "size": 51,
+      "sha256": "997ee1c83d863413"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\operations\\install\\editable_legacy.py",
+      "size": 1282,
+      "sha256": "61e47429a7565f0f"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\operations\\install\\wheel.py",
+      "size": 27311,
+      "sha256": "f6119bd5ce1b4673"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\operations\\prepare.py",
+      "size": 28128,
+      "sha256": "e7b3aaf3b1dfba75"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\pyproject.py",
+      "size": 7152,
+      "sha256": "e17b33a75d7182bd"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\req\\__init__.py",
+      "size": 2738,
+      "sha256": "4c42c58193a87f79"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\req\\constructors.py",
+      "size": 19018,
+      "sha256": "f21958e7a8a612d8"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\req\\req_file.py",
+      "size": 17790,
+      "sha256": "33cb6d3992fe3f00"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\req\\req_install.py",
+      "size": 35460,
+      "sha256": "c2d38fc64c9148cf"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\req\\req_set.py",
+      "size": 4704,
+      "sha256": "88c603513a12824c"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\req\\req_uninstall.py",
+      "size": 24551,
+      "sha256": "9e6bd341a4420b48"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\resolution\\__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c14"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\resolution\\base.py",
+      "size": 583,
+      "sha256": "aa59a1df6e520557"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\resolution\\legacy\\__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c14"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\resolution\\legacy\\resolver.py",
+      "size": 24025,
+      "sha256": "5e4db88d0eb61af2"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\resolution\\resolvelib\\__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c14"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\resolution\\resolvelib\\base.py",
+      "size": 5173,
+      "sha256": "8e0e423a61cb8660"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\resolution\\resolvelib\\candidates.py",
+      "size": 21052,
+      "sha256": "d7d2a2f753e8f8c4"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\resolution\\resolvelib\\factory.py",
+      "size": 32292,
+      "sha256": "beaaa4fa18dc85d8"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\resolution\\resolvelib\\found_candidates.py",
+      "size": 5705,
+      "sha256": "86f2f71e86bd55a6"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\resolution\\resolvelib\\provider.py",
+      "size": 9824,
+      "sha256": "e2ddb78af8ebbaa3"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\resolution\\resolvelib\\reporter.py",
+      "size": 3100,
+      "sha256": "6059bd850bf3e031"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\resolution\\resolvelib\\requirements.py",
+      "size": 5696,
+      "sha256": "fa424e34fd168c37"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\resolution\\resolvelib\\resolver.py",
+      "size": 12592,
+      "sha256": "9cb24eb15304562d"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\self_outdated_check.py",
+      "size": 8378,
+      "sha256": "b1ac502c1f14cc81"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\utils\\__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c14"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\utils\\_jaraco_text.py",
+      "size": 3351,
+      "sha256": "caf0c67a54d5ba04"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\utils\\_log.py",
+      "size": 1015,
+      "sha256": "fa31cb384fd31da6"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\utils\\appdirs.py",
+      "size": 1665,
+      "sha256": "b3081c4ca3a6ddd6"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\utils\\compat.py",
+      "size": 1884,
+      "sha256": "002c817cb823dff5"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\utils\\compatibility_tags.py",
+      "size": 5377,
+      "sha256": "c9d8a7f101bc047a"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\utils\\datetime.py",
+      "size": 242,
+      "sha256": "9b6d58df002d41cf"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\utils\\deprecation.py",
+      "size": 3627,
+      "sha256": "34aa3c56a2e2a09e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\utils\\direct_url_helpers.py",
+      "size": 3206,
+      "sha256": "e85d6d736adc29a0"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\utils\\egg_link.py",
+      "size": 2463,
+      "sha256": "d0578f6685182afe"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\utils\\encoding.py",
+      "size": 1169,
+      "sha256": "aaab170ed8b03088"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\utils\\entrypoints.py",
+      "size": 3064,
+      "sha256": "62584b4d1976a070"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\utils\\filesystem.py",
+      "size": 5122,
+      "sha256": "4613085d468d54c1"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\utils\\filetypes.py",
+      "size": 716,
+      "sha256": "8bc5c04347850a88"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\utils\\glibc.py",
+      "size": 3113,
+      "sha256": "31eb31c6083704bc"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\utils\\hashes.py",
+      "size": 5118,
+      "sha256": "3233a2802ef9cfaa"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\utils\\logging.py",
+      "size": 11603,
+      "sha256": "7ddb6e649f802a4a"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\utils\\misc.py",
+      "size": 23623,
+      "sha256": "7cd5f069e7a292f9"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\utils\\models.py",
+      "size": 1193,
+      "sha256": "e46a18539f3a4abc"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\utils\\packaging.py",
+      "size": 2108,
+      "sha256": "e569baff1ee52ab9"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\utils\\setuptools_build.py",
+      "size": 4435,
+      "sha256": "a2e5e9b9dfa3792f"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\utils\\subprocess.py",
+      "size": 9207,
+      "sha256": "cf376299bef98d52"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\utils\\temp_dir.py",
+      "size": 9312,
+      "sha256": "0d4030db6b85aee4"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\utils\\unpacking.py",
+      "size": 8821,
+      "sha256": "4816f6895d5cadbf"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\utils\\urls.py",
+      "size": 1759,
+      "sha256": "02169eb141a5fbd8"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\utils\\virtualenv.py",
+      "size": 3456,
+      "sha256": "4ba7fb72c628ad1a"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\utils\\wheel.py",
+      "size": 4499,
+      "sha256": "8b807050d1dab6dc"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\vcs\\__init__.py",
+      "size": 596,
+      "sha256": "500aafce96e2d156"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\vcs\\bazaar.py",
+      "size": 3519,
+      "sha256": "8f4a229f47e91911"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\vcs\\git.py",
+      "size": 18121,
+      "sha256": "09e2811899e5eaeb"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\vcs\\mercurial.py",
+      "size": 5249,
+      "sha256": "a142ce8732765227"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\vcs\\subversion.py",
+      "size": 11729,
+      "sha256": "be166cf0bf933608"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\vcs\\versioncontrol.py",
+      "size": 22787,
+      "sha256": "dde223b4e318bce6"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_internal\\wheel_builder.py",
+      "size": 11801,
+      "sha256": "a934f3415f05e9bd"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\__init__.py",
+      "size": 4993,
+      "sha256": "539d4d3f05dd03ec"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\cachecontrol\\__init__.py",
+      "size": 676,
+      "sha256": "72d1da80c8505eeb"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\cachecontrol\\_cmd.py",
+      "size": 1737,
+      "sha256": "8a2b2dd84a7326f0"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\cachecontrol\\adapter.py",
+      "size": 6392,
+      "sha256": "fc2716bd43fdd38f"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\cachecontrol\\cache.py",
+      "size": 1952,
+      "sha256": "393423ef6b547fc0"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\cachecontrol\\caches\\__init__.py",
+      "size": 303,
+      "sha256": "76daebae82b90670"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\cachecontrol\\caches\\file_cache.py",
+      "size": 5352,
+      "sha256": "df3f0058a0febdf2"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\cachecontrol\\caches\\redis_cache.py",
+      "size": 1386,
+      "sha256": "f6b9aac2d62efe58"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\cachecontrol\\controller.py",
+      "size": 18384,
+      "sha256": "91e08503765a3556"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\cachecontrol\\filewrapper.py",
+      "size": 4292,
+      "sha256": "493b6d1a620f06f6"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\cachecontrol\\heuristics.py",
+      "size": 4828,
+      "sha256": "7dd15b93d5bc21e2"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\cachecontrol\\serialize.py",
+      "size": 7173,
+      "sha256": "d1d1de31a0f0cac5"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\cachecontrol\\wrapper.py",
+      "size": 1417,
+      "sha256": "86c19cee0f101904"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\certifi\\__init__.py",
+      "size": 94,
+      "sha256": "2ff8fe774918b80f"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\certifi\\__main__.py",
+      "size": 255,
+      "sha256": "d64dc2afde6f0b1c"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\certifi\\core.py",
+      "size": 4279,
+      "sha256": "67088eb2ffac0ffa"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\__init__.py",
+      "size": 4797,
+      "sha256": "e7b47e1d2c63d0f5"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\big5freq.py",
+      "size": 31274,
+      "sha256": "96d71f3fedcf8e53"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\big5prober.py",
+      "size": 1763,
+      "sha256": "94f31fc025fabf60"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\chardistribution.py",
+      "size": 10032,
+      "sha256": "d7707c5d41b8a170"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\charsetgroupprober.py",
+      "size": 3915,
+      "sha256": "50a2b749a2190763"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\charsetprober.py",
+      "size": 5420,
+      "sha256": "2f7b7cff020ea2ff"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\cli\\__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c14"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\cli\\chardetect.py",
+      "size": 3242,
+      "sha256": "ce26cc560e51a4a6"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\codingstatemachine.py",
+      "size": 3732,
+      "sha256": "2bb93af6cc378d8e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\codingstatemachinedict.py",
+      "size": 542,
+      "sha256": "d066371e2daa219b"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\cp949prober.py",
+      "size": 1860,
+      "sha256": "d2329157b7c40ae5"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\enums.py",
+      "size": 1683,
+      "sha256": "4f3102899a0228d3"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\escprober.py",
+      "size": 4006,
+      "sha256": "2a1a38f17eb9c44d"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\escsm.py",
+      "size": 12176,
+      "sha256": "02ac97a40d854050"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\eucjpprober.py",
+      "size": 3934,
+      "sha256": "e4a61a33d7ecc644"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\euckrfreq.py",
+      "size": 13566,
+      "sha256": "de61ee46f5dfb2af"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\euckrprober.py",
+      "size": 1753,
+      "sha256": "862153eb0335ef81"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\euctwfreq.py",
+      "size": 36913,
+      "sha256": "d9a9482c4d4b8797"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\euctwprober.py",
+      "size": 1753,
+      "sha256": "3716e935d06d5345"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\gb2312freq.py",
+      "size": 20735,
+      "sha256": "e3d3ab757cc3f875"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\gb2312prober.py",
+      "size": 1759,
+      "sha256": "28f101b9e6922d2b"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\hebrewprober.py",
+      "size": 14537,
+      "sha256": "f7a4ff2e3fce996f"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\jisfreq.py",
+      "size": 25796,
+      "sha256": "9a6f2d7ebc2a8693"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\johabfreq.py",
+      "size": 42498,
+      "sha256": "741a4e606df81915"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\johabprober.py",
+      "size": 1752,
+      "sha256": "3b5430f67573467b"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\jpcntx.py",
+      "size": 27055,
+      "sha256": "ba11eb61690bc44f"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\langbulgarianmodel.py",
+      "size": 104562,
+      "sha256": "be66ef6053fc4999"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\langgreekmodel.py",
+      "size": 98484,
+      "sha256": "25f07b6eea638c91"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\langhebrewmodel.py",
+      "size": 98196,
+      "sha256": "dc75c768b40f3401"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\langhungarianmodel.py",
+      "size": 101363,
+      "sha256": "5b16de408c64bfc6"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\langrussianmodel.py",
+      "size": 128035,
+      "sha256": "b37f796d367cec44"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\langthaimodel.py",
+      "size": 102774,
+      "sha256": "edb265422b51a539"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\langturkishmodel.py",
+      "size": 95372,
+      "sha256": "5d8d1e19d4c8cb87"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\latin1prober.py",
+      "size": 5380,
+      "sha256": "a75e4412615b9905"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\macromanprober.py",
+      "size": 6077,
+      "sha256": "f5a9dfce663a4c17"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\mbcharsetprober.py",
+      "size": 3715,
+      "sha256": "5abd3858d2381775"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\mbcsgroupprober.py",
+      "size": 2131,
+      "sha256": "891a5a3418d5d033"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\mbcssm.py",
+      "size": 30391,
+      "sha256": "854b4fbc36205836"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\metadata\\__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c14"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\metadata\\languages.py",
+      "size": 13560,
+      "sha256": "161bc121d645c514"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\resultdict.py",
+      "size": 402,
+      "sha256": "7b3e0546f37929a4"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\sbcharsetprober.py",
+      "size": 6400,
+      "sha256": "fa777717dd22ec6a"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\sbcsgroupprober.py",
+      "size": 4137,
+      "sha256": "81c808d1f39f830f"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\sjisprober.py",
+      "size": 4007,
+      "sha256": "6aa42e7cccd1c38e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\universaldetector.py",
+      "size": 14848,
+      "sha256": "c5806b838c7475df"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\utf1632prober.py",
+      "size": 8505,
+      "sha256": "a70d5ea4674c8f58"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\utf8prober.py",
+      "size": 2812,
+      "sha256": "f26d3c51be78f741"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\chardet\\version.py",
+      "size": 244,
+      "sha256": "946b4973118ce384"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\colorama\\__init__.py",
+      "size": 266,
+      "sha256": "c1e3d0038536d2d2"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\colorama\\ansi.py",
+      "size": 2522,
+      "sha256": "4e8a7811e12e6907"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\colorama\\ansitowin32.py",
+      "size": 11128,
+      "sha256": "bcf3586b73996f18"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\colorama\\initialise.py",
+      "size": 3325,
+      "sha256": "fa1227cbce82957a"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\colorama\\tests\\__init__.py",
+      "size": 75,
+      "sha256": "32480f004cc641df"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\colorama\\tests\\ansi_test.py",
+      "size": 2839,
+      "sha256": "15e5620eb5083486"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\colorama\\tests\\ansitowin32_test.py",
+      "size": 10678,
+      "sha256": "44dec0221309e44a"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\colorama\\tests\\initialise_test.py",
+      "size": 6741,
+      "sha256": "05b3f2f977f21f02"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\colorama\\tests\\isatty_test.py",
+      "size": 1866,
+      "sha256": "3e0dba2d1a6fd324"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\colorama\\tests\\utils.py",
+      "size": 1079,
+      "sha256": "d48211ca51b7f73e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\colorama\\tests\\winterm_test.py",
+      "size": 3709,
+      "sha256": "aa85853c48f29b98"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\colorama\\win32.py",
+      "size": 6181,
+      "sha256": "61038ac0c4f0b460"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\colorama\\winterm.py",
+      "size": 7134,
+      "sha256": "5c24050c78cf8ba0"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\distlib\\__init__.py",
+      "size": 625,
+      "sha256": "849285ec51e8a9b9"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\distlib\\compat.py",
+      "size": 41487,
+      "sha256": "527fae201bf2d36c"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\distlib\\database.py",
+      "size": 51965,
+      "sha256": "d15f50becd15af16"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\distlib\\index.py",
+      "size": 20797,
+      "sha256": "9536f0dbaf2b4618"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\distlib\\locators.py",
+      "size": 51767,
+      "sha256": "a35aff33cebf6d12"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\distlib\\manifest.py",
+      "size": 14168,
+      "sha256": "dea7e6026570c51a"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\distlib\\markers.py",
+      "size": 5268,
+      "sha256": "9f70df3a1d72bd9f"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\distlib\\metadata.py",
+      "size": 39693,
+      "sha256": "a41f5667d9817e64"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\distlib\\resources.py",
+      "size": 10820,
+      "sha256": "2f06cf92c7340352"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\distlib\\scripts.py",
+      "size": 18315,
+      "sha256": "9d015737a1bb9ce5"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\distlib\\util.py",
+      "size": 67530,
+      "sha256": "5d2ce7c448bf8b74"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\distlib\\version.py",
+      "size": 23747,
+      "sha256": "f695e476e721bdef"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\distlib\\wheel.py",
+      "size": 43958,
+      "sha256": "155402bdef2ef8bd"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\distro\\__init__.py",
+      "size": 981,
+      "sha256": "d9f1e317e49f80fb"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\distro\\__main__.py",
+      "size": 64,
+      "sha256": "6eef5ddd389fa0a7"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\distro\\distro.py",
+      "size": 49330,
+      "sha256": "5193b52e3221b450"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\idna\\__init__.py",
+      "size": 849,
+      "sha256": "28940dd5e401afc8"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\idna\\codec.py",
+      "size": 3374,
+      "sha256": "ea5cb9a1d29faabc"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\idna\\compat.py",
+      "size": 321,
+      "sha256": "d3fb0e114313e025"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\idna\\core.py",
+      "size": 12950,
+      "sha256": "d49c5c8702b39310"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\idna\\idnadata.py",
+      "size": 44375,
+      "sha256": "c548ea2aa88957c1"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\idna\\intranges.py",
+      "size": 1881,
+      "sha256": "601af87d162e587e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\idna\\package_data.py",
+      "size": 21,
+      "sha256": "0bf8c7273997f0f2"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\idna\\uts46data.py",
+      "size": 206539,
+      "sha256": "cef8d9536e2ce7cf"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\msgpack\\__init__.py",
+      "size": 1132,
+      "sha256": "8721a196799c264c"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\msgpack\\exceptions.py",
+      "size": 1081,
+      "sha256": "7424d67a2f1da64a"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\msgpack\\ext.py",
+      "size": 6079,
+      "sha256": "0b930af098556066"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\msgpack\\fallback.py",
+      "size": 34544,
+      "sha256": "b6f3411f2c7115bb"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\packaging\\__about__.py",
+      "size": 661,
+      "sha256": "ba001220edb0d685"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\packaging\\__init__.py",
+      "size": 497,
+      "sha256": "6fd2a4e4c17b2b18"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\packaging\\_manylinux.py",
+      "size": 11488,
+      "sha256": "5dc6e25c1faa723b"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\packaging\\_musllinux.py",
+      "size": 4378,
+      "sha256": "fca1a063fa9ceef8"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\packaging\\_structures.py",
+      "size": 1431,
+      "sha256": "ab77953666d62461"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\packaging\\markers.py",
+      "size": 8487,
+      "sha256": "00904e718f0eab49"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\packaging\\requirements.py",
+      "size": 4676,
+      "sha256": "36d0e53c1b688e99"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\packaging\\specifiers.py",
+      "size": 30110,
+      "sha256": "2d1434905b07ae5e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\packaging\\tags.py",
+      "size": 15699,
+      "sha256": "966b2718d889f02e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\packaging\\utils.py",
+      "size": 4200,
+      "sha256": "7498de6addc14be4"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\packaging\\version.py",
+      "size": 14665,
+      "sha256": "fdf2d136b16bc587"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pkg_resources\\__init__.py",
+      "size": 109364,
+      "sha256": "85301e2423586fb7"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\platformdirs\\__init__.py",
+      "size": 20155,
+      "sha256": "4a4844615c82fc75"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\platformdirs\\__main__.py",
+      "size": 1476,
+      "sha256": "7d5bd2893cebdbe4"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\platformdirs\\android.py",
+      "size": 7211,
+      "sha256": "cbf10430ac18976f"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\platformdirs\\api.py",
+      "size": 7132,
+      "sha256": "8d6b57d3a8c0272b"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\platformdirs\\macos.py",
+      "size": 3678,
+      "sha256": "2ee7953a85601960"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\platformdirs\\unix.py",
+      "size": 8809,
+      "sha256": "db626147c658d1a2"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\platformdirs\\version.py",
+      "size": 160,
+      "sha256": "99abd94d02092177"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\platformdirs\\windows.py",
+      "size": 9573,
+      "sha256": "e13b5b3c6a161b63"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pygments\\__init__.py",
+      "size": 2983,
+      "sha256": "e80b8396342dbdff"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pygments\\__main__.py",
+      "size": 353,
+      "sha256": "7acf0428cbd78f9c"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pygments\\cmdline.py",
+      "size": 23685,
+      "sha256": "6f2c58269f609e35"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pygments\\console.py",
+      "size": 1697,
+      "sha256": "db06795be53a4ee7"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pygments\\filter.py",
+      "size": 1938,
+      "sha256": "8f968b33d6bdc12c"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pygments\\filters\\__init__.py",
+      "size": 40386,
+      "sha256": "87f928624505a3e1"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pygments\\formatter.py",
+      "size": 4178,
+      "sha256": "27d38bf615cb24a6"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pygments\\formatters\\__init__.py",
+      "size": 5424,
+      "sha256": "ff180071d14aaf44"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pygments\\formatters\\_mapping.py",
+      "size": 4176,
+      "sha256": "d42c37ec5b9094d6"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pygments\\formatters\\bbcode.py",
+      "size": 3314,
+      "sha256": "af56fbc33593268b"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pygments\\formatters\\groff.py",
+      "size": 5094,
+      "sha256": "c72f197f7b573a8e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pygments\\formatters\\html.py",
+      "size": 35610,
+      "sha256": "3c8cc0ca294da9a4"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pygments\\formatters\\img.py",
+      "size": 21938,
+      "sha256": "5ca5e6836fd738da"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pygments\\formatters\\irc.py",
+      "size": 4981,
+      "sha256": "129fa6f23777be81"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pygments\\formatters\\latex.py",
+      "size": 19351,
+      "sha256": "146cc9f98a924c4f"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pygments\\formatters\\other.py",
+      "size": 5073,
+      "sha256": "80fc6493905d0335"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pygments\\formatters\\pangomarkup.py",
+      "size": 2212,
+      "sha256": "e8b2a741cf32878f"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pygments\\formatters\\rtf.py",
+      "size": 5014,
+      "sha256": "680d2ffe9b16e8a6"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pygments\\formatters\\svg.py",
+      "size": 7335,
+      "sha256": "75038d5b2a5bcdfb"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pygments\\formatters\\terminal.py",
+      "size": 4674,
+      "sha256": "146faba634691663"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pygments\\formatters\\terminal256.py",
+      "size": 11753,
+      "sha256": "d77489dc3e6915da"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pygments\\lexer.py",
+      "size": 34618,
+      "sha256": "d81a6a2e54f6131b"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pygments\\lexers\\__init__.py",
+      "size": 12130,
+      "sha256": "8f92848b93bf550e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pygments\\lexers\\_mapping.py",
+      "size": 72281,
+      "sha256": "1edb38aff650f227"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pygments\\lexers\\python.py",
+      "size": 53424,
+      "sha256": "73b8e798a154f432"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pygments\\modeline.py",
+      "size": 986,
+      "sha256": "785daf3b82e9386a"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pygments\\plugin.py",
+      "size": 2591,
+      "sha256": "8f5161df5d116d5d"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pygments\\regexopt.py",
+      "size": 3072,
+      "sha256": "8e0d402e881c6065"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pygments\\scanner.py",
+      "size": 3092,
+      "sha256": "6ff9eee7f7f71c28"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pygments\\sphinxext.py",
+      "size": 6882,
+      "sha256": "c011589b5f34a9e6"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pygments\\style.py",
+      "size": 6257,
+      "sha256": "0b8ab2a09ad44e4a"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pygments\\styles\\__init__.py",
+      "size": 3700,
+      "sha256": "85eec78d0c7bb02d"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pygments\\token.py",
+      "size": 6184,
+      "sha256": "b1e36c99c721f4e1"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pygments\\unistring.py",
+      "size": 63223,
+      "sha256": "15a51f1b5e0d0491"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pygments\\util.py",
+      "size": 10230,
+      "sha256": "004558d2aa27cb21"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pyparsing\\__init__.py",
+      "size": 9116,
+      "sha256": "f66d496c4d894cb7"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pyparsing\\actions.py",
+      "size": 6567,
+      "sha256": "d39b9a20f3b39c93"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pyparsing\\common.py",
+      "size": 13387,
+      "sha256": "a7eddcf37139f838"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pyparsing\\core.py",
+      "size": 224445,
+      "sha256": "cafb9194ba57485f"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pyparsing\\diagram\\__init__.py",
+      "size": 24215,
+      "sha256": "9f19833a8605f4d5"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pyparsing\\exceptions.py",
+      "size": 9523,
+      "sha256": "e8973a5b5783641c"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pyparsing\\helpers.py",
+      "size": 38646,
+      "sha256": "059247080f124b4a"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pyparsing\\results.py",
+      "size": 26692,
+      "sha256": "f5dcaa43ec373237"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pyparsing\\testing.py",
+      "size": 13488,
+      "sha256": "7899dc834a7cdf39"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pyparsing\\unicode.py",
+      "size": 10646,
+      "sha256": "7c03ddb098804456"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pyparsing\\util.py",
+      "size": 8670,
+      "sha256": "bd33334ddc120f25"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pyproject_hooks\\__init__.py",
+      "size": 491,
+      "sha256": "9027a19b2d146816"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pyproject_hooks\\_compat.py",
+      "size": 138,
+      "sha256": "6f2e9ebeb627aa48"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pyproject_hooks\\_impl.py",
+      "size": 11920,
+      "sha256": "eb5189c73422a742"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pyproject_hooks\\_in_process\\__init__.py",
+      "size": 546,
+      "sha256": "f604004e9b5b1647"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\pyproject_hooks\\_in_process\\_in_process.py",
+      "size": 10927,
+      "sha256": "9b66f7e1cf75ec85"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\requests\\__init__.py",
+      "size": 5169,
+      "sha256": "a30ba3a1be1d938e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\requests\\__version__.py",
+      "size": 435,
+      "sha256": "b2c237133b7b3dac"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\requests\\_internal_utils.py",
+      "size": 1495,
+      "sha256": "9cc4329abe21b37d"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\requests\\adapters.py",
+      "size": 19697,
+      "sha256": "89d8fa7197087772"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\requests\\api.py",
+      "size": 6449,
+      "sha256": "abad71717ab8b668"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\requests\\auth.py",
+      "size": 10187,
+      "sha256": "87e1cb955c7d8fca"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\requests\\certs.py",
+      "size": 575,
+      "sha256": "3d53e8a01d233f98"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\requests\\compat.py",
+      "size": 1286,
+      "sha256": "2212bdaaec97d114"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\requests\\cookies.py",
+      "size": 18560,
+      "sha256": "903de43447028fe9"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\requests\\exceptions.py",
+      "size": 3823,
+      "sha256": "140fbf915c016768"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\requests\\help.py",
+      "size": 3879,
+      "sha256": "167000925bfc3069"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\requests\\hooks.py",
+      "size": 733,
+      "sha256": "0a2bb2b221c0dfd5"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\requests\\models.py",
+      "size": 35288,
+      "sha256": "74367e893868b64c"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\requests\\packages.py",
+      "size": 695,
+      "sha256": "9e32665627d8e1a4"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\requests\\sessions.py",
+      "size": 30373,
+      "sha256": "f8bbd3ceb3ed7ad4"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\requests\\status_codes.py",
+      "size": 4235,
+      "sha256": "16f1e64f9b87fbfb"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\requests\\structures.py",
+      "size": 2912,
+      "sha256": "f886e6855cf4e92f"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\requests\\utils.py",
+      "size": 33460,
+      "sha256": "90e3e7d2a603eb14"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\resolvelib\\__init__.py",
+      "size": 537,
+      "sha256": "879d3d4dd11ca5be"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\resolvelib\\compat\\__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c14"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\resolvelib\\compat\\collections_abc.py",
+      "size": 156,
+      "sha256": "bb2f31519f8d0c4c"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\resolvelib\\providers.py",
+      "size": 5871,
+      "sha256": "7eebaf56b09eb6ee"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\resolvelib\\reporters.py",
+      "size": 1601,
+      "sha256": "4d26d1996cd3736e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\resolvelib\\resolvers.py",
+      "size": 20511,
+      "sha256": "1bcaec2d94aaeb88"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\resolvelib\\structs.py",
+      "size": 4963,
+      "sha256": "d3fd7f5cef33fc22"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\__init__.py",
+      "size": 6090,
+      "sha256": "751c6320bf926c55"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\__main__.py",
+      "size": 8478,
+      "sha256": "4d3f2c6fd3d39ec9"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\_cell_widths.py",
+      "size": 10096,
+      "sha256": "da7e048898b75fdb"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\_emoji_codes.py",
+      "size": 140235,
+      "sha256": "86ed552fd9db55da"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\_emoji_replace.py",
+      "size": 1064,
+      "sha256": "9fe91c7adb04531d"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\_export_format.py",
+      "size": 2100,
+      "sha256": "ab1815de72a75d0b"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\_extension.py",
+      "size": 265,
+      "sha256": "5ede3b41a7022b06"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\_fileno.py",
+      "size": 799,
+      "sha256": "1d66713f90b66a33"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\_inspect.py",
+      "size": 9695,
+      "sha256": "a19246c37d5eeb87"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\_log_render.py",
+      "size": 3225,
+      "sha256": "d41c88d0f035669c"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\_loop.py",
+      "size": 1236,
+      "sha256": "855ffa08b7683e6d"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\_null_file.py",
+      "size": 1387,
+      "sha256": "b4649793fbfe2199"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\_palettes.py",
+      "size": 7063,
+      "sha256": "71d7afd4940a6742"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\_pick.py",
+      "size": 423,
+      "sha256": "7af0edf10378945e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\_ratio.py",
+      "size": 5472,
+      "sha256": "da52d29622f4db96"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\_spinners.py",
+      "size": 19919,
+      "sha256": "536af5fe0ff5cd28"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\_stack.py",
+      "size": 351,
+      "sha256": "f82f0e2bbaf19f7b"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\_timer.py",
+      "size": 417,
+      "sha256": "cde9716d3ea83c56"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\_win32_console.py",
+      "size": 22820,
+      "sha256": "3f4bf12367dc9ddc"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\_windows.py",
+      "size": 1926,
+      "sha256": "76f365f5399f3f33"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\_windows_renderer.py",
+      "size": 2783,
+      "sha256": "b7be192f7c6e0c23"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\_wrap.py",
+      "size": 1840,
+      "sha256": "c5f57ff6dd1283aa"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\abc.py",
+      "size": 890,
+      "sha256": "38df84f99a924a17"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\align.py",
+      "size": 10368,
+      "sha256": "262f98a247e48677"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\ansi.py",
+      "size": 6906,
+      "sha256": "883eb9df6418aa70"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\bar.py",
+      "size": 3264,
+      "sha256": "6bb503df4dc171c4"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\box.py",
+      "size": 9842,
+      "sha256": "149ea72378c3ee1d"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\cells.py",
+      "size": 4509,
+      "sha256": "eb6ef3b49b3dcce2"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\color.py",
+      "size": 18224,
+      "sha256": "f4687de7c5377fbe"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\color_triplet.py",
+      "size": 1054,
+      "sha256": "de585091d25bbd63"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\columns.py",
+      "size": 7131,
+      "sha256": "1d45f429c326f5db"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\console.py",
+      "size": 99218,
+      "sha256": "a43be46cb92fb592"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\constrain.py",
+      "size": 1288,
+      "sha256": "d5520fb82f0082d2"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\containers.py",
+      "size": 5497,
+      "sha256": "68a826e540c79f93"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\control.py",
+      "size": 6630,
+      "sha256": "0d29074d440ba2b7"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\default_styles.py",
+      "size": 8082,
+      "sha256": "f857b7d7c90c548f"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\diagnose.py",
+      "size": 972,
+      "sha256": "6a7eaea2ec2128f0"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\emoji.py",
+      "size": 2501,
+      "sha256": "a264c5f5ab1a027b"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\errors.py",
+      "size": 642,
+      "sha256": "e693f729ce5de102"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\file_proxy.py",
+      "size": 1683,
+      "sha256": "4e5f531cc0d9f8f9"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\filesize.py",
+      "size": 2508,
+      "sha256": "f5f4cb00f080c079"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\highlighter.py",
+      "size": 9584,
+      "sha256": "a770b5838418cdec"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\json.py",
+      "size": 5032,
+      "sha256": "118a7db9c8fe9c38"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\jupyter.py",
+      "size": 3252,
+      "sha256": "432a0aa04ffc21d0"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\layout.py",
+      "size": 14007,
+      "sha256": "44560be8774216c1"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\live.py",
+      "size": 14273,
+      "sha256": "bd9cd8beeedfab09"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\live_render.py",
+      "size": 3667,
+      "sha256": "cc4966dcfadf488b"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\logging.py",
+      "size": 11903,
+      "sha256": "b81f9c07edd0e1b9"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\markup.py",
+      "size": 8198,
+      "sha256": "c73178b8069f8847"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\measure.py",
+      "size": 5305,
+      "sha256": "1e6ac8257f2c5914"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\padding.py",
+      "size": 4970,
+      "sha256": "913146b1d19ed28b"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\pager.py",
+      "size": 828,
+      "sha256": "48efc44c114a6e0d"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\palette.py",
+      "size": 3396,
+      "sha256": "9489ef4753830d3d"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\panel.py",
+      "size": 10574,
+      "sha256": "c0631ee3427c2821"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\pretty.py",
+      "size": 35852,
+      "sha256": "78b11837dc5568c3"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\progress.py",
+      "size": 59706,
+      "sha256": "9f8285f6f932f3fe"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\progress_bar.py",
+      "size": 8165,
+      "sha256": "704a017e473794bc"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\prompt.py",
+      "size": 11303,
+      "sha256": "c74996fa920fa1d2"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\protocol.py",
+      "size": 1391,
+      "sha256": "e611c70c33477247"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\region.py",
+      "size": 166,
+      "sha256": "acd4fdc59ad56536"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\repr.py",
+      "size": 4431,
+      "sha256": "f59f28b4e98cfadc"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\rule.py",
+      "size": 4602,
+      "sha256": "d1f35a4bf68445ad"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\scope.py",
+      "size": 2843,
+      "sha256": "4cc514f2aa35eed8"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\screen.py",
+      "size": 1591,
+      "sha256": "628791784494871e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\segment.py",
+      "size": 24247,
+      "sha256": "5cb9c9105bdc5776"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\spinner.py",
+      "size": 4339,
+      "sha256": "d799280a61740d07"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\status.py",
+      "size": 4425,
+      "sha256": "809b085c865e4a8d"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\style.py",
+      "size": 27073,
+      "sha256": "de18a8707ff837cb"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\styled.py",
+      "size": 1258,
+      "sha256": "799367cc6ac8e248"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\syntax.py",
+      "size": 35173,
+      "sha256": "8e00e25422ba7294"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\table.py",
+      "size": 39684,
+      "sha256": "f96cdeb0bf9524ab"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\terminal_theme.py",
+      "size": 3370,
+      "sha256": "d63e7eb9f25f9ef9"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\text.py",
+      "size": 45525,
+      "sha256": "ffc2419526aed1cd"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\theme.py",
+      "size": 3777,
+      "sha256": "6de9452688330345"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\themes.py",
+      "size": 102,
+      "sha256": "d318132e8cdf69b7"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\traceback.py",
+      "size": 29604,
+      "sha256": "c822d5ac2b72a053"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\tree.py",
+      "size": 9169,
+      "sha256": "04c6d460d8d2f6ea"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\six.py",
+      "size": 34549,
+      "sha256": "4ce39f422ee71467"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\tenacity\\__init__.py",
+      "size": 20493,
+      "sha256": "de4bc02fa28296af"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\tenacity\\_asyncio.py",
+      "size": 3551,
+      "sha256": "422eb0810b066bd3"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\tenacity\\_utils.py",
+      "size": 2179,
+      "sha256": "b9bb3a6bbb318f72"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\tenacity\\after.py",
+      "size": 1682,
+      "sha256": "4b934221249c3de2"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\tenacity\\before.py",
+      "size": 1562,
+      "sha256": "748644f609814df7"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\tenacity\\before_sleep.py",
+      "size": 2372,
+      "sha256": "626a6037d63b1c69"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\tenacity\\nap.py",
+      "size": 1383,
+      "sha256": "7d15af9f3d5a2336"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\tenacity\\retry.py",
+      "size": 8746,
+      "sha256": "8ebcc3fe6c40e664"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\tenacity\\stop.py",
+      "size": 3086,
+      "sha256": "60c26ced98197cd0"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\tenacity\\tornadoweb.py",
+      "size": 2142,
+      "sha256": "a68dbdfc5d4cb7ca"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\tenacity\\wait.py",
+      "size": 8024,
+      "sha256": "dc57012680838329"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\tomli\\__init__.py",
+      "size": 396,
+      "sha256": "26153057ae830758"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\tomli\\_parser.py",
+      "size": 22633,
+      "sha256": "83df8435a00b4be0"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\tomli\\_re.py",
+      "size": 2943,
+      "sha256": "75b8e0e428594f6d"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\tomli\\_types.py",
+      "size": 254,
+      "sha256": "f864c6d9552a929c"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\truststore\\__init__.py",
+      "size": 403,
+      "sha256": "ab34cb487f0fbc09"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\truststore\\_api.py",
+      "size": 9893,
+      "sha256": "c63b84bbfae51f88"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\truststore\\_macos.py",
+      "size": 17694,
+      "sha256": "063bc02a80235e17"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\truststore\\_openssl.py",
+      "size": 2324,
+      "sha256": "2cb519ed919a8a8f"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\truststore\\_ssl_constants.py",
+      "size": 1130,
+      "sha256": "3540f87d529d483d"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\truststore\\_windows.py",
+      "size": 17468,
+      "sha256": "d71fc485139e27d4"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\typing_extensions.py",
+      "size": 111130,
+      "sha256": "116a5ca724275667"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\__init__.py",
+      "size": 3333,
+      "sha256": "8972dc6222724a7d"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\_collections.py",
+      "size": 10811,
+      "sha256": "469d6657206073f5"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\_version.py",
+      "size": 64,
+      "sha256": "6b3a0ceccec15000"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\connection.py",
+      "size": 20300,
+      "sha256": "f7693db5dff2e0f1"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\connectionpool.py",
+      "size": 39990,
+      "sha256": "22d5436ac0e73d13"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\contrib\\__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c14"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\contrib\\_appengine_environ.py",
+      "size": 957,
+      "sha256": "6c36f2384856d822"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\contrib\\_securetransport\\__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c14"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\contrib\\_securetransport\\bindings.py",
+      "size": 17632,
+      "sha256": "e1793ae2a2243c1b"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\contrib\\_securetransport\\low_level.py",
+      "size": 13922,
+      "sha256": "076241076fcd44fd"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\contrib\\appengine.py",
+      "size": 11036,
+      "sha256": "551ebc780544d77e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\contrib\\ntlmpool.py",
+      "size": 4528,
+      "sha256": "3657e45bb58c756f"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\contrib\\pyopenssl.py",
+      "size": 17081,
+      "sha256": "843261e0c87263fa"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\contrib\\securetransport.py",
+      "size": 34448,
+      "sha256": "ca165d9958d8e8f2"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\contrib\\socks.py",
+      "size": 7097,
+      "sha256": "6918bd7965e8f591"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\exceptions.py",
+      "size": 8217,
+      "sha256": "d0c9e7a372874cd7"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\fields.py",
+      "size": 8579,
+      "sha256": "92f2c30a0fc9987d"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\filepost.py",
+      "size": 2440,
+      "sha256": "e5bfeaaa04475652"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\packages\\__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c14"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\packages\\backports\\__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c14"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\packages\\backports\\makefile.py",
+      "size": 1417,
+      "sha256": "9dbcedde2d1a80f5"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\packages\\backports\\weakref_finalize.py",
+      "size": 5343,
+      "sha256": "b5109a97938084d4"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\packages\\six.py",
+      "size": 34665,
+      "sha256": "6fd2ccd30057bfb1"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\poolmanager.py",
+      "size": 19752,
+      "sha256": "d22f1c260aeaba9c"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\request.py",
+      "size": 6691,
+      "sha256": "61358536bed02308"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\response.py",
+      "size": 30641,
+      "sha256": "7e60c9005906ef5b"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\util\\__init__.py",
+      "size": 1155,
+      "sha256": "2449929a6aaa2f26"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\util\\connection.py",
+      "size": 4901,
+      "sha256": "e4bc760753d6dbd2"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\util\\proxy.py",
+      "size": 1605,
+      "sha256": "cd4bcf3c226ba7a7"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\util\\queue.py",
+      "size": 498,
+      "sha256": "9d1817f3f797fbf5"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\util\\request.py",
+      "size": 3997,
+      "sha256": "0b4394b76b5c53a2"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\util\\response.py",
+      "size": 3510,
+      "sha256": "189a60dc4822f6a6"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\util\\retry.py",
+      "size": 22013,
+      "sha256": "67a5847f9d7c7933"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\util\\ssl_.py",
+      "size": 17177,
+      "sha256": "5f8f80a96f756983"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\util\\ssl_match_hostname.py",
+      "size": 5758,
+      "sha256": "22be1c6551239809"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\util\\ssltransport.py",
+      "size": 6895,
+      "sha256": "340faee6b313ac31"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\util\\timeout.py",
+      "size": 10168,
+      "sha256": "730ab874c93cee62"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\util\\url.py",
+      "size": 14296,
+      "sha256": "942004ecce66c80f"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\util\\wait.py",
+      "size": 5403,
+      "sha256": "7ce5f4fdf6a8cc6d"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\webencodings\\__init__.py",
+      "size": 10579,
+      "sha256": "a8e04922e3f2ff80"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\webencodings\\labels.py",
+      "size": 8979,
+      "sha256": "e003bf2b14dd76a1"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\webencodings\\mklabels.py",
+      "size": 1305,
+      "sha256": "19821ecb09e968b9"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\webencodings\\tests.py",
+      "size": 6563,
+      "sha256": "3ad18bca384d6357"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pip\\_vendor\\webencodings\\x_user_defined.py",
+      "size": 4307,
+      "sha256": "c8ea9649d9a9cad1"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\__init__.py",
+      "size": 108568,
+      "sha256": "7d3e58dcfd6d7125"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c14"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\appdirs.py",
+      "size": 24701,
+      "sha256": "3227af504bafde5f"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\importlib_resources\\__init__.py",
+      "size": 506,
+      "sha256": "7af3e6d7690b818a"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\importlib_resources\\_adapters.py",
+      "size": 4504,
+      "sha256": "a39d6d3f686956da"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\importlib_resources\\_common.py",
+      "size": 2741,
+      "sha256": "888c40690868b528"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\importlib_resources\\_compat.py",
+      "size": 2706,
+      "sha256": "9c504218cbc89a09"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\importlib_resources\\_itertools.py",
+      "size": 884,
+      "sha256": "582749d46b3f90d1"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\importlib_resources\\_legacy.py",
+      "size": 3494,
+      "sha256": "4cc2e4c7a68433a5"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\importlib_resources\\abc.py",
+      "size": 3886,
+      "sha256": "32f4c92576a36e5e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\importlib_resources\\readers.py",
+      "size": 3566,
+      "sha256": "ffd40b190e40ceb1"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\importlib_resources\\simple.py",
+      "size": 2836,
+      "sha256": "c6dd2a8576f0b776"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\jaraco\\__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c14"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\jaraco\\context.py",
+      "size": 5420,
+      "sha256": "ed7d6da422dce443"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\jaraco\\functools.py",
+      "size": 13515,
+      "sha256": "78bc0f87c15663ba"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\jaraco\\text\\__init__.py",
+      "size": 15526,
+      "sha256": "70de796c571c796e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\more_itertools\\__init__.py",
+      "size": 83,
+      "sha256": "65062effd1fab2d4"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\more_itertools\\more.py",
+      "size": 132569,
+      "sha256": "a1abdeff6ea372d2"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\more_itertools\\recipes.py",
+      "size": 18410,
+      "sha256": "37a6820f0a083ef1"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__about__.py",
+      "size": 661,
+      "sha256": "ba001220edb0d685"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__init__.py",
+      "size": 497,
+      "sha256": "6fd2a4e4c17b2b18"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_manylinux.py",
+      "size": 11488,
+      "sha256": "5dc6e25c1faa723b"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_musllinux.py",
+      "size": 4378,
+      "sha256": "fca1a063fa9ceef8"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_structures.py",
+      "size": 1431,
+      "sha256": "ab77953666d62461"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\packaging\\markers.py",
+      "size": 8496,
+      "sha256": "80548aa014dbd2c2"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\packaging\\requirements.py",
+      "size": 4706,
+      "sha256": "b89e1c8f09b7fe7a"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\packaging\\specifiers.py",
+      "size": 30110,
+      "sha256": "2d1434905b07ae5e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\packaging\\tags.py",
+      "size": 15699,
+      "sha256": "966b2718d889f02e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\packaging\\utils.py",
+      "size": 4200,
+      "sha256": "7498de6addc14be4"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\packaging\\version.py",
+      "size": 14665,
+      "sha256": "fdf2d136b16bc587"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\pyparsing\\__init__.py",
+      "size": 9159,
+      "sha256": "e76407de580f6c98"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\pyparsing\\actions.py",
+      "size": 6426,
+      "sha256": "c14f62df67b4cb5c"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\pyparsing\\common.py",
+      "size": 12936,
+      "sha256": "9452fdee8a08791e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\pyparsing\\core.py",
+      "size": 213310,
+      "sha256": "bbc1a9b5013f1fac"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\pyparsing\\diagram\\__init__.py",
+      "size": 23668,
+      "sha256": "7ff11fc5a86aadd9"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\pyparsing\\exceptions.py",
+      "size": 9023,
+      "sha256": "dcb6d269f0f7d8d6"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\pyparsing\\helpers.py",
+      "size": 39129,
+      "sha256": "42950e8d6d3ea6cb"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\pyparsing\\results.py",
+      "size": 25341,
+      "sha256": "1e036f5955c17503"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\pyparsing\\testing.py",
+      "size": 13402,
+      "sha256": "eedbb801ba78b927"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\pyparsing\\unicode.py",
+      "size": 10787,
+      "sha256": "7f0ba1323df4490d"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\pyparsing\\util.py",
+      "size": 6805,
+      "sha256": "92aefbd8ee5849e5"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\_vendor\\zipp.py",
+      "size": 8425,
+      "sha256": "6a3ced387fbd23b2"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\pkg_resources\\extern\\__init__.py",
+      "size": 2426,
+      "sha256": "8a716808af639ffc"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\__init__.py",
+      "size": 8429,
+      "sha256": "0ea2f8593c325c5a"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_deprecation_warning.py",
+      "size": 218,
+      "sha256": "8d4f7e76d7efe9c2"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\__init__.py",
+      "size": 537,
+      "sha256": "dd340f2ea603c203"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\_collections.py",
+      "size": 1330,
+      "sha256": "b3bce44a1ed05322"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\_functools.py",
+      "size": 411,
+      "sha256": "00167e2f2c3e8a02"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\_macos_compat.py",
+      "size": 239,
+      "sha256": "faffd9d0cd4b107e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\_msvccompiler.py",
+      "size": 19672,
+      "sha256": "9869a5870eee092a"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\archive_util.py",
+      "size": 8603,
+      "sha256": "917c6344a02ac0a8"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\bcppcompiler.py",
+      "size": 14789,
+      "sha256": "c34570bc09b2b768"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\ccompiler.py",
+      "size": 47369,
+      "sha256": "af424cb8d7c0a51e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\cmd.py",
+      "size": 17973,
+      "sha256": "f1cc7e581e94b1a0"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\__init__.py",
+      "size": 430,
+      "sha256": "7d5529b380c986f4"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\_framework_compat.py",
+      "size": 1614,
+      "sha256": "1d6f386757169a0e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\bdist.py",
+      "size": 5441,
+      "sha256": "8eea8ccfc594c866"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\bdist_dumb.py",
+      "size": 4701,
+      "sha256": "224d7fee6f483df7"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\bdist_rpm.py",
+      "size": 22051,
+      "sha256": "1c59f2ee11ebbdf3"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\build.py",
+      "size": 5617,
+      "sha256": "2ba9dfc0fd53605e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\build_clib.py",
+      "size": 7728,
+      "sha256": "da579740035b70aa"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\build_ext.py",
+      "size": 31558,
+      "sha256": "98520445af7aa495"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\build_py.py",
+      "size": 16568,
+      "sha256": "03e914b8b4577fe3"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\build_scripts.py",
+      "size": 5624,
+      "sha256": "55848bbadabb856b"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\check.py",
+      "size": 4888,
+      "sha256": "d8f6fb9b58ce8d8e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\clean.py",
+      "size": 2603,
+      "sha256": "f79d93c467b46728"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\config.py",
+      "size": 13137,
+      "sha256": "7733e7720553aba4"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\install.py",
+      "size": 30221,
+      "sha256": "e0bab86954927cd0"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\install_data.py",
+      "size": 2779,
+      "sha256": "9b376e4abc65dc8c"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\install_egg_info.py",
+      "size": 2785,
+      "sha256": "74e8cd372b5351ca"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\install_headers.py",
+      "size": 1189,
+      "sha256": "77c44809c43c3607"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\install_lib.py",
+      "size": 8434,
+      "sha256": "6be892d45d7ad1b0"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\install_scripts.py",
+      "size": 1936,
+      "sha256": "e88230cfcc498f96"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\py37compat.py",
+      "size": 672,
+      "sha256": "128242f20558308b"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\register.py",
+      "size": 11765,
+      "sha256": "4b2b6be80041b9db"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\sdist.py",
+      "size": 19241,
+      "sha256": "ccc16476f77193d7"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\upload.py",
+      "size": 7477,
+      "sha256": "7c9e6706e7867220"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\config.py",
+      "size": 4920,
+      "sha256": "d0c25d1170273f91"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\core.py",
+      "size": 9451,
+      "sha256": "b1cda900b1b71ecc"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\cygwinccompiler.py",
+      "size": 12537,
+      "sha256": "1fd379226595bd5d"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\debug.py",
+      "size": 139,
+      "sha256": "37a32b4c0a8aea5f"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\dep_util.py",
+      "size": 3423,
+      "sha256": "44187c92c2477413"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\dir_util.py",
+      "size": 8082,
+      "sha256": "19f00cbe510f92fa"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\dist.py",
+      "size": 50186,
+      "sha256": "2531c769ed2bc055"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\errors.py",
+      "size": 3589,
+      "sha256": "66d0709e10e9400d"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\extension.py",
+      "size": 10270,
+      "sha256": "1744c1363624326b"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\fancy_getopt.py",
+      "size": 17910,
+      "sha256": "931550384060d807"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\file_util.py",
+      "size": 8226,
+      "sha256": "39446988b3e15a65"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\filelist.py",
+      "size": 13713,
+      "sha256": "379cc95c79e9ad3f"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\log.py",
+      "size": 1972,
+      "sha256": "a6b01027f8b2e070"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\msvc9compiler.py",
+      "size": 30235,
+      "sha256": "d41be79d4209d517"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\msvccompiler.py",
+      "size": 23602,
+      "sha256": "347d0a90a274644f"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\py38compat.py",
+      "size": 217,
+      "sha256": "819f8d43973ab9fc"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\py39compat.py",
+      "size": 639,
+      "sha256": "be4c63bf6d87d5b8"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\spawn.py",
+      "size": 3517,
+      "sha256": "5d943d8df6b0af6d"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\sysconfig.py",
+      "size": 18858,
+      "sha256": "5e0e8ae1a6c58550"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\text_file.py",
+      "size": 12096,
+      "sha256": "b4b8c825506eed53"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\unixccompiler.py",
+      "size": 15641,
+      "sha256": "d20f2b3cd2b5fb14"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\util.py",
+      "size": 18128,
+      "sha256": "92466f7c05e27a15"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\version.py",
+      "size": 12952,
+      "sha256": "e87578974b471125"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\versionpredicate.py",
+      "size": 5248,
+      "sha256": "8f032d3702ad12a8"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_entry_points.py",
+      "size": 1972,
+      "sha256": "e6b47212e882d2d7"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_imp.py",
+      "size": 2392,
+      "sha256": "1e617dd486e2b517"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_importlib.py",
+      "size": 1311,
+      "sha256": "d512d1ce93423ca1"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_itertools.py",
+      "size": 675,
+      "sha256": "a590205cdcfab513"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_path.py",
+      "size": 749,
+      "sha256": "f4675b12eafa7ff9"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_reqs.py",
+      "size": 501,
+      "sha256": "0297533a60c5c8ae"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c14"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\__init__.py",
+      "size": 30130,
+      "sha256": "c515f04edbe0e040"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\_adapters.py",
+      "size": 1862,
+      "sha256": "07a7c28b9fbc98b5"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\_collections.py",
+      "size": 743,
+      "sha256": "089d0e4c21c88d60"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\_compat.py",
+      "size": 1828,
+      "sha256": "728b4168c501fb6a"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\_functools.py",
+      "size": 2895,
+      "sha256": "3ec636fb8aeb297e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\_itertools.py",
+      "size": 2068,
+      "sha256": "72faffdaff0145bc"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\_meta.py",
+      "size": 1154,
+      "sha256": "fc5e3c1eefe31719"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\_text.py",
+      "size": 2166,
+      "sha256": "1c2b0592c66924b7"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_resources\\__init__.py",
+      "size": 506,
+      "sha256": "7af3e6d7690b818a"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_resources\\_adapters.py",
+      "size": 4504,
+      "sha256": "a39d6d3f686956da"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_resources\\_common.py",
+      "size": 2741,
+      "sha256": "888c40690868b528"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_resources\\_compat.py",
+      "size": 2706,
+      "sha256": "9c504218cbc89a09"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_resources\\_itertools.py",
+      "size": 884,
+      "sha256": "582749d46b3f90d1"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_resources\\_legacy.py",
+      "size": 3494,
+      "sha256": "4cc2e4c7a68433a5"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_resources\\abc.py",
+      "size": 3886,
+      "sha256": "32f4c92576a36e5e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_resources\\readers.py",
+      "size": 3566,
+      "sha256": "ffd40b190e40ceb1"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_resources\\simple.py",
+      "size": 2836,
+      "sha256": "c6dd2a8576f0b776"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco\\__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c14"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco\\context.py",
+      "size": 5420,
+      "sha256": "ed7d6da422dce443"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco\\functools.py",
+      "size": 13512,
+      "sha256": "6a9d6aa1768d0013"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco\\text\\__init__.py",
+      "size": 15517,
+      "sha256": "29f14631eaeb90df"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\more_itertools\\__init__.py",
+      "size": 82,
+      "sha256": "0bbb177df1d35ccd"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\more_itertools\\more.py",
+      "size": 117959,
+      "sha256": "d2b07f9a26c5479d"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\more_itertools\\recipes.py",
+      "size": 16256,
+      "sha256": "524364aec672aa2c"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\ordered_set.py",
+      "size": 15130,
+      "sha256": "75b68272cdbb7723"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\__about__.py",
+      "size": 661,
+      "sha256": "ba001220edb0d685"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\__init__.py",
+      "size": 497,
+      "sha256": "6fd2a4e4c17b2b18"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\_manylinux.py",
+      "size": 11488,
+      "sha256": "5dc6e25c1faa723b"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\_musllinux.py",
+      "size": 4378,
+      "sha256": "fca1a063fa9ceef8"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\_structures.py",
+      "size": 1431,
+      "sha256": "ab77953666d62461"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\markers.py",
+      "size": 8493,
+      "sha256": "96285182aa598cb3"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\requirements.py",
+      "size": 4700,
+      "sha256": "3a9774163aa07448"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\specifiers.py",
+      "size": 30110,
+      "sha256": "2d1434905b07ae5e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\tags.py",
+      "size": 15699,
+      "sha256": "966b2718d889f02e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\utils.py",
+      "size": 4200,
+      "sha256": "7498de6addc14be4"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\version.py",
+      "size": 14665,
+      "sha256": "fdf2d136b16bc587"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\pyparsing\\__init__.py",
+      "size": 9159,
+      "sha256": "e76407de580f6c98"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\pyparsing\\actions.py",
+      "size": 6426,
+      "sha256": "c14f62df67b4cb5c"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\pyparsing\\common.py",
+      "size": 12936,
+      "sha256": "9452fdee8a08791e"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\pyparsing\\core.py",
+      "size": 213310,
+      "sha256": "bbc1a9b5013f1fac"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\pyparsing\\diagram\\__init__.py",
+      "size": 23668,
+      "sha256": "7ff11fc5a86aadd9"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\pyparsing\\exceptions.py",
+      "size": 9023,
+      "sha256": "dcb6d269f0f7d8d6"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\pyparsing\\helpers.py",
+      "size": 39129,
+      "sha256": "42950e8d6d3ea6cb"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\pyparsing\\results.py",
+      "size": 25341,
+      "sha256": "1e036f5955c17503"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\pyparsing\\testing.py",
+      "size": 13402,
+      "sha256": "eedbb801ba78b927"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\pyparsing\\unicode.py",
+      "size": 10787,
+      "sha256": "7f0ba1323df4490d"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\pyparsing\\util.py",
+      "size": 6805,
+      "sha256": "92aefbd8ee5849e5"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\tomli\\__init__.py",
+      "size": 396,
+      "sha256": "26153057ae830758"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\tomli\\_parser.py",
+      "size": 22633,
+      "sha256": "83df8435a00b4be0"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\tomli\\_re.py",
+      "size": 2943,
+      "sha256": "75b8e0e428594f6d"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\tomli\\_types.py",
+      "size": 254,
+      "sha256": "f864c6d9552a929c"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\typing_extensions.py",
+      "size": 87149,
+      "sha256": "d6eaa2fd14a523b8"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\zipp.py",
+      "size": 8425,
+      "sha256": "6a3ced387fbd23b2"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\archive_util.py",
+      "size": 7346,
+      "sha256": "e964a1a4347fb866"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\build_meta.py",
+      "size": 19539,
+      "sha256": "2f0e8b98a4150127"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\command\\__init__.py",
+      "size": 396,
+      "sha256": "1d9952a69381f15a"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\command\\alias.py",
+      "size": 2381,
+      "sha256": "d6c2d0c5970d87a7"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\command\\bdist_egg.py",
+      "size": 16623,
+      "sha256": "40422ed409204b4d"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\command\\bdist_rpm.py",
+      "size": 1182,
+      "sha256": "3f1ae0a073cd6b0d"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\command\\build.py",
+      "size": 6595,
+      "sha256": "e456b203b9919260"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\command\\build_clib.py",
+      "size": 4415,
+      "sha256": "7d61d2146924d745"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\command\\build_ext.py",
+      "size": 15821,
+      "sha256": "7189b83af9653dfe"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\command\\build_py.py",
+      "size": 14115,
+      "sha256": "08ca03f46c5de6fb"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\command\\develop.py",
+      "size": 7012,
+      "sha256": "e7f4acec435dd7f0"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\command\\dist_info.py",
+      "size": 4800,
+      "sha256": "55d70d1ed6cf1467"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\command\\easy_install.py",
+      "size": 85662,
+      "sha256": "b31eff470a5adb05"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\command\\editable_wheel.py",
+      "size": 31188,
+      "sha256": "c940b004d712ef9b"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\command\\egg_info.py",
+      "size": 26795,
+      "sha256": "056a39170dbf053f"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\command\\install.py",
+      "size": 5163,
+      "sha256": "081770f622131c07"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\command\\install_egg_info.py",
+      "size": 2226,
+      "sha256": "a6067ae26ffe926b"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\command\\install_lib.py",
+      "size": 3875,
+      "sha256": "533e3631cb321d90"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\command\\install_scripts.py",
+      "size": 2612,
+      "sha256": "00f145a6dfe56141"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\command\\py36compat.py",
+      "size": 4946,
+      "sha256": "ef22d6cd08f5efd1"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\command\\register.py",
+      "size": 468,
+      "sha256": "924dc3c5709be655"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\command\\rotate.py",
+      "size": 2128,
+      "sha256": "4afb103dab1ecc8a"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\command\\saveopts.py",
+      "size": 658,
+      "sha256": "cdaed00817108a62"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\command\\sdist.py",
+      "size": 7071,
+      "sha256": "77c4f2d1e0a250a7"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\command\\setopt.py",
+      "size": 5086,
+      "sha256": "a24c61a83d4d3359"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\command\\test.py",
+      "size": 8102,
+      "sha256": "656a0851d9babb66"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\command\\upload.py",
+      "size": 462,
+      "sha256": "5d3dd81557d83c09"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\command\\upload_docs.py",
+      "size": 7494,
+      "sha256": "d601d2b3c0b2b5ed"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\config\\__init__.py",
+      "size": 1121,
+      "sha256": "260e3c01ce82f00b"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\config\\_apply_pyprojecttoml.py",
+      "size": 13398,
+      "sha256": "12fd51c2d41b3e20"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\config\\_validate_pyproject\\__init__.py",
+      "size": 1038,
+      "sha256": "e585cf5b5b1a6d59"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\config\\_validate_pyproject\\error_reporting.py",
+      "size": 11266,
+      "sha256": "bd6883b348639420"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\config\\_validate_pyproject\\extra_validations.py",
+      "size": 1153,
+      "sha256": "c07ceb81f75950c4"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\config\\_validate_pyproject\\fastjsonschema_exceptions.py",
+      "size": 1612,
+      "sha256": "c3be3d260a8a8bc7"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\config\\_validate_pyproject\\fastjsonschema_validations.py",
+      "size": 269900,
+      "sha256": "a2a5d20df61e7329"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\config\\_validate_pyproject\\formats.py",
+      "size": 8736,
+      "sha256": "b8c527a7898b223a"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\config\\expand.py",
+      "size": 16319,
+      "sha256": "1508daf93f331bd6"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\config\\pyprojecttoml.py",
+      "size": 19304,
+      "sha256": "ddd6067d907f7e39"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\config\\setupcfg.py",
+      "size": 25198,
+      "sha256": "6aa5dd52e0799652"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\dep_util.py",
+      "size": 949,
+      "sha256": "043c75064ccd427b"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\depends.py",
+      "size": 5499,
+      "sha256": "41840869daf90f02"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\discovery.py",
+      "size": 20799,
+      "sha256": "51909e50b52b576d"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\dist.py",
+      "size": 45578,
+      "sha256": "a2513f08c365839f"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\errors.py",
+      "size": 2464,
+      "sha256": "dae4e8348440edd1"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\extension.py",
+      "size": 5591,
+      "sha256": "8e9b00750bc20429"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\extern\\__init__.py",
+      "size": 2512,
+      "sha256": "2d81d2db4b9ffa79"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\glob.py",
+      "size": 4873,
+      "sha256": "d686636df8c01d25"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\installer.py",
+      "size": 3824,
+      "sha256": "b3a0d07eca080812"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\launch.py",
+      "size": 812,
+      "sha256": "4f23d3f887354f61"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\logging.py",
+      "size": 1210,
+      "sha256": "6bc203855e79ab21"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\monkey.py",
+      "size": 4857,
+      "sha256": "b7a4e8ecb1214f23"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\msvc.py",
+      "size": 47724,
+      "sha256": "c7a8ec8c0f497547"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\namespaces.py",
+      "size": 3093,
+      "sha256": "3cca8654f5cf6108"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\package_index.py",
+      "size": 40020,
+      "sha256": "01290cb7b5584c76"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\py34compat.py",
+      "size": 245,
+      "sha256": "29839deb26d1c630"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\sandbox.py",
+      "size": 14348,
+      "sha256": "991f378be9aef995"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\unicode_utils.py",
+      "size": 941,
+      "sha256": "68e385a38246c00b"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\version.py",
+      "size": 144,
+      "sha256": "a20fdcb9941bd102"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\wheel.py",
+      "size": 8376,
+      "sha256": "e8ba61cd42987dd2"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\setuptools\\windows_support.py",
+      "size": 718,
+      "sha256": "297ac55abb5e5e38"
+    },
+    {
+      "path": "tqsc-native\\.venv\\Lib\\site-packages\\tqsc_native\\__init__.py",
+      "size": 127,
+      "sha256": "db387d1e0f6f3669"
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "agent-client-protocol"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "aiohappyeyeballs"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "aiohttp"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "aiosignal"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "annotated-doc"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "annotated-types"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "anyio"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "attrs"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "av"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "beautifulsoup4"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "boto3"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "botocore"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "brotli"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "brotlicffi"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "cadquery"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "cadquery-ocp"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "cadquery-ocp-proxy"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "casadi"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "certifi"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "cffi"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "charset-normalizer"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "click"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "colorama"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "concurrent-log-handler"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "contourpy"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "croniter"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "cryptography"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "cssselect2"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "ctranslate2"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "cycler"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "davey"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "defusedxml"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "dependency-injector"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "discord.py"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "distro"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "edge-tts"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "et_xmlfile"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "ezdxf"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "fastapi"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "faster-whisper"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "filelock"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "fire"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "flatbuffers"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "fonttools"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "frozenlist"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "fsspec"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "geographiclib"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "geopy"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "google-api-core"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "google-api-python-client"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "google-auth"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "google-auth-httplib2"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "google-auth-oauthlib"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "googleapis-common-protos"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "h11"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "hermes-agent"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "hf-xet"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "httpcore"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "httplib2"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "httptools"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "httpx"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "httpx-sse"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "huggingface_hub"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "idna"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "Jinja2"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "jiter"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "jmespath"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "joblib"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "jsonschema"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "jsonschema-specifications"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "kiwisolver"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "llvmlite"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "lxml"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "Markdown"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "markdown-it-py"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "MarkupSafe"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "matplotlib"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "maturin"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "mcp"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "mdurl"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "microsoft-teams-api"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "microsoft-teams-apps"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "microsoft-teams-cards"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "microsoft-teams-common"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "more-itertools"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "mpmath"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "msal"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "msgpack"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "multidict"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "multimethod"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "narwhals"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "networkx"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "nlopt"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "numba"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "numpy"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "numpy-stl"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "oauthlib"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "onnxruntime"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "openai"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "openpyxl"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "packaging"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "pandas"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "pathspec"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "pillow"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "pip"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "portalocker"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "prompt_toolkit"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "propcache"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "proto-plus"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "protobuf"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "psutil"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "pyasn1"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "pyasn1_modules"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "pycparser"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "pydantic"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "pydantic_core"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "pydantic-settings"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "pydyf"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "pyglet"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "Pygments"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "PyJWT"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "pymupdf"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "PyNaCl"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "pyngrok"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "pypandoc"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "pyparsing"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "pyphen"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "python-dateutil"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "python-docx"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "python-dotenv"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "python-multipart"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "python-telegram-bot"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "python-utils"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "pytz"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "pywin32"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "pywinpty"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "PyYAML"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "referencing"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "regex"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "requests"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "requests-oauthlib"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "rich"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "rpds-py"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "ruamel.yaml"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "ruamel.yaml.clib"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "runtype"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "s3transfer"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "safetensors"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "scikit-learn"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "scipy"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "seaborn"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "sentence-transformers"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "setuptools"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "shellingham"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "simple-term-menu"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "six"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "slack_bolt"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "slack_sdk"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "sniffio"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "socksio"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "sounddevice"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "soupsieve"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "sse-starlette"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "starlette"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "sympy"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "tabulate"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "tenacity"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "termcolor"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "threadpoolctl"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "tinycss2"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "tinyhtml5"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "tokenizers"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "torch"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "tornado"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "tqdm"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "trame"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "trame-client"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "trame-common"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "trame-components"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "trame-server"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "trame-vtk"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "trame-vuetify"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "transformers"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "trimesh"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "typer"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "typer-slim"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "typing_extensions"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "typing-inspection"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "tzdata"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "uritemplate"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "urllib3"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "uvicorn"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "vtk"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "watchfiles"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "wcwidth"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "weasyprint"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "webencodings"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "websockets"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "wslink"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "yarl"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "youtube-transcript-api"
+    },
+    {
+      "spdxElementId": "TQSC-v2.0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "zopfli"
+    }
+  ],
+  "_source": "C:\\Users\\raem9\\Desktop\\Proyecto TQSC\\v1.0"
+}

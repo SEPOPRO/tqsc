@@ -1,22 +1,69 @@
 """
-TQSC v1.0 — SyscallMonitor REAL
-Intercepta llamadas críticas del sistema operativo usando ctypes + ntdll.
-Windows nativo (user-space, no requiere driver Ring 0).
+Process list monitor that polls running processes at regular intervals. Does NOT intercept syscalls.
 """
-import os, ctypes, ctypes.wintypes as wintypes, threading, time, json, logging
+import os, threading, time, logging
 from datetime import datetime
-from pathlib import Path
 from collections import defaultdict
 from typing import Optional
+import ctypes
+from ctypes import wintypes
+
+# IOCTL Definitions
+FILE_DEVICE_UNKNOWN = 0x00000022
+METHOD_BUFFERED = 0
+FILE_ANY_ACCESS = 0
+
+def CTL_CODE(DeviceType, Function, Method, Access):
+    return (DeviceType << 16) | (Access << 14) | (Function << 2) | Method
+
+IOCTL_TQSC_READ_EVENTS = CTL_CODE(FILE_DEVICE_UNKNOWN, 0x801, METHOD_BUFFERED, FILE_ANY_ACCESS)
+IOCTL_TQSC_BLOCK_PROCESS = CTL_CODE(FILE_DEVICE_UNKNOWN, 0x802, METHOD_BUFFERED, FILE_ANY_ACCESS)
+
+class TQSC_EVENT(ctypes.Structure):
+    _fields_ = [
+        ("PID", ctypes.c_ulong),
+        ("ParentPID", ctypes.c_ulong),
+        ("ImagePath", ctypes.c_wchar * 260)
+    ]
+
+try:
+    kernel32 = ctypes.WinDLL('kernel32', use_last_error=True)
+    CreateFileW = kernel32.CreateFileW
+    CreateFileW.argtypes = [wintypes.LPCWSTR, wintypes.DWORD, wintypes.DWORD, wintypes.LPVOID, wintypes.DWORD, wintypes.DWORD, wintypes.HANDLE]
+    CreateFileW.restype = wintypes.HANDLE
+    
+    DeviceIoControl = kernel32.DeviceIoControl
+    DeviceIoControl.argtypes = [wintypes.HANDLE, wintypes.DWORD, wintypes.LPVOID, wintypes.DWORD, wintypes.LPVOID, wintypes.DWORD, ctypes.POINTER(wintypes.DWORD), wintypes.LPVOID]
+    DeviceIoControl.restype = wintypes.BOOL
+    
+    CloseHandle = kernel32.CloseHandle
+    CloseHandle.argtypes = [wintypes.HANDLE]
+    CloseHandle.restype = wintypes.BOOL
+except Exception:
+    pass
+
+GENERIC_READ = 0x80000000
+GENERIC_WRITE = 0x40000000
+OPEN_EXISTING = 3
 
 from native_bridge import enum_processes as _enum_processes
-from utils.secure_storage import append as _append
+
+try:
+    import wmi
+    import pythoncom
+    HAS_WMI = True
+except ImportError:
+    HAS_WMI = False
 
 LOG = logging.getLogger("tqsc.syscall")
-TQSC_TEST = os.environ.get("TQSC_TEST_MODE") == "1"
+TQSC_TEST = lambda: os.environ.get("TQSC_TEST_MODE") == "1"
 
 
 class SyscallStats:
+    """
+    Estadísticas de llamadas.
+    NOTA: anomalias_detectadas es actualmente siempre 0.
+    """
     def __init__(self):
         self.total_calls = 0
         self.calls_por_segundo = 0
@@ -26,9 +73,10 @@ class SyscallStats:
 
 
 class SyscallMonitor:
-    """Monitoreo de procesos vía Rust (tqsc_native) con fallback Python."""
+    """Process monitoring via Rust (tqsc_native) with Python fallback.
+    TODO: Implement real syscall monitoring instead of just process polling."""
 
-    CALLS_CRITICAS = [
+    PROCESOS_CRITICOS = [
         "NtCreateProcess", "NtCreateThreadEx", "NtAllocateVirtualMemory",
         "NtWriteVirtualMemory", "NtProtectVirtualMemory",
         "NtReadVirtualMemory", "NtOpenProcess", "NtOpenKey",
@@ -36,123 +84,170 @@ class SyscallMonitor:
         "CreateProcessAsUser", "CreateProcessWithToken", "CreateProcessWithLogon",
     ]
 
-    SYSINTERNALS_BYPASS = ["procexp", "procmon", "dbgview", "tcpview", "handle"]
-
-    def __init__(self, data_dir: str = "data", intervalo: float = 2.0):
-        self.data_dir = Path(data_dir)
+    def __init__(self, intervalo: float = 3.0):
         self.intervalo = intervalo
-        self.stats = SyscallStats()
-        self._baseline: dict[str, int] = {}
-        self._activo = False
+        self.activo = False
         self._hilo: Optional[threading.Thread] = None
+        self.stats = SyscallStats()
         self._procesos_previos: set[int] = set()
         self._windows_ok = False
+        self._has_driver = False
+        self._driver_handle = None
 
-        if TQSC_TEST:
+        if TQSC_TEST():
             LOG.info("SyscallMonitor: MODO TEST — sin hardware real")
             return
 
+        # Try to open driver handle
         try:
-            self.ntdll = ctypes.windll.ntdll
-            self.kernel32 = ctypes.windll.kernel32
-            self._windows_ok = True
-            LOG.info("SyscallMonitor: ctypes inicializado")
-        except (AttributeError, OSError) as e:
-            LOG.warning("SyscallMonitor: ctypes no disponible (%s)", e)
+            handle = CreateFileW(
+                r"\\.\TqscDriver",
+                GENERIC_READ | GENERIC_WRITE,
+                0,
+                None,
+                OPEN_EXISTING,
+                0,
+                None
+            )
+            if handle and handle != -1 and handle != ctypes.c_void_p(-1).value:
+                self._has_driver = True
+                self._driver_handle = handle
+                LOG.info("SyscallMonitor: Conectado a \\\\.\\TqscDriver con éxito.")
+            else:
+                LOG.info("SyscallMonitor: No se pudo conectar al driver (fallback a WMI/polling).")
+        except Exception as e:
+            LOG.warning("SyscallMonitor: Error abriendo driver: %s", e)
+
+        self._windows_ok = True
+        LOG.info("SyscallMonitor: inicializado")
 
     def iniciar(self):
-        if TQSC_TEST or not self._windows_ok:
+        if TQSC_TEST() or not self._windows_ok:
             LOG.info("SyscallMonitor: monitoreo simulado (test mode)")
             return
-        self._activo = True
-        self._establecer_baseline()
-        self._hilo = threading.Thread(target=self._loop_monitoreo, daemon=True)
+        self.activo = True
+        self._hilo = threading.Thread(target=self._loop, daemon=True)
         self._hilo.start()
-        LOG.info("SyscallMonitor: monitoreo activo (intervalo=%ss)", self.intervalo)
+        LOG.info("SyscallMonitor: activo")
 
     def detener(self):
-        self._activo = False
+        self.activo = False
 
-    def _establecer_baseline(self):
-        self._baseline["procesos"] = len(self._listar_procesos())
-        self._baseline["hilos"] = self._contar_hilos()
+    def _loop(self):
+        use_wmi = HAS_WMI and not TQSC_TEST() and not self._has_driver
+        watcher = None
+        if use_wmi:
+            try:
+                pythoncom.CoInitialize()
+                c = wmi.WMI()
+                watcher = c.Win32_ProcessStartTrace.watch_for(delay=1)
+                LOG.info("SyscallMonitor: WMI watcher inicializado para Win32_ProcessStartTrace")
+            except Exception as e:
+                LOG.warning("SyscallMonitor: WMI falló, usando fallback. Error: %s", e)
+                use_wmi = False
+
+        while self.activo:
+            try:
+                if self._has_driver:
+                    event = TQSC_EVENT()
+                    bytes_returned = wintypes.DWORD(0)
+                    res = DeviceIoControl(
+                        self._driver_handle,
+                        IOCTL_TQSC_READ_EVENTS,
+                        None, 0,
+                        ctypes.byref(event), ctypes.sizeof(event),
+                        ctypes.byref(bytes_returned),
+                        None
+                    )
+                    if res and bytes_returned.value > 0:
+                        LOG.info("SyscallMonitor: Driver detectó nuevo proceso: %s (PID: %d)", event.ImagePath, event.PID)
+                        self._procesos_previos.add(event.PID)
+                    else:
+                        time.sleep(self.intervalo)
+                elif use_wmi and watcher:
+                    try:
+                        # Monitor with timeout to allow thread termination when self.activo is False
+                        process_event = watcher(timeout_ms=int(self.intervalo * 1000))
+                        if process_event:
+                            pid = int(process_event.ProcessID)
+                            nombre = process_event.ProcessName
+                            LOG.info("SyscallMonitor: WMI detectó nuevo proceso: %s (PID: %d)", nombre, pid)
+                            self._procesos_previos.add(pid)
+                    except wmi.x_wmi_timed_out:
+                        pass
+                    except Exception as e:
+                        LOG.warning("SyscallMonitor: error en WMI watcher: %s", e)
+                        # Optionally fallback or just sleep
+                        time.sleep(self.intervalo)
+                else:
+                    procs_act = self._listar_procesos()
+                    nuevos = [p for p in procs_act if p["pid"] not in self._procesos_previos]
+                    if nuevos:
+                        LOG.info("SyscallMonitor: %d procesos nuevos detectados", len(nuevos))
+                    self._procesos_previos = {p["pid"] for p in procs_act}
+                    time.sleep(self.intervalo)
+            except Exception as e:
+                LOG.warning("SyscallMonitor: error en loop: %s", e)
+                time.sleep(self.intervalo)
+                
+        if use_wmi:
+            try:
+                pythoncom.CoUninitialize()
+            except Exception:
+                pass
+                
+        if self._has_driver and self._driver_handle:
+            CloseHandle(self._driver_handle)
+            self._driver_handle = None
 
     def _listar_procesos(self) -> list[dict]:
-        if TQSC_TEST:
+        if TQSC_TEST():
             return [{"pid": 1, "nombre": "test", "hilos": 2, "ppid": 0}]
         try:
             procs = _enum_processes()
-            return [{
-                "pid": p["pid"], "nombre": p["nombre"],
-                "hilos": 1, "ppid": 0,
-            } for p in procs]
+            if procs is None:
+                raise RuntimeError("native_bridge devolvió None")
+            for p in procs:
+                if "nombre" not in p:
+                    p["nombre"] = f"pid_{p.get('pid', 0)}"
+                if "hilos" not in p:
+                    p["hilos"] = 1
+                if "ppid" not in p:
+                    p["ppid"] = 0
+            return procs
         except Exception as e:
-            LOG.debug("Error listando procesos: %s", e)
+            LOG.warning("SyscallMonitor: error listando procesos: %s", e)
             return []
-
-    def _contar_hilos(self) -> int:
-        return sum(p.get("hilos", 1) for p in self._listar_procesos())
-
-    def _loop_monitoreo(self):
-        while self._activo:
-            try: self._ciclo()
-            except Exception as e: LOG.warning("SyscallMonitor: error: %s", e)
-            time.sleep(self.intervalo)
-
-    def _ciclo(self):
-        procesos = self._listar_procesos()
-        pids_actuales = {p["pid"] for p in procesos}
-        pids_nuevos = pids_actuales - self._procesos_previos
-        self.stats.total_calls += len(pids_nuevos)
-        for p in procesos:
-            if p["pid"] in pids_nuevos:
-                self._analizar_proceso_nuevo(p)
-        self._procesos_previos = pids_actuales
-
-    def _analizar_proceso_nuevo(self, proc: dict):
-        nombre = proc.get("nombre", "").lower()
-        senales = []
-        # UAC bypass tools
-        if any(s in nombre for s in self.SYSINTERNALS_BYPASS):
-            senales.append(f"uac_bypass_tool: {nombre}")
-        if any(s in nombre for s in ["powershell", "cmd", "wscript", "cscript", "mshta"]):
-            senales.append(f"shell: {nombre}")
-        if proc.get("hilos", 0) > 50:
-            senales.append(f"hilos: {proc['hilos']}")
-        # Procesos efímeros: si el PID es muy bajo pero tiene muchos hilos
-        if proc.get("pid", 0) < 100 and proc.get("hilos", 0) > 20:
-            senales.append(f"efimero: PID={proc['pid']} hilos={proc['hilos']}")
-        for padre in self._listar_procesos():
-            if padre["pid"] == proc.get("ppid") and self._combinacion_peligrosa(padre["nombre"].lower(), nombre):
-                senales.append(f"{padre['nombre']}={nombre}")
-        if senales:
-            self._emitir_alerta(f"nuevo_proceso:{proc['pid']}", "; ".join(senales))
-
-    def _combinacion_peligrosa(self, padre: str, hijo: str) -> bool:
-        pares = [("winword", "powershell"), ("excel", "powershell"), ("chrome", "cmd"),
-                 ("outlook", "powershell"), ("explorer", "powershell")]
-        p = padre.split(".")[0]; h = hijo.split(".")[0]
-        return (p, h) in pares
-
-    def _emitir_alerta(self, tipo: str, detalle: str):
-        alerta = {"timestamp": datetime.now().isoformat(), "tipo": tipo, "detalle": detalle}
-        self.stats.anomalias_detectadas += 1
-        self.stats.alertas_emitidas.append(alerta)
-        LOG.warning("SyscallMonitor: [%s] %s", tipo, detalle)
-        _append(self.data_dir / "syscall_alertas.jsonl", alerta)
-
-    def monitorear(self, llamada: Optional[str] = None, origen: str = "") -> Optional[dict]:
-        if llamada and llamada in self.CALLS_CRITICAS:
-            a = {"llamada": llamada, "origen": origen, "alerta": "critica"}
-            self._emitir_alerta(f"syscall:{llamada}", f"desde {origen}" if origen else "")
-            return a
-        return None
 
     def estado(self) -> dict:
         return {
-            "activo": self._activo, "windows_ok": self._windows_ok,
-            "test_mode": TQSC_TEST,
-            "total_calls": self.stats.total_calls,
+            "activo": self.activo or TQSC_TEST(),
+            "procesos_monitoreados": len(self._procesos_previos),
+            "ventana_segundos": self.intervalo,
             "anomalias": self.stats.anomalias_detectadas,
-            "procesos_actuales": len(self._procesos_previos),
+            "test_mode": TQSC_TEST(),
+            "critical_calls_monitored": len(self.PROCESOS_CRITICOS),
+            "driver_active": self._has_driver,
         }
+
+    def bloquear_proceso(self, image_name: str) -> bool:
+        if not self._has_driver:
+            LOG.warning("SyscallMonitor: Driver no disponible para bloquear proceso %s", image_name)
+            return False
+        
+        buffer = ctypes.create_unicode_buffer(image_name, 260)
+        bytes_returned = wintypes.DWORD(0)
+        res = DeviceIoControl(
+            self._driver_handle,
+            IOCTL_TQSC_BLOCK_PROCESS,
+            buffer, ctypes.sizeof(buffer),
+            None, 0,
+            ctypes.byref(bytes_returned),
+            None
+        )
+        if res:
+            LOG.info("SyscallMonitor: Comando de bloqueo enviado para %s", image_name)
+            return True
+        else:
+            LOG.error("SyscallMonitor: Error enviando comando de bloqueo al driver.")
+            return False

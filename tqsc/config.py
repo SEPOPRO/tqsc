@@ -6,17 +6,18 @@ from pathlib import Path
 
 # ── Rutas ────────────────────────────────────
 BASE_DIR = Path(__file__).parent
-DATA_DIR = BASE_DIR / "data"
+TQSC_HOME = os.environ.get("TQSC_HOME", "")
+if TQSC_HOME:
+    DATA_DIR = Path(TQSC_HOME)
+else:
+    DATA_DIR = BASE_DIR / "data"
 LOG_DIR = DATA_DIR / "logs"
 os.makedirs(DATA_DIR, exist_ok=True)
 os.makedirs(LOG_DIR, exist_ok=True)
 
 # ── Nodos blockchain ─────────────────────────
-DEFAULT_NODOS = {
-    "Nodo_A": "abc123",
-    "Nodo_B": "abc123",
-    "Nodo_C": "xyz789",
-}
+import hashlib
+DEFAULT_NODOS = {f"Nodo_{c}": hashlib.sha256(f"tqsc_nodo_{c}".encode()).hexdigest()[:16] for c in "ABCDEFG"}
 
 # ── Umbrales de defensa ──────────────────────
 HPA_TENSION_MAX = 0.45

@@ -1,0 +1,47 @@
+[Version]
+Signature   = "$WINDOWS NT$"
+Class       = System
+ClassGuid   = {4d36e97d-e325-11ce-bfc1-08002be10318}
+Provider    = %ProviderName%
+DriverVer   = 01/01/2024,1.0.0.0
+CatalogFile = TqscDriver.cat
+PnpLockDown = 1
+
+[DestinationDirs]
+DefaultDestDir = 12 ; %windir%\system32\drivers
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+TqscDriver.sys = 1,,
+
+[Manufacturer]
+%ManufacturerName% = Standard,NT$ARCH$
+
+[Standard.NT$ARCH$]
+%TqscDriver.DeviceDesc% = TqscDriver_Device, Root\TqscDriver
+
+[TqscDriver_Device.NT]
+CopyFiles = Drivers_Dir
+
+[Drivers_Dir]
+TqscDriver.sys
+
+[TqscDriver_Device.NT.Services]
+AddService = TqscDriver,%SPSVCINST_ASSOCSERVICE%, TqscDriver_Service_Inst
+
+[TqscDriver_Service_Inst]
+DisplayName    = %TqscDriver.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\TqscDriver.sys
+
+[Strings]
+ProviderName            = "TQSC"
+ManufacturerName        = "TQSC"
+DiskName                = "TqscDriver Installation Disk"
+TqscDriver.DeviceDesc   = "TqscDriver Device"
+TqscDriver.SVCDESC      = "TqscDriver Service"
+SPSVCINST_ASSOCSERVICE  = 0x00000002

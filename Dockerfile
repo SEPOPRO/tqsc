@@ -1,38 +1,41 @@
-# TQSC v2.0 — Base image
-# Multi-stage: build deps first, then runtime
+# TQSC v2.0 — Docker producción
 FROM python:3.11-slim AS builder
-
-WORKDIR /build
+RUN apt-get update && apt-get install -y --no-install-recommends gcc && \
+    rm -rf /var/lib/apt/lists/*
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt && \
-    pip install --no-cache-dir maturin
+RUN pip wheel --no-cache-dir --wheel-dir /wheels \
+    -r requirements.txt \
+    scikit-learn joblib numpy
 
-# Copy Rust code and build native module
-COPY tqsc-native/ /build/tqsc-native/
-RUN cd tqsc-native && maturin build --release --out /build/wheels
+FROM python:3.11-slim
+# Usuario no-root
+RUN groupadd -r tqsc && useradd -r -g tqsc -d /app -s /sbin/nologin tqsc
 
-# ── Runtime image ──
-FROM python:3.11-slim AS runtime
+# Solo lo necesario: tini (señales) + curl (healthcheck)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl tini && rm -rf /var/lib/apt/lists/*
+
+# Python deps compiladas
+COPY --from=builder /wheels /wheels
+RUN pip install --no-cache-dir /wheels/*.whl && rm -rf /wheels
 
 WORKDIR /app
-
-# Install system deps for psutil + networking
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    netcat-openbsd curl procps && \
-    rm -rf /var/lib/apt/lists/*
-
-# Copy Python deps + native wheels
-COPY --from=builder /build/wheels/ /tmp/wheels/
-RUN pip install --no-cache-dir /tmp/wheels/*.whl && \
-    pip install --no-cache-dir psutil cryptography geopy pynacl && \
-    rm -rf /tmp/wheels
-
-# Copy TQSC source
 COPY tqsc/ /app/tqsc/
 COPY run.py /app/
 
-ENV PYTHONPATH=/app
-ENV TQSC_HOME=/app/data
+# Data dir con permisos para tqsc
+RUN mkdir -p /app/data && chown -R tqsc:tqsc /app
 
-# Default: run supervisor
-CMD ["python", "run.py", "--supervised"]
+ENV PYTHONPATH=/app \
+    TQSC_HOME=/app/data \
+    TQSC_DOCKER=1
+
+VOLUME /app/data
+EXPOSE 9090 2222
+
+HEALTHCHECK --interval=30s --timeout=5s --start-period=15s --retries=3 \
+    CMD curl -sf http://localhost:9090/api > /dev/null 2>&1 || exit 1
+
+USER tqsc
+ENTRYPOINT ["/usr/bin/tini", "--"]
+CMD ["python", "run.py", "--hud"]

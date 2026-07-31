@@ -1,8 +1,10 @@
 """
 hybrid_lora.py — Fine-Tuning con Almacenamiento Híbrido Ternario
 PyTorch nn.Module compatible con HuggingFace LoRA.
+
+KNOWN ISSUE: Weights stored as Python nested lists incur ~50-100 bytes CPython object overhead per element, using 10-20x MORE memory than standard float32 tensors. The register_buffer stores zeros and is not used. This is a proof-of-concept, not production-ready.
 """
-import math, os, time
+import math, time
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -29,7 +31,10 @@ def _encode_weight(w: float, bits: int = 8) -> list[int]:
     """Cuantiza float a [-1,1] y codifica en ternario."""
     q = int((w + 1.0) / 2.0 * (2**bits - 1))
     q = max(0, min(2**bits - 1, q))
-    return _to_ternary(q)
+    trits = _to_ternary(q)
+    max_len = math.ceil(bits * math.log(2) / math.log(3)) + 1
+    trits.extend([0] * (int(max_len) - len(trits)))
+    return trits
 
 def _decode_weight(enc: list[int], bits: int = 8) -> float:
     """Decodifica ternario a float en [-1,1]."""
@@ -65,10 +70,7 @@ class HybridLinear(nn.Module):
             for j in range(in_features):
                 row.append(_encode_weight(float(w_np[i, j]), bits))
             encoded.append(row)
-        self.register_buffer('_weight_encoded', torch.tensor([
-            [0 for _ in range(in_features)] for _ in range(out_features)
-        ]))  # Placeholder, el almacenamiento real es Python list
-        self._weight_enc = encoded  # List[list[list[int]]]
+        self.register_buffer('_weight_enc', torch.tensor(encoded, dtype=torch.int8))
         
         # Bias en float32 (no vale la pena comprimir)
         self.bias = nn.Parameter(torch.zeros(out_features))
@@ -83,9 +85,10 @@ class HybridLinear(nn.Module):
             return self._weight_cache
             
         w_decoded = torch.zeros(self.out_features, self.in_features)
+        enc_list = self._weight_enc.tolist()
         for i in range(self.out_features):
             for j in range(self.in_features):
-                w_decoded[i, j] = _decode_weight(self._weight_enc[i][j], self.bits)
+                w_decoded[i, j] = _decode_weight(enc_list[i][j], self.bits)
         self._weight_cache = w_decoded
         return w_decoded
     
@@ -226,10 +229,13 @@ class HybridModel(nn.Module):
                 h_layer = HybridLinear(child.in_features, child.out_features, self.bits)
                 # Copiar pesos (cuantizados a ternario)
                 w_float = child.weight.data.cpu()
+                encoded = []
                 for i in range(h_layer.out_features):
+                    row = []
                     for j in range(h_layer.in_features):
-                        h_layer._weight_enc[i][j] = _encode_weight(
-                            float(w_float[i, j]), self.bits)
+                        row.append(_encode_weight(float(w_float[i, j]), self.bits))
+                    encoded.append(row)
+                h_layer._weight_enc.data = torch.tensor(encoded, dtype=torch.int8)
                 if child.bias is not None:
                     h_layer.bias.data = child.bias.data.clone()
                 

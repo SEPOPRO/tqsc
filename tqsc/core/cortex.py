@@ -13,7 +13,7 @@ LOG = logging.getLogger("tqsc.cortex")
 
 
 class CortexDeConfinamiento:
-    """Supervisor con descongelación gradual y auto-recovery."""
+    """Monitors metric deques and freezes nuclei based on boolean flag checks."""
 
     def __init__(self, ventana_ciclos: int = 5, max_deg: int = 3, data_dir: str = "data"):
         self.ventana = ventana_ciclos
@@ -38,7 +38,7 @@ class CortexDeConfinamiento:
             self.congelado = True
             self._modo_seguro = True
             estado = "congelar"
-            LOG.critical("CORTEX: LoRA congelado por auto-envenenamiento!")
+            LOG.critical("CORTEX: Núcleo congelado por comportamiento degenerativo")
             self._notificar_congelamiento()
             self._persistir_evidencia()
         return estado
@@ -48,9 +48,9 @@ class CortexDeConfinamiento:
         actual = self.historial[-1]; anterior = self.historial[-2]
         senales = 0
         if actual.get("confianza_promedio", 1) < anterior.get("confianza_promedio", 0): senales += 1
-        if actual.get("hipotesis_repetidas") and actual.get("n_fuentes", 1) == 0: senales += 1
+        if actual.get("hipotesis_repetidas", False) and actual.get("n_fuentes", 1) == 0: senales += 1
         if actual.get("errores", 0) > anterior.get("errores", 0) * 1.5: senales += 1
-        if actual.get("confianza_cayendo"): senales += 1
+        if actual.get("confianza_cayendo", False): senales += 1
         hora = datetime.now().hour
         umbral = 1 if hora < 6 or hora > 22 else 2
         es_degenerativo = senales >= umbral
@@ -93,7 +93,7 @@ class CortexDeConfinamiento:
 
     def _notificar_congelamiento(self):
         alerta = {"timestamp": datetime.now().isoformat(), "evento": "CORTEX_CONFINAMIENTO",
-                  "accion": "LoRA congelado", "ultimos_ciclos": len(self.historial),
+                  "accion": "Núcleo congelado", "ultimos_ciclos": len(self.historial),
                   "degenerativos": sum(1 for h in self.historial if h.get("_degenerativo"))}
         LOG.critical(": %s", json.dumps(alerta, indent=2))
 

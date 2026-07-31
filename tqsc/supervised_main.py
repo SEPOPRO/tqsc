@@ -3,7 +3,7 @@ TQSC v2.0 — Modo Supervisado (multi-proceso)
 Cada núcleo como proceso independiente con watchdog.
 Uso: python run.py --supervised
 """
-import logging, os, sys, time
+import logging, os, sys, time, hashlib
 
 LOG = logging.getLogger("tqsc.supervised")
 
@@ -45,7 +45,7 @@ def main_supervisado():
 
     # Registrar núcleos especiales
     for nombre, script_template in NUCLEOS_ESPECIALES.items():
-        puerto = 19100 + hash(nombre) % 1000
+        puerto = 19100 + int(hashlib.sha256(nombre.encode()).hexdigest(), 16) % 1000
         script = script_template.format(BASE=os.path.dirname(__file__).replace("\\", "\\\\"), PORT=puerto)
         sup._registrar_especial(nombre, script, puerto)
 

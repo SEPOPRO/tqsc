@@ -82,7 +82,8 @@ class KeyManager:
                 import stat
                 ruta.chmod(stat.S_IREAD | stat.S_IRGRP | stat.S_IROTH)
                 self._ruta_firma().chmod(stat.S_IREAD | stat.S_IRGRP | stat.S_IROTH)
-            except: pass
+            except (OSError, PermissionError):
+                LOG.warning("KeyManager: no se pudo proteger archivos de clave")
 
     def derivar(self, contexto: str, longitud: int = 32) -> bytes:
         """HKDF extract-and-expand (RFC 5869). Fallback SHA256 si no hay cryptography."""
@@ -117,8 +118,17 @@ class KeyManager:
     def rotar(self) -> bytes:
         vieja = self._clave_maestra
         self._clave_maestra = secrets.token_bytes(32)
-        with open(self.data_dir / ".master_key", "wb") as f:
+        self.data_dir.mkdir(parents=True, exist_ok=True)
+        ruta = self.data_dir / ".master_key"
+        ruta_hmac = self._ruta_firma()
+        for r in [ruta, ruta_hmac]:
+            if r.exists():
+                r.chmod(0o600)
+        with open(ruta, "wb") as f:
             f.write(self._clave_maestra)
+        ruta_hmac.write_text(self._firmar_clave(self._clave_maestra))
+        ruta.chmod(0o444)
+        ruta_hmac.chmod(0o444)
         return vieja
 
 
@@ -163,9 +173,13 @@ class FirmaDigital:
         if HAS_NACL:
             try:
                 firma_bytes = bytes.fromhex(firma_hex)
+                if len(firma_bytes) != 64:
+                    LOG.warning("FirmaDigital: firma inválida (longitud %d)", len(firma_bytes))
+                    return False
                 crypto_sign_open(firma_bytes + datos, self._vk)
                 return True
-            except Exception:
+            except (ValueError, nacl_b.BadSignatureError, nacl_b.CryptoError) as e:
+                LOG.warning("FirmaDigital: verificación falló: %s", e)
                 return False
         else:
             esperado = hmac.new(self._clave, datos, hashlib.sha256).hexdigest()

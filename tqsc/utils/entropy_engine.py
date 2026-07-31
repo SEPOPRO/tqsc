@@ -9,7 +9,7 @@ from typing import Optional
 
 from utils.secure_storage import append as _append
 
-TQSC_TEST = os.environ.get("TQSC_TEST_MODE") == "1"
+TQSC_TEST = lambda: os.environ.get("TQSC_TEST_MODE") == "1"
 try:
     import psutil
     HAS_PSUTIL = True
@@ -72,7 +72,7 @@ class EntropyShield:
         return HAS_PSUTIL
 
     def ram_noise_interceptor(self, force: bool = False) -> list[dict]:
-        if not HAS_PSUTIL or TQSC_TEST: return []
+        if not HAS_PSUTIL or TQSC_TEST(): return []
         ahora = time.time()
         if not force and self.ultima_activacion.get("ram", 0) > ahora - 30:
             return self._cache.get("ram", [])
@@ -88,7 +88,7 @@ class EntropyShield:
         return sospechosos
 
     def io_traffic_noise_checker(self, force: bool = False) -> bool:
-        if not HAS_PSUTIL or TQSC_TEST: return False
+        if not HAS_PSUTIL or TQSC_TEST(): return False
         ahora = time.time()
         if not force and self.ultima_activacion.get("io", 0) > ahora - 30:
             return self._cache.get("io", False)
@@ -125,13 +125,67 @@ class EntropyShield:
         except (psutil.AccessDenied, AttributeError): pass
         return score
 
+    # ─────────────────────────────────────────────
+    # Entropy Matcher — Para validación de honeytokens
+    # ─────────────────────────────────────────────
+
+    @staticmethod
+    def calcular_entropia_shannon(texto: str) -> float:
+        """Calcula H(X) = -Σ P(x)·log₂P(x) de un string.
+        Útil para validar que los honeytokens tengan entropía realista."""
+        if not texto:
+            return 0.0
+        freqs = {}
+        for c in texto:
+            freqs[c] = freqs.get(c, 0) + 1
+        n = len(texto)
+        import math
+        return -sum((c/n) * math.log2(c/n) for c in freqs.values())
+
+    @staticmethod
+    def entropia_charset(texto: str) -> float:
+        """Ratio de caracteres únicos vs totales."""
+        if not texto:
+            return 0.0
+        return len(set(texto)) / len(texto)
+
+    def validar_entropia_honeytoken(self, token: str,
+                                     baseline_mean: float = 3.5,
+                                     baseline_std: float = 0.8,
+                                     sigma: float = 2.0) -> dict:
+        """Valida que un honeytoken tenga entropía dentro del rango esperado.
+        
+        Args:
+            token: Token a validar
+            baseline_mean: Media de entropía de tokens reales
+            baseline_std: Desviación estándar de tokens reales
+            sigma: Umbral de desviación permitida (default: 2σ)
+            
+        Returns:
+            dict con {pass, entropia, z_score, realista}
+        """
+        h = self.calcular_entropia_shannon(token)
+        z = (h - baseline_mean) / baseline_std if baseline_std > 0 else 0.0
+        return {
+            "pass": abs(z) <= sigma,
+            "entropia": round(h, 4),
+            "z_score": round(z, 4),
+            "realista": abs(z) <= sigma,
+        }
+
 
 class EntropyTraceLedger:
     """Ledger forense con HMAC, rate limiting y rotación automática."""
 
     def __init__(self, data_dir: str = "data", max_entries: int = 10000):
         self.ruta = Path(data_dir) / "entropy_ledger.jsonl"
-        self._secreto = secrets.token_hex(16)
+        key_path = Path(data_dir) / ".entropy_ledger_key"
+        if key_path.exists():
+            self._secreto = key_path.read_text().strip()
+        else:
+            self._secreto = secrets.token_hex(16)
+            key_path.parent.mkdir(parents=True, exist_ok=True)
+            key_path.write_text(self._secreto)
         self._max_entries = max_entries
         self._count = 0
 

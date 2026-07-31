@@ -3,7 +3,7 @@ TQSC v1.0 — ForkSealant
 Integridad Distribuida: detección de forks, validación cruzada, consenso autónomo.
 Todos los logs con firma HMAC para detección de manipulación.
 """
-import json, time, hashlib, hmac, secrets, logging, os
+import json, time, hashlib, hmac, secrets, logging, os, socket
 from collections import defaultdict
 from pathlib import Path
 from typing import Optional
@@ -11,20 +11,20 @@ from datetime import datetime, timedelta
 
 from utils.secure_storage import write as _write, read as _read
 
-TQSC_TEST = os.environ.get("TQSC_TEST_MODE") == "1"
-HMAC_SECRET = secrets.token_hex(16)
+TQSC_TEST = lambda: os.environ.get("TQSC_TEST_MODE") == "1"
 LOG = logging.getLogger("tqsc.blockchain")
+EVENT_LOG = []  # Event log compartido entre instancias
 
 
-def _firmar(datos: dict) -> str:
-    """Firma HMAC-SHA256 de un diccionario."""
+def _firmar(datos: dict, secreto: str) -> str:
+    """Firma HMAC-SHA256 de un diccionario con secreto explícito."""
     raw = json.dumps(datos, sort_keys=True, ensure_ascii=False).encode()
-    return hmac.new(HMAC_SECRET.encode(), raw, hashlib.sha256).hexdigest()[:16]
+    return hmac.new(secreto.encode(), raw, hashlib.sha256).hexdigest()[:16]
 
 
-def _persistir_log(ruta: Path, datos: dict):
-    """Persiste con firma HMAC + cifrado AES-256-GCM."""
-    datos["hmac"] = _firmar(datos)
+def _persistir_log(ruta: Path, datos: dict, secreto: str):
+    """Persiste con firma HMAC."""
+    datos["hmac"] = _firmar(datos, secreto)
     _write(ruta, datos)
 
 
@@ -36,6 +36,7 @@ class ForkSealant:
         self.data_dir = Path(data_dir)
         self.data_dir.mkdir(parents=True, exist_ok=True)
         self._firmas_historicas: set[str] = set()
+        self._secreto = secrets.token_hex(16)
 
     def verificar(self, hash_local: str) -> bool:
         if hash_local not in set(self.nodos.values()):
@@ -56,7 +57,7 @@ class ForkSealant:
             "accion": "bloqueo_proceso",
             "estado": "fork_detectado",
         }
-        _persistir_log(self.data_dir / "fork_event.json", evento)
+        _persistir_log(self.data_dir / "fork_event.json", evento, self._secreto)
         return evento
 
 
@@ -65,24 +66,25 @@ class NodeReputationManager:
 
     def __init__(self, nodos: dict[str, str], score_inicial: float = 1.0,
                  umbral_compromiso: float = 0.3, max_influencia: float = 0.5,
-                 decay_rate: float = 0.02, data_dir: str = "data"):
+                 decay_rate: float = 0.02, data_dir: str = "data",
+                 secreto: str = ""):
         self.scores: dict[str, float] = {n: score_inicial for n in nodos}
         self.umbral = umbral_compromiso; self.max_influencia = max_influencia
         self.decay_rate = decay_rate; self.ultimo_voto: dict[str, float] = {n: time.time() for n in nodos}
         self.data_dir = Path(data_dir); self.historial: dict[str, list[dict]] = {n: [] for n in nodos}
+        self._secreto = secreto or secrets.token_hex(16)
         self._cargar()
 
     def _ruta(self) -> Path: return self.data_dir / "reputacion.json"
 
     def _cargar(self):
-        if TQSC_TEST: return
+        if TQSC_TEST(): return
         try:
-            if self._ruta().exists():
-                data = _read(self._ruta())
-                if data:
-                    for n, s in data.get("scores", {}).items():
-                        if n in self.scores:
-                            self.scores[n] = s
+            data = _read(self._ruta())
+            if data:
+                for n, s in data.get("scores", {}).items():
+                    if n in self.scores:
+                        self.scores[n] = s
         except (json.JSONDecodeError, OSError) as e:
             LOG.warning("NodeReputation: corrupción en %s (%s)", self._ruta(), e)
 
@@ -127,7 +129,7 @@ class NodeReputationManager:
         _persistir_log(self.data_dir / "node_compromised.json", {
             "timestamp": datetime.now().isoformat(), "nodo": nodo,
             "score": self.scores[nodo], "accion": "nodo_comprometido_excluido",
-        })
+        }, self._secreto)
 
     def estado(self) -> dict:
         return {n: {"score": round(s, 3), "comprometido": s < self.umbral}
@@ -182,7 +184,7 @@ class NodeChallenge:
             self.reputacion.penalizar(nodo, "nonce_incorrecto", 0.3); return False
         if datetime.now() - ts > timedelta(seconds=5):
             self.reputacion.penalizar(nodo, "timeout", 0.2); del self.desafios_activos[nodo]; return False
-        esperado = hashlib.sha256(f"{nonce}{self.claves[nodo]}".encode()).hexdigest()
+        esperado = hmac.new(self.claves[nodo].encode(), nonce.encode(), hashlib.sha256).hexdigest()
         if respuesta != esperado:
             self.reputacion.penalizar(nodo, "respuesta_incorrecta", 0.5); del self.desafios_activos[nodo]; return False
         # Rotar clave post-verificación
@@ -204,7 +206,7 @@ class CrossChainTracker:
         self.sealant = sealant or ForkSealant(nodos=nodos)
         self.reputacion = reputacion or NodeReputationManager(self.nodos)
         self.red: Optional[RedBlockchain] = None
-        if not TQSC_TEST:
+        if not TQSC_TEST():
             try:
                 from blockchain.ipc_red import RedBlockchain
                 self.red = RedBlockchain(data_dir=str(self.reputacion.data_dir))
@@ -272,7 +274,8 @@ class ReconsensusAgent:
                     LOG.warning("Reconsensus: %s TIMEOUT", n)
                     self.reputacion.penalizar(n, "timeout_reconsenso")
                     continue
-            except: pass
+            except (OSError, ConnectionError, socket.timeout):
+                pass
 
             if voto_a_favor:
                 votos_a_favor += peso
@@ -294,7 +297,7 @@ class ReconsensusAgent:
             "detalle_nodos": resultados_nodos,
         }
 
-        _persistir_log(self.data_dir / "resolucion_reconsensus.json", resolucion)
+        _persistir_log(self.data_dir / "resolucion_reconsensus.json", resolucion, self.reputacion._secreto)
         LOG.info("Reconsensus: %s → %s (%.1f%% a favor)",
                  hash_conflictivo[:16], "ACEPTADO" if resultado else "RECHAZADO",
                  100 * votos_a_favor / peso_total if peso_total else 0)

@@ -4,6 +4,9 @@
 
 ---
 
+> [!IMPORTANT]
+> **Nota de honestidad (2026-07-28):** Los estados marcados como 🟢 en esta hoja de ruta indican que la ESTRUCTURA del código existe y funciona, no que la implementación sea equivalente a un producto comercial. Ver LIMITACIONES_ML.md para limitaciones del ML. Los nombres de clases como 'ModelTrainer', 'RCQNeuralShield', 'QuantumValidator' son metafóricos — las implementaciones reales usan heurísticas simples basadas en diccionarios y contadores.
+
 ## 📊 LEYENDA
 
 | Símbolo | Significado |

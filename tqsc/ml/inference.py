@@ -19,6 +19,9 @@ TARGETS = [
     "bc_fork", "cd_necesita", "cl_loop", "cx_congelar",
     "en_anomalia", "hm_anomalia", "ij_aceptable", "me_implantacion",
     "oc_shellcode", "pi_accion", "pi_severidad", "pi_tipo", "ps_reflectivo",
+    # ABH Engine — Nuevas cabezas de inferencia
+    "abh_ttp_class",      # TTP Classifier (categoría de técnica MITRE)
+    "abh_intent",         # Intent Prediction (objetivo del atacante)
 ]
 
 TIPOS_ATAQUE = {
@@ -29,9 +32,24 @@ TIPOS_ATAQUE = {
 
 ACCIONES = {0: "bloquear", 1: "engañar", 2: "monitorear", 3: "ignorar"}
 
+# ABH: Mapeo de TTPs para la cabeza abh_ttp_class
+TTP_CLASSES = {
+    0: "T1046", 1: "T1190", 2: "T1210", 3: "T1003",
+    4: "T1558", 5: "T1552", 6: "T1078", 7: "T1021",
+    8: "T1059", 9: "T1562", 10: "T1070", 11: "T1082",
+    12: "T1110", 13: "T1048", 14: "T1590", 15: "desconocido",
+}
+
+# ABH: Mapeo de intentos para la cabeza abh_intent
+INTENT_CLASSES = {
+    0: "reconnaissance", 1: "initial_access", 2: "credential_theft",
+    3: "lateral_movement", 4: "data_exfiltration", 5: "defense_evasion",
+    6: "persistence", 7: "command_and_control",
+}
+
 
 class WorldModel:
-    """Carga modelos sklearn y provee predicciones para los 9 núcleos."""
+    """Loads 15 separate sklearn models (representing 15 'heads'), not a multi-head neural network."""
 
     def __init__(self, model_dir: str = "data/ml"):
         self._modelos = None
@@ -132,6 +150,14 @@ class WorldModel:
                 hp.get("tasa_exito_login", 0.5),
             ]
 
+            # ABH Honeypot Extras (4 features) — para cabezas abh_ttp_class y abh_intent
+            f += [
+                hp.get("abh_danger_score", 0.0),           # peligrosidad del atacante
+                hp.get("abh_ttp_count", 0) / 10.0,          # TTPs distintas observadas
+                hp.get("abh_session_depth", 0) / 50.0,      # profundidad de la sesión
+                hp.get("abh_herramientas_count", 0) / 5.0,  # herramientas distintas
+            ]
+
             # Entropy (6 features)
             f += [
                 en.get("entropia_actual", 0.5),
@@ -166,11 +192,11 @@ class WorldModel:
                 me.get("tasa_implantacion", 0.5),
             ]
 
-            # Padding a 68 features si es necesario
-            while len(f) < 68:
+            # Padding a 72 features si es necesario (68 originales + 4 ABH)
+            while len(f) < 72:
                 f.append(0.0)
 
-            return f[:68]
+            return f[:72]
 
         except Exception as e:
             LOG.error("World Model: error extrayendo features — %s", e)
@@ -182,7 +208,7 @@ class WorldModel:
             return {}
 
         import numpy as np
-        x = self._scaler.transform(np.array([features[:68]], dtype=np.float32))
+        x = self._scaler.transform(np.array([features[:72]], dtype=np.float32))
         resultado = {}
 
         for i, nombre in enumerate(TARGETS):
@@ -196,6 +222,12 @@ class WorldModel:
                 if pred < 0.3: resultado[nombre] = "baja"
                 elif pred < 0.6: resultado[nombre] = "media"
                 else: resultado[nombre] = "alta"
+            elif nombre == "abh_ttp_class":
+                resultado[nombre] = TTP_CLASSES.get(int(pred), "desconocido")
+                resultado["abh_ttp_num"] = float(pred)
+            elif nombre == "abh_intent":
+                resultado[nombre] = INTENT_CLASSES.get(int(pred), "unknown")
+                resultado["abh_intent_num"] = float(pred)
             elif nombre == "cl_loop":
                 resultado[nombre] = bool(pred)
             elif nombre == "cx_congelar":

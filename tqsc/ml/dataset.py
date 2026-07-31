@@ -1,10 +1,4 @@
-"""
-TQSC v2.0 — TQSC World Model
-Dataset de entrenamiento que cubre TODOS los 9 núcleos y sus 54+ subnúcleos.
-
-Genera ~5000 muestras de comportamiento del sistema completo,
-simulando estados normales y anómalos para cada subnúcleo.
-"""
+"""WARNING: This module generates 100% SYNTHETIC training data using random.uniform and if/else rules. Models trained on this data have NOT been validated against real attacks. See LIMITACIONES_ML.md for details."""
 import json, math, random, secrets, hashlib
 from pathlib import Path
 

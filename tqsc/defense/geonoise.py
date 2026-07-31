@@ -1,14 +1,7 @@
 """
-TQSC v2.0 — GeoNoiseTracker REAL
-Geolocalización mediante redes WiFi cercanas + OpenStreetMap.
-Sin API key, sin costos, sin EM simulado.
-
-Precisión esperada:
-  - WiFi + OSM: ~50-200m (nivel de calle con suficientes APs)
-  - Sin WiFi: ciudad por configuración regional de Windows
+Generates deterministic pseudo-random coordinates based on WiFi SSID hashes. NOT real geolocation. Coordinates are offsets from a base point (CDMX). Useful as a fingerprinting/entropy source, not for actual positioning.
 """
 import subprocess, re, json, time, logging, random, os, hashlib
-from pathlib import Path
 from typing import Optional
 from datetime import datetime
 
@@ -96,25 +89,17 @@ def _nominatim_geocode(lat: float, lon: float) -> Optional[dict]:
 
 
 def _localizar_por_wifi() -> Optional[dict]:
-    """Localiza usando BSSIDs de redes WiFi visibles + OSM.
-    Como OSM no geolocaliza por BSSID directamente, usamos las coordenadas
-    de un punto céntrico de la ciudad obtenida por señales.
-    Sin API de Google, esto da ~200m de precisión.
-    """
+    """Localiza usando BSSIDs de redes WiFi visibles. Usa un dummy mock determinista."""
     redes = escanear_wifi()
     if not redes:
         return None
 
-    # Tomar el SSID con mejor señal como referencia
+    # Dummy mock logic
     mejor = max(redes, key=lambda r: r.get("senal", 0))
-    # Generar hash del SSID + timestamp (15min ventana) para consistencia
     ventana = int(time.time() / 900)  # 15 minutos
     seed = f"{mejor['ssid']}:{ventana}"
-    # Usar seed para coordenadas determinísticas dentro de la ciudad
-    # En lugar de coordenadas aleatorias, usamos un punto base por SSID
     hash_val = int(hashlib.sha256(seed.encode()).hexdigest()[:8], 16)
-    # Coordenadas dentro de un bounding box (~1km cuadrado)
-    # Esto evita que el atacante correlacione localizaciones
+    
     lat_base, lon_base = 19.4326, -99.1332  # default CDMX
     lat = lat_base + (hash_val % 100) * 0.0001
     lon = lon_base + ((hash_val // 100) % 100) * 0.0001
@@ -131,6 +116,7 @@ def _localizar_por_wifi() -> Optional[dict]:
 def localizar() -> dict:
     """Obtiene ubicación actual.
     Prioridad: WiFi + OSM → ciudad por sistema → random jitter.
+    NOTE: The fallback is locale-hash based, not actual GPS.
     """
     # WiFi + OSM (precisión ~calle)
     loc = _localizar_por_wifi()
@@ -148,7 +134,7 @@ def localizar() -> dict:
         encoding = locale.getdefaultlocale()[1] or "UTF-8"
         pais = locale.getdefaultlocale()[0] or "es_MX"
         ciudad = pais.split("_")[0].upper()
-    except Exception:
+    except (locale.Error, TypeError, ValueError):
         ciudad = "MX"
 
     hash_val = int(hashlib.sha256(f"{ciudad}:{int(time.time()/3600)}".encode()).hexdigest()[:8], 16)

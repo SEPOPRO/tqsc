@@ -64,10 +64,21 @@ class NucleusDaemon:
             try:
                 conn, addr = self._server.accept()
                 LOG.debug("Conexión TLS de %s", addr)
-            except: break
+            except (socket.timeout, OSError): break
 
     def _manejar_conexion(self, conn):
-        conn.close()
+        try:
+            data = conn.recv(65536).decode()
+            if data:
+                req = json.loads(data)
+                resp = {"status": "ok"}
+                if req.get("tipo") == "heartbeat":
+                    resp["msg"] = "pong"
+                conn.sendall(json.dumps(resp).encode() + b"\n")
+        except Exception as e:
+            LOG.debug("Error manejando conexion: %s", e)
+        finally:
+            conn.close()
 
     def _heartbeat_loop(self):
         while self._activo:
